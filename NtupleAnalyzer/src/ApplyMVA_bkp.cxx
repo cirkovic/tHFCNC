@@ -1,0 +1,905 @@
+#include "../include/ApplyMVA.h"
+
+ApplyMVA::ApplyMVA(std::string home)
+{
+   _home = home;
+}
+
+ApplyMVA::~ApplyMVA()
+{
+   delete b3j4HutSTreader;
+   delete b3j4HctSTreader;
+   delete b3j4HutTTreader;
+   delete b3j4HctTTreader;
+
+   delete b3j3HutSTreader;
+   delete b3j3HctSTreader;
+   delete b3j3HutTTreader;
+   delete b3j3HctTTreader;
+
+   delete b2j4HutSTreader;
+   delete b2j4HctSTreader;
+   delete b2j4HutTTreader;
+   delete b2j4HctTTreader;
+}
+
+void ApplyMVA::init()
+{
+
+   b3j4HutSTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b3j4HutSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j4HutSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j4HutSTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j4HutSTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j4HutSTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j4HutSTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j4HutSTreader->AddVariable("LepCharge",&LepCharge);
+   b3j4HutSTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b3j4HutSTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b3j4HutSTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b3j4HutSTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b3j4HutSTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+   b3j4HutSTreader->AddVariable("TopLepEta_TOPTOPLEPHBB",&TopLepEta_TOPTOPLEPHBB);
+
+   b3j4HctSTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b3j4HctSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j4HctSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j4HctSTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j4HctSTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j4HctSTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j4HctSTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j4HctSTreader->AddVariable("LepCharge",&LepCharge);
+   b3j4HctSTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b3j4HctSTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b3j4HctSTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b3j4HctSTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b3j4HctSTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+
+   b3j4HutTTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b3j4HutTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j4HutTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j4HutTTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j4HutTTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j4HutTTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j4HutTTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j4HutTTreader->AddVariable("LepCharge",&LepCharge);
+   b3j4HutTTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b3j4HutTTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b3j4HutTTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b3j4HutTTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b3j4HutTTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+
+   b3j4HctTTreader = new TMVA::Reader("!Color:!Silent");
+
+   b3j4HctTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j4HctTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j4HctTTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j4HctTTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j4HctTTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j4HctTTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j4HctTTreader->AddVariable("LepCharge",&LepCharge);
+   b3j4HctTTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b3j4HctTTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b3j4HctTTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b3j4HctTTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b3j4HctTTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+  
+   std::string b3j4HutSTweightsFile = _home+"/MVA/weights/TMVA_HutST_b3j4_BDT.weights.xml";
+   b3j4HutSTreader->BookMVA("BDTG method",b3j4HutSTweightsFile.c_str());
+   std::string b3j4HctSTweightsFile = _home+"/MVA/weights/TMVA_HctST_b3j4_BDT.weights.xml";
+   b3j4HctSTreader->BookMVA("BDTG method",b3j4HctSTweightsFile.c_str());
+   std::string b3j4HutTTweightsFile = _home+"/MVA/weights/TMVA_HutTT_b3j4_BDT.weights.xml";
+   b3j4HutTTreader->BookMVA("BDTG method",b3j4HutTTweightsFile.c_str());
+   std::string b3j4HctTTweightsFile = _home+"/MVA/weights/TMVA_HctTT_b3j4_BDT.weights.xml";
+   b3j4HctTTreader->BookMVA("BDTG method",b3j4HctTTweightsFile.c_str());
+
+   b3j3HutSTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b3j3HutSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j3HutSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j3HutSTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j3HutSTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j3HutSTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j3HutSTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j3HutSTreader->AddVariable("LepCharge",&LepCharge);
+   b3j3HutSTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b3j3HutSTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+
+   b3j3HctSTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b3j3HctSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j3HctSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j3HctSTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j3HctSTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j3HctSTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j3HctSTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j3HctSTreader->AddVariable("LepCharge",&LepCharge);
+   b3j3HctSTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+
+   b3j3HutTTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b3j3HutTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j3HutTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j3HutTTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j3HutTTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j3HutTTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j3HutTTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j3HutTTreader->AddVariable("LepCharge",&LepCharge);
+   b3j3HutTTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+
+   b3j3HctTTreader = new TMVA::Reader("!Color:!Silent");
+ 
+   b3j3HctTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b3j3HctTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b3j3HctTTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b3j3HctTTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b3j3HctTTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b3j3HctTTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b3j3HctTTreader->AddVariable("LepCharge",&LepCharge);
+   b3j3HctTTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   
+   std::string b3j3HutSTweightsFile = _home+"/MVA/weights/TMVA_HutST_b3j3_BDT.weights.xml";
+   b3j3HutSTreader->BookMVA("BDTG method",b3j3HutSTweightsFile.c_str());
+   std::string b3j3HctSTweightsFile = _home+"/MVA/weights/TMVA_HctST_b3j3_BDT.weights.xml";
+   b3j3HctSTreader->BookMVA("BDTG method",b3j3HctSTweightsFile.c_str());
+   std::string b3j3HutTTweightsFile = _home+"/MVA/weights/TMVA_HutTT_b3j3_BDT.weights.xml";
+   b3j3HutTTreader->BookMVA("BDTG method",b3j3HutTTweightsFile.c_str());
+   std::string b3j3HctTTweightsFile = _home+"/MVA/weights/TMVA_HctTT_b3j3_BDT.weights.xml";
+   b3j3HctTTreader->BookMVA("BDTG method",b3j3HctTTweightsFile.c_str());
+
+   b2j4HutSTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b2j4HutSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b2j4HutSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b2j4HutSTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b2j4HutSTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b2j4HutSTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b2j4HutSTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b2j4HutSTreader->AddVariable("LepCharge",&LepCharge);
+   b2j4HutSTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b2j4HutSTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b2j4HutSTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b2j4HutSTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b2j4HutSTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+   b2j4HutSTreader->AddVariable("TopLepEta_TOPTOPLEPHBB",&TopLepEta_TOPTOPLEPHBB);
+
+   b2j4HctSTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b2j4HctSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b2j4HctSTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b2j4HctSTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b2j4HctSTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b2j4HctSTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b2j4HctSTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b2j4HctSTreader->AddVariable("LepCharge",&LepCharge);
+   b2j4HctSTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b2j4HctSTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b2j4HctSTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b2j4HctSTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b2j4HctSTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+
+   b2j4HutTTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b2j4HutTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b2j4HutTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b2j4HutTTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b2j4HutTTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b2j4HutTTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b2j4HutTTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b2j4HutTTreader->AddVariable("LepCharge",&LepCharge);
+   b2j4HutTTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b2j4HutTTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b2j4HutTTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b2j4HutTTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b2j4HutTTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+
+   b2j4HctTTreader = new TMVA::Reader("!Color:!Silent");
+   
+   b2j4HctTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+   b2j4HctTTreader->AddVariable("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+   b2j4HctTTreader->AddVariable("HiggsEta_TOPHLEPBB",&HiggsEta_TOPHLEPBB);
+   b2j4HctTTreader->AddVariable("HiggsEta_TOPTOPLEPHBB",&HiggsEta_TOPTOPLEPHBB);
+   b2j4HctTTreader->AddVariable("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
+   b2j4HctTTreader->AddVariable("HiggsMass_TOPTOPLEPHBB",&HiggsMass_TOPTOPLEPHBB);
+   b2j4HctTTreader->AddVariable("LepCharge",&LepCharge);
+   b2j4HctTTreader->AddVariable("MVA_TOPHLEPBB",&MVA_TOPHLEPBB);
+   b2j4HctTTreader->AddVariable("MVA_TOPTOPLEPHAD",&MVA_TOPTOPLEPHAD);
+   b2j4HctTTreader->AddVariable("MVA_TOPTOPLEPHBB",&MVA_TOPTOPLEPHBB);
+   b2j4HctTTreader->AddVariable("TopHadMass_TOPTOPLEPHAD",&TopHadMass_TOPTOPLEPHAD);
+   b2j4HctTTreader->AddVariable("TopLepEta_TOPHLEPBB",&TopLepEta_TOPHLEPBB);
+   
+   std::string b2j4HutSTweightsFile = _home+"/MVA/weights/TMVA_HutST_b2j4_BDT.weights.xml";
+   b2j4HutSTreader->BookMVA("BDTG method",b2j4HutSTweightsFile.c_str());
+   std::string b2j4HctSTweightsFile = _home+"/MVA/weights/TMVA_HctST_b2j4_BDT.weights.xml";
+   b2j4HctSTreader->BookMVA("BDTG method",b2j4HctSTweightsFile.c_str());
+   std::string b2j4HutTTweightsFile = _home+"/MVA/weights/TMVA_HutTT_b2j4_BDT.weights.xml";
+   b2j4HutTTreader->BookMVA("BDTG method",b2j4HutTTweightsFile.c_str());
+   std::string b2j4HctTTweightsFile = _home+"/MVA/weights/TMVA_HctTT_b2j4_BDT.weights.xml";
+   b2j4HctTTreader->BookMVA("BDTG method",b2j4HctTTweightsFile.c_str());
+
+    new_categories.push_back(string("HctSTb0j3"));
+    new_categories.push_back(string("HctSTb1j3"));
+    new_categories.push_back(string("HctSTb2j3"));
+    new_categories.push_back(string("HctSTb3j3"));
+    new_categories.push_back(string("HctSTb0j4"));
+    new_categories.push_back(string("HctSTb1j4"));
+    new_categories.push_back(string("HctSTb2j4"));
+    new_categories.push_back(string("HctSTb3j4"));
+    new_categories.push_back(string("HctSTb4j4"));
+    new_categories.push_back(string("HctTTb0j3"));
+    new_categories.push_back(string("HctTTb1j3"));
+    new_categories.push_back(string("HctTTb2j3"));
+    new_categories.push_back(string("HctTTb3j3"));
+    new_categories.push_back(string("HctTTb0j4"));
+    new_categories.push_back(string("HctTTb1j4"));
+    new_categories.push_back(string("HctTTb2j4"));
+    new_categories.push_back(string("HctTTb3j4"));
+    new_categories.push_back(string("HctTTb4j4"));
+    new_categories.push_back(string("HutSTb0j3"));
+    new_categories.push_back(string("HutSTb1j3"));
+    new_categories.push_back(string("HutSTb2j3"));
+    new_categories.push_back(string("HutSTb3j3"));
+    new_categories.push_back(string("HutSTb0j4"));
+    new_categories.push_back(string("HutSTb1j4"));
+    new_categories.push_back(string("HutSTb2j4"));
+    new_categories.push_back(string("HutSTb3j4"));
+    new_categories.push_back(string("HutSTb4j4"));
+    new_categories.push_back(string("HutTTb0j3"));
+    new_categories.push_back(string("HutTTb1j3"));
+    new_categories.push_back(string("HutTTb2j3"));
+    new_categories.push_back(string("HutTTb3j3"));
+    new_categories.push_back(string("HutTTb0j4"));
+    new_categories.push_back(string("HutTTb1j4"));
+    new_categories.push_back(string("HutTTb2j4"));
+    new_categories.push_back(string("HutTTb3j4"));
+    new_categories.push_back(string("HutTTb4j4"));
+
+
+   vector<string> *newvec;
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("TopHadMass_TOPTOPLEPHAD");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("LepCharge");
+   newvec->push_back("HiggsEta_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("TopLepPt_TOPHLEPBB");
+   newvec->push_back("TopLepEta_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPHLEPBB");
+   newvec->push_back("MVA_TOPHLEPBB");
+   newvec->push_back("TopLepMass_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB");
+   newvec->push_back("TopLepHiggsDr_TOPHLEPBB");
+   newvec->push_back("HiggsBJet1CSVv2_TOPHLEPBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPHLEPBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPHLEPBB");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   newvec = new vector<string>;
+   newvec->push_back("HiggsMass_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHBB");
+   newvec->push_back("MVA_TOPTOPLEPHAD");
+   newvec->push_back("TopLepMass_TOPTOPLEPHBB");
+   newvec->push_back("TopLepMass_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepHiggsDr_TOPTOPLEPHBB");
+   newvec->push_back("TopLepTopHadDr_TOPTOPLEPHAD");
+   newvec->push_back("HiggsBJet1CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("HiggsBJet2CSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopHadNonBJetCSVv2_TOPTOPLEPHBB");
+   newvec->push_back("TopLepBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadBJetCSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD");
+   newvec->push_back("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD");
+   new_variables.push_back(*newvec);
+
+   std::cout << "ApplyMVA initialisation done" << std::endl;
+}
+
+double ApplyMVA::run(std::string chan)
+{
+   _disc = 10E+10;
+   
+   if( chan == "b3j4HutST" ) _disc = b3j4HutSTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b3j4HctST" ) _disc = b3j4HctSTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b3j4HutTT" ) _disc = b3j4HutTTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b3j4HctTT" ) _disc = b3j4HctTTreader->EvaluateMVA("BDTG method");
+
+   else if( chan == "b3j3HutST" ) _disc = b3j3HutSTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b3j3HctST" ) _disc = b3j3HctSTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b3j3HutTT" ) _disc = b3j3HutTTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b3j3HctTT" ) _disc = b3j3HctTTreader->EvaluateMVA("BDTG method");
+
+   else if( chan == "b2j4HutST" ) _disc = b2j4HutSTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b2j4HctST" ) _disc = b2j4HctSTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b2j4HutTT" ) _disc = b2j4HutTTreader->EvaluateMVA("BDTG method");
+   else if( chan == "b2j4HctTT" ) _disc = b2j4HctTTreader->EvaluateMVA("BDTG method");
+   
+   return _disc;
+}

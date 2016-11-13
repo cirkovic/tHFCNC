@@ -1,0 +1,1979 @@
+==> LSFJOB_791294387/STDOUT <==
+Input events = 41643
+Output events = 17663
+xrdcp -f /pool/lsf/cirkovic/791294387/tmp.iqdshkx1Fn/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_1.root
+[2MB/9.518MB][ 21%][==========>                                       ][0B/s]  [9.518MB/9.518MB][100%][==================================================][0B/s]  [9.518MB/9.518MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:23:24 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:39 KSI2K hours (519 KSI2K seconds)
+                 This process corresponds to     : 0:33:45 HS06  hours (2025 HS06  seconds)
+
+==> LSFJOB_791294390/STDOUT <==
+Input events = 37528
+Output events = 15696
+xrdcp -f /pool/lsf/cirkovic/791294390/tmp.bSMMwsg2SC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_2.root
+[2MB/8.477MB][ 23%][===========>                                      ][0B/s]  [8.477MB/8.477MB][100%][==================================================][0B/s]  [8.477MB/8.477MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:13:33 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:20 KSI2K hours (440 KSI2K seconds)
+                 This process corresponds to     : 0:28:38 HS06  hours (1718 HS06  seconds)
+
+==> LSFJOB_791294392/STDOUT <==
+Input events = 24830
+Output events = 10378
+xrdcp -f /pool/lsf/cirkovic/791294392/tmp.xORIYdPSgq/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_3.root
+[2MB/5.613MB][ 35%][=================>                                ][0B/s]  [5.613MB/5.613MB][100%][==================================================][0B/s]  [5.613MB/5.613MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:05:29 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:32 KSI2K hours (332 KSI2K seconds)
+                 This process corresponds to     : 0:21:35 HS06  hours (1295 HS06  seconds)
+
+==> LSFJOB_791294395/STDOUT <==
+Input events = 37692
+Output events = 15955
+xrdcp -f /pool/lsf/cirkovic/791294395/tmp.nCu3QW3Rd5/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_4.root
+[2MB/8.602MB][ 23%][===========>                                      ][2MB/s]  [8.602MB/8.602MB][100%][==================================================][8.602MB/s]  [8.602MB/8.602MB][100%][==================================================][8.602MB/s]  
+
+Job finished at Sun Oct 16 22:06:10 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:40 KSI2K hours (400 KSI2K seconds)
+                 This process corresponds to     : 0:26:03 HS06  hours (1563 HS06  seconds)
+
+==> LSFJOB_791294396/STDOUT <==
+Input events = 37039
+Output events = 15541
+xrdcp -f /pool/lsf/cirkovic/791294396/tmp.AlETnR1Ux5/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_5.root
+[2MB/8.379MB][ 23%][===========>                                      ][0B/s]  [8.379MB/8.379MB][100%][==================================================][0B/s]  [8.379MB/8.379MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:12:57 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:09 KSI2K hours (429 KSI2K seconds)
+                 This process corresponds to     : 0:27:55 HS06  hours (1675 HS06  seconds)
+
+==> LSFJOB_791294397/STDOUT <==
+Input events = 63285
+Output events = 26638
+xrdcp -f /pool/lsf/cirkovic/791294397/tmp.PecbFPf3Gf/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_6.root
+[2MB/14.35MB][ 13%][======>                                           ][0B/s]  [14.35MB/14.35MB][100%][==================================================][0B/s]  [14.35MB/14.35MB][100%][==================================================][14.35MB/s]  
+
+Job finished at Sun Oct 16 22:25:52 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:52 KSI2K hours (592 KSI2K seconds)
+                 This process corresponds to     : 0:38:31 HS06  hours (2311 HS06  seconds)
+
+==> LSFJOB_791294401/STDOUT <==
+Input events = 18337
+Output events = 7716
+xrdcp -f /pool/lsf/cirkovic/791294401/tmp.lOfSSFZHk1/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_7.root
+[2MB/4.166MB][ 48%][========================>                         ][1024kB/s]  [4.166MB/4.166MB][100%][==================================================][2.083MB/s]  [4.166MB/4.166MB][100%][==================================================][1.389MB/s]  
+
+Job finished at Sun Oct 16 22:14:38 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:04:56 KSI2K hours (296 KSI2K seconds)
+                 This process corresponds to     : 0:19:16 HS06  hours (1156 HS06  seconds)
+
+==> LSFJOB_791294403/STDOUT <==
+Input events = 36837
+Output events = 15409
+xrdcp -f /pool/lsf/cirkovic/791294403/tmp.34tzLbk8Pl/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_8.root
+[2MB/8.318MB][ 24%][============>                                     ][0B/s]  [8.318MB/8.318MB][100%][==================================================][0B/s]  [8.318MB/8.318MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:05:52 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:23 KSI2K hours (383 KSI2K seconds)
+                 This process corresponds to     : 0:24:55 HS06  hours (1495 HS06  seconds)
+
+==> LSFJOB_791294404/STDOUT <==
+Input events = 37847
+Output events = 16009
+xrdcp -f /pool/lsf/cirkovic/791294404/tmp.OyoIeUSs8O/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_9.root
+[2MB/8.64MB][ 23%][===========>                                      ][2MB/s]  [8.64MB/8.64MB][100%][==================================================][8.64MB/s]  [8.64MB/8.64MB][100%][==================================================][8.64MB/s]  
+
+Job finished at Sun Oct 16 22:19:18 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:24 KSI2K hours (384 KSI2K seconds)
+                 This process corresponds to     : 0:24:58 HS06  hours (1498 HS06  seconds)
+
+==> LSFJOB_791294406/STDOUT <==
+Input events = 41109
+Output events = 17360
+xrdcp -f /pool/lsf/cirkovic/791294406/tmp.LO1KeA3WxG/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_10.root
+[2MB/9.365MB][ 21%][==========>                                       ][0B/s]  [4MB/9.365MB][ 42%][=====================>                            ][4MB/s]  [9.365MB/9.365MB][100%][==================================================][9.365MB/s]  [9.365MB/9.365MB][100%][==================================================][9.365MB/s]  
+
+Job finished at Sun Oct 16 22:05:50 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:19 KSI2K hours (379 KSI2K seconds)
+                 This process corresponds to     : 0:24:38 HS06  hours (1478 HS06  seconds)
+
+==> LSFJOB_791294407/STDOUT <==
+Input events = 40565
+Output events = 16890
+xrdcp -f /pool/lsf/cirkovic/791294407/tmp.atTtTGkMyN/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_11.root
+[2MB/9.096MB][ 21%][==========>                                       ][0B/s]  [9.096MB/9.096MB][100%][==================================================][0B/s]  [9.096MB/9.096MB][100%][==================================================][9.096MB/s]  
+
+Job finished at Sun Oct 16 22:05:52 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:14 KSI2K hours (374 KSI2K seconds)
+                 This process corresponds to     : 0:24:21 HS06  hours (1461 HS06  seconds)
+
+==> LSFJOB_791294409/STDOUT <==
+Input events = 35664
+Output events = 15041
+xrdcp -f /pool/lsf/cirkovic/791294409/tmp.nhpMa8pLnp/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_12.root
+[2MB/8.104MB][ 24%][============>                                     ][0B/s]  [8.104MB/8.104MB][100%][==================================================][0B/s]  [8.104MB/8.104MB][100%][==================================================][8.104MB/s]  
+
+Job finished at Sun Oct 16 22:12:11 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:24 KSI2K hours (384 KSI2K seconds)
+                 This process corresponds to     : 0:25:01 HS06  hours (1501 HS06  seconds)
+
+==> LSFJOB_791294411/STDOUT <==
+Input events = 44180
+Output events = 18632
+xrdcp -f /pool/lsf/cirkovic/791294411/tmp.nXFRRk0AX1/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_13.root
+[2MB/10.04MB][ 19%][=========>                                        ][0B/s]  [10.04MB/10.04MB][100%][==================================================][0B/s]  [10.04MB/10.04MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:16 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:55 KSI2K hours (415 KSI2K seconds)
+                 This process corresponds to     : 0:27:00 HS06  hours (1620 HS06  seconds)
+
+==> LSFJOB_791294414/STDOUT <==
+Input events = 36645
+Output events = 15447
+xrdcp -f /pool/lsf/cirkovic/791294414/tmp.4jnPIyOzfo/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_14.root
+[2MB/8.348MB][ 23%][===========>                                      ][292.6kB/s]  [8.348MB/8.348MB][100%][==================================================][1.193MB/s]  [8.348MB/8.348MB][100%][==================================================][1.044MB/s]  
+
+Job finished at Sun Oct 16 22:06:19 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:02 KSI2K hours (422 KSI2K seconds)
+                 This process corresponds to     : 0:27:29 HS06  hours (1649 HS06  seconds)
+
+==> LSFJOB_791294415/STDOUT <==
+Input events = 41182
+Output events = 17504
+xrdcp -f /pool/lsf/cirkovic/791294415/tmp.5m2GdSwn9V/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_15.root
+[2MB/9.433MB][ 21%][==========>                                       ][0B/s]  [9.433MB/9.433MB][100%][==================================================][0B/s]  [9.433MB/9.433MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:28 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:45 KSI2K hours (465 KSI2K seconds)
+                 This process corresponds to     : 0:30:16 HS06  hours (1816 HS06  seconds)
+
+==> LSFJOB_791294416/STDOUT <==
+Input events = 36082
+Output events = 15119
+xrdcp -f /pool/lsf/cirkovic/791294416/tmp.x9DAoOurKW/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_16.root
+[2MB/8.156MB][ 24%][============>                                     ][2MB/s]  [8.156MB/8.156MB][100%][==================================================][8.156MB/s]  [8.156MB/8.156MB][100%][==================================================][8.156MB/s]  
+
+Job finished at Sun Oct 16 22:06:19 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:57 KSI2K hours (417 KSI2K seconds)
+                 This process corresponds to     : 0:27:08 HS06  hours (1628 HS06  seconds)
+
+==> LSFJOB_791294417/STDOUT <==
+Input events = 37915
+Output events = 15876
+xrdcp -f /pool/lsf/cirkovic/791294417/tmp.Czat6ad1eJ/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_17.root
+[2MB/8.566MB][ 23%][===========>                                      ][0B/s]  [8.566MB/8.566MB][100%][==================================================][0B/s]  [8.566MB/8.566MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:05:45 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:43 KSI2K hours (343 KSI2K seconds)
+                 This process corresponds to     : 0:22:20 HS06  hours (1340 HS06  seconds)
+
+==> LSFJOB_791294418/STDOUT <==
+Input events = 37769
+Output events = 15927
+xrdcp -f /pool/lsf/cirkovic/791294418/tmp.IpaFmDqGSI/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_18.root
+[2MB/8.592MB][ 23%][===========>                                      ][0B/s]  [8.592MB/8.592MB][100%][==================================================][0B/s]  [8.592MB/8.592MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:17:48 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:08 KSI2K hours (368 KSI2K seconds)
+                 This process corresponds to     : 0:23:56 HS06  hours (1436 HS06  seconds)
+
+==> LSFJOB_791294420/STDOUT <==
+Input events = 36033
+Output events = 15086
+xrdcp -f /pool/lsf/cirkovic/791294420/tmp.8PtygsQzHT/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_19.root
+[2MB/8.129MB][ 24%][============>                                     ][1024kB/s]  [8.129MB/8.129MB][100%][==================================================][4.064MB/s]  [8.129MB/8.129MB][100%][==================================================][2.71MB/s]  
+
+Job finished at Sun Oct 16 22:18:24 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:57 KSI2K hours (357 KSI2K seconds)
+                 This process corresponds to     : 0:23:14 HS06  hours (1394 HS06  seconds)
+
+==> LSFJOB_791294422/STDOUT <==
+Input events = 42601
+Output events = 17991
+xrdcp -f /pool/lsf/cirkovic/791294422/tmp.1CetTzoVW4/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_20.root
+[2MB/9.68MB][ 20%][==========>                                       ][0B/s]  [9.68MB/9.68MB][100%][==================================================][0B/s]  [9.68MB/9.68MB][100%][==================================================][9.68MB/s]  
+
+Job finished at Sun Oct 16 22:06:00 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:19 KSI2K hours (379 KSI2K seconds)
+                 This process corresponds to     : 0:24:41 HS06  hours (1481 HS06  seconds)
+
+==> LSFJOB_791294426/STDOUT <==
+Input events = 37796
+Output events = 15829
+xrdcp -f /pool/lsf/cirkovic/791294426/tmp.FxwFdq8ZbG/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_21.root
+[2MB/8.55MB][ 23%][===========>                                      ][2MB/s]  [8.55MB/8.55MB][100%][==================================================][8.55MB/s]  [8.55MB/8.55MB][100%][==================================================][8.55MB/s]  
+
+Job finished at Sun Oct 16 22:07:51 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:25 KSI2K hours (445 KSI2K seconds)
+                 This process corresponds to     : 0:28:59 HS06  hours (1739 HS06  seconds)
+
+==> LSFJOB_791294427/STDOUT <==
+Input events = 36175
+Output events = 15243
+xrdcp -f /pool/lsf/cirkovic/791294427/tmp.nu1biGBgvB/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_22.root
+[2MB/8.227MB][ 24%][============>                                     ][1024kB/s]  [8.227MB/8.227MB][100%][==================================================][4.113MB/s]  [8.227MB/8.227MB][100%][==================================================][4.113MB/s]  
+
+Job finished at Sun Oct 16 22:09:06 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:56 KSI2K hours (476 KSI2K seconds)
+                 This process corresponds to     : 0:30:57 HS06  hours (1857 HS06  seconds)
+
+==> LSFJOB_791294428/STDOUT <==
+Input events = 44548
+Output events = 18807
+xrdcp -f /pool/lsf/cirkovic/791294428/tmp.R8eqZwBVIx/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_23.root
+[2MB/10.16MB][ 19%][=========>                                        ][2MB/s]  [10.16MB/10.16MB][100%][==================================================][10.16MB/s]  [10.16MB/10.16MB][100%][==================================================][10.16MB/s]  
+
+Job finished at Sun Oct 16 22:21:47 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:51 KSI2K hours (531 KSI2K seconds)
+                 This process corresponds to     : 0:34:33 HS06  hours (2073 HS06  seconds)
+
+==> LSFJOB_791294432/STDOUT <==
+Input events = 40525
+Output events = 17166
+xrdcp -f /pool/lsf/cirkovic/791294432/tmp.gKKsnwRfvy/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_24.root
+[2MB/9.253MB][ 21%][==========>                                       ][2MB/s]  [8MB/9.253MB][ 86%][===========================================>      ][4MB/s]  [9.253MB/9.253MB][100%][==================================================][4.627MB/s]  [9.253MB/9.253MB][100%][==================================================][4.627MB/s]  
+
+Job finished at Sun Oct 16 22:23:17 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:39 KSI2K hours (459 KSI2K seconds)
+                 This process corresponds to     : 0:29:53 HS06  hours (1793 HS06  seconds)
+
+==> LSFJOB_791294433/STDOUT <==
+Input events = 38213
+Output events = 16056
+xrdcp -f /pool/lsf/cirkovic/791294433/tmp.cDIKVBfr3e/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_25.root
+[2MB/8.661MB][ 23%][===========>                                      ][0B/s]  [8.661MB/8.661MB][100%][==================================================][0B/s]  [8.661MB/8.661MB][100%][==================================================][8.661MB/s]  
+
+Job finished at Sun Oct 16 22:07:35 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:13 KSI2K hours (433 KSI2K seconds)
+                 This process corresponds to     : 0:28:09 HS06  hours (1689 HS06  seconds)
+
+==> LSFJOB_791294434/STDOUT <==
+Input events = 50406
+Output events = 21357
+xrdcp -f /pool/lsf/cirkovic/791294434/tmp.gyGimb7iE6/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_26.root
+[2MB/11.51MB][ 17%][========>                                         ][2MB/s]  [11.51MB/11.51MB][100%][==================================================][11.51MB/s]  [11.51MB/11.51MB][100%][==================================================][11.51MB/s]  
+
+Job finished at Sun Oct 16 22:10:03 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:34 KSI2K hours (454 KSI2K seconds)
+                 This process corresponds to     : 0:29:33 HS06  hours (1773 HS06  seconds)
+
+==> LSFJOB_791294436/STDOUT <==
+Input events = 45659
+Output events = 19119
+xrdcp -f /pool/lsf/cirkovic/791294436/tmp.ziMxmT2Hs8/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_27.root
+[2MB/10.31MB][ 19%][=========>                                        ][0B/s]  [10.31MB/10.31MB][100%][==================================================][0B/s]  [10.31MB/10.31MB][100%][==================================================][10.31MB/s]  
+
+Job finished at Sun Oct 16 22:23:55 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:23 KSI2K hours (563 KSI2K seconds)
+                 This process corresponds to     : 0:36:35 HS06  hours (2195 HS06  seconds)
+
+==> LSFJOB_791294437/STDOUT <==
+Input events = 42324
+Output events = 17970
+xrdcp -f /pool/lsf/cirkovic/791294437/tmp.JxURKBlNQC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_28.root
+[2MB/9.7MB][ 20%][==========>                                       ][512kB/s]  [9.7MB/9.7MB][100%][==================================================][2.425MB/s]  [9.7MB/9.7MB][100%][==================================================][2.425MB/s]  
+
+Job finished at Sun Oct 16 22:23:26 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:47 KSI2K hours (467 KSI2K seconds)
+                 This process corresponds to     : 0:30:25 HS06  hours (1825 HS06  seconds)
+
+==> LSFJOB_791294440/STDOUT <==
+Input events = 38236
+Output events = 16087
+xrdcp -f /pool/lsf/cirkovic/791294440/tmp.oCikxlq6wv/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_29.root
+[2MB/8.696MB][ 22%][===========>                                      ][2MB/s]  [8.696MB/8.696MB][100%][==================================================][8.696MB/s]  [8.696MB/8.696MB][100%][==================================================][8.696MB/s]  
+
+Job finished at Sun Oct 16 22:08:39 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:58 KSI2K hours (478 KSI2K seconds)
+                 This process corresponds to     : 0:31:07 HS06  hours (1867 HS06  seconds)
+
+==> LSFJOB_791294444/STDOUT <==
+Input events = 36470
+Output events = 15285
+xrdcp -f /pool/lsf/cirkovic/791294444/tmp.3yv3Vo8sMC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_30.root
+[2MB/8.25MB][ 24%][============>                                     ][2MB/s]  [8.25MB/8.25MB][100%][==================================================][8.25MB/s]  [8.25MB/8.25MB][100%][==================================================][8.25MB/s]  
+
+Job finished at Sun Oct 16 22:08:05 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:34 KSI2K hours (454 KSI2K seconds)
+                 This process corresponds to     : 0:29:32 HS06  hours (1772 HS06  seconds)
+
+==> LSFJOB_791294445/STDOUT <==
+Input events = 11974
+Output events = 5101
+xrdcp -f /pool/lsf/cirkovic/791294445/tmp.3BBbMVdFdJ/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_31.root
+[2MB/2.76MB][ 72%][====================================>             ][0B/s]  [2.76MB/2.76MB][100%][==================================================][0B/s]  [2.76MB/2.76MB][100%][==================================================][2.76MB/s]  
+
+Job finished at Sun Oct 16 22:05:37 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:03:47 KSI2K hours (227 KSI2K seconds)
+                 This process corresponds to     : 0:14:45 HS06  hours (885 HS06  seconds)
+
+==> LSFJOB_791294446/STDOUT <==
+Input events = 40666
+Output events = 17041
+xrdcp -f /pool/lsf/cirkovic/791294446/tmp.B3ndmm2cO1/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_32.root
+[2MB/9.191MB][ 21%][==========>                                       ][0B/s]  [9.191MB/9.191MB][100%][==================================================][0B/s]  [9.191MB/9.191MB][100%][==================================================][9.191MB/s]  
+
+Job finished at Sun Oct 16 22:22:51 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:52 KSI2K hours (472 KSI2K seconds)
+                 This process corresponds to     : 0:30:43 HS06  hours (1843 HS06  seconds)
+
+==> LSFJOB_791294447/STDOUT <==
+Input events = 55886
+Output events = 23489
+xrdcp -f /pool/lsf/cirkovic/791294447/tmp.HCm58ISmbI/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_33.root
+[2MB/12.65MB][ 15%][=======>                                          ][0B/s]  [8MB/12.65MB][ 63%][===============================>                  ][8MB/s]  [12.65MB/12.65MB][100%][==================================================][12.65MB/s]  [12.65MB/12.65MB][100%][==================================================][12.65MB/s]  
+
+Job finished at Sun Oct 16 22:27:48 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:46 KSI2K hours (586 KSI2K seconds)
+                 This process corresponds to     : 0:38:07 HS06  hours (2287 HS06  seconds)
+
+==> LSFJOB_791294448/STDOUT <==
+Input events = 48393
+Output events = 20501
+xrdcp -f /pool/lsf/cirkovic/791294448/tmp.njKD12ILGz/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_34.root
+[2MB/11.03MB][ 18%][=========>                                        ][0B/s]  [4MB/11.03MB][ 36%][==================>                               ][4MB/s]  [11.03MB/11.03MB][100%][==================================================][11.03MB/s]  [11.03MB/11.03MB][100%][==================================================][11.03MB/s]  
+
+Job finished at Sun Oct 16 22:07:14 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:36 KSI2K hours (456 KSI2K seconds)
+                 This process corresponds to     : 0:29:42 HS06  hours (1782 HS06  seconds)
+
+==> LSFJOB_791294452/STDOUT <==
+Input events = 43408
+Output events = 18165
+xrdcp -f /pool/lsf/cirkovic/791294452/tmp.C5bFJ9mCEM/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_35.root
+[2MB/9.787MB][ 20%][==========>                                       ][2MB/s]  [9.787MB/9.787MB][100%][==================================================][9.787MB/s]  [9.787MB/9.787MB][100%][==================================================][9.787MB/s]  
+
+Job finished at Sun Oct 16 22:23:40 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:43 KSI2K hours (523 KSI2K seconds)
+                 This process corresponds to     : 0:34:02 HS06  hours (2042 HS06  seconds)
+
+==> LSFJOB_791294457/STDOUT <==
+Input events = 49116
+Output events = 20838
+xrdcp -f /pool/lsf/cirkovic/791294457/tmp.p8Gnufacag/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_36.root
+[2MB/11.21MB][ 17%][========>                                         ][0B/s]  [11.21MB/11.21MB][100%][==================================================][0B/s]  [11.21MB/11.21MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:16 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:48 KSI2K hours (468 KSI2K seconds)
+                 This process corresponds to     : 0:30:27 HS06  hours (1827 HS06  seconds)
+
+==> LSFJOB_791294461/STDOUT <==
+Input events = 63187
+Output events = 26474
+xrdcp -f /pool/lsf/cirkovic/791294461/tmp.XPHN1shFYh/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_37.root
+[2MB/14.27MB][ 14%][=======>                                          ][2MB/s]  [14.27MB/14.27MB][100%][==================================================][14.27MB/s]  [14.27MB/14.27MB][100%][==================================================][14.27MB/s]  
+
+Job finished at Sun Oct 16 22:08:27 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:34 KSI2K hours (634 KSI2K seconds)
+                 This process corresponds to     : 0:41:12 HS06  hours (2472 HS06  seconds)
+
+==> LSFJOB_791294462/STDOUT <==
+Input events = 30735
+Output events = 12982
+xrdcp -f /pool/lsf/cirkovic/791294462/tmp.TCQPdQa0VG/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_38.root
+[2MB/7MB][ 28%][==============>                                   ][0B/s]  [7MB/7MB][100%][==================================================][0B/s]  [7MB/7MB][100%][==================================================][7MB/s]  
+
+Job finished at Sun Oct 16 22:06:05 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:49 KSI2K hours (349 KSI2K seconds)
+                 This process corresponds to     : 0:22:42 HS06  hours (1362 HS06  seconds)
+
+==> LSFJOB_791294464/STDOUT <==
+Input events = 36976
+Output events = 15481
+xrdcp -f /pool/lsf/cirkovic/791294464/tmp.gBdm25rBrh/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_39.root
+[2MB/8.373MB][ 23%][===========>                                      ][0B/s]  [8.373MB/8.373MB][100%][==================================================][0B/s]  [8.373MB/8.373MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:08:16 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:38 KSI2K hours (578 KSI2K seconds)
+                 This process corresponds to     : 0:37:36 HS06  hours (2256 HS06  seconds)
+
+==> LSFJOB_791294465/STDOUT <==
+Input events = 43647
+Output events = 18376
+xrdcp -f /pool/lsf/cirkovic/791294465/tmp.V3s2cA4thB/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_40.root
+[2MB/9.91MB][ 20%][==========>                                       ][2MB/s]  [9.91MB/9.91MB][100%][==================================================][9.91MB/s]  [9.91MB/9.91MB][100%][==================================================][9.91MB/s]  
+
+Job finished at Sun Oct 16 22:16:30 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:37 KSI2K hours (457 KSI2K seconds)
+                 This process corresponds to     : 0:29:42 HS06  hours (1782 HS06  seconds)
+
+==> LSFJOB_791294466/STDOUT <==
+Input events = 37149
+Output events = 15849
+xrdcp -f /pool/lsf/cirkovic/791294466/tmp.y6DV5KOzIk/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_41.root
+[2MB/8.541MB][ 23%][===========>                                      ][2MB/s]  [8.541MB/8.541MB][100%][==================================================][8.541MB/s]  [8.541MB/8.541MB][100%][==================================================][4.271MB/s]  
+
+Job finished at Sun Oct 16 22:08:11 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:27 KSI2K hours (447 KSI2K seconds)
+                 This process corresponds to     : 0:29:03 HS06  hours (1743 HS06  seconds)
+
+==> LSFJOB_791294488/STDOUT <==
+Input events = 37838
+Output events = 16019
+xrdcp -f /pool/lsf/cirkovic/791294488/tmp.6LSh2UuN0Z/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_42.root
+[2MB/8.654MB][ 23%][===========>                                      ][0B/s]  [8.654MB/8.654MB][100%][==================================================][0B/s]  [8.654MB/8.654MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:15:11 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:14 KSI2K hours (494 KSI2K seconds)
+                 This process corresponds to     : 0:32:07 HS06  hours (1927 HS06  seconds)
+
+==> LSFJOB_791294491/STDOUT <==
+Input events = 43685
+Output events = 18369
+xrdcp -f /pool/lsf/cirkovic/791294491/tmp.7ENteN0ApV/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_43.root
+[2MB/9.909MB][ 20%][==========>                                       ][0B/s]  [9.909MB/9.909MB][100%][==================================================][0B/s]  [9.909MB/9.909MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:23:39 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:20 KSI2K hours (560 KSI2K seconds)
+                 This process corresponds to     : 0:36:24 HS06  hours (2184 HS06  seconds)
+
+==> LSFJOB_791294495/STDOUT <==
+Input events = 43989
+Output events = 18297
+xrdcp -f /pool/lsf/cirkovic/791294495/tmp.kQgsccCXNE/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_44.root
+[2MB/9.869MB][ 20%][==========>                                       ][2MB/s]  [9.869MB/9.869MB][100%][==================================================][9.869MB/s]  [9.869MB/9.869MB][100%][==================================================][9.869MB/s]  
+
+Job finished at Sun Oct 16 22:15:22 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:31 KSI2K hours (451 KSI2K seconds)
+                 This process corresponds to     : 0:29:22 HS06  hours (1762 HS06  seconds)
+
+==> LSFJOB_791294498/STDOUT <==
+Input events = 19160
+Output events = 8069
+xrdcp -f /pool/lsf/cirkovic/791294498/tmp.Rzeaknx4NI/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_45.root
+[2MB/4.373MB][ 45%][======================>                           ][0B/s]  [4.373MB/4.373MB][100%][==================================================][0B/s]  [4.373MB/4.373MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:01 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:04:54 KSI2K hours (294 KSI2K seconds)
+                 This process corresponds to     : 0:19:07 HS06  hours (1147 HS06  seconds)
+
+==> LSFJOB_791294500/STDOUT <==
+Input events = 68428
+Output events = 28661
+xrdcp -f /pool/lsf/cirkovic/791294500/tmp.1DYIMX0enC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_46.root
+[2MB/15.45MB][ 12%][======>                                           ][2MB/s]  [15.45MB/15.45MB][100%][==================================================][15.45MB/s]  [15.45MB/15.45MB][100%][==================================================][7.723MB/s]  
+
+Job finished at Sun Oct 16 22:19:18 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:33 KSI2K hours (633 KSI2K seconds)
+                 This process corresponds to     : 0:41:09 HS06  hours (2469 HS06  seconds)
+
+==> LSFJOB_791294502/STDOUT <==
+Input events = 38186
+Output events = 15976
+xrdcp -f /pool/lsf/cirkovic/791294502/tmp.wdNGVJnKrR/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_47.root
+[2MB/8.625MB][ 23%][===========>                                      ][0B/s]  [8.625MB/8.625MB][100%][==================================================][0B/s]  [8.625MB/8.625MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:09:16 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:49 KSI2K hours (529 KSI2K seconds)
+                 This process corresponds to     : 0:34:23 HS06  hours (2063 HS06  seconds)
+
+==> LSFJOB_791294504/STDOUT <==
+Input events = 44218
+Output events = 18519
+xrdcp -f /pool/lsf/cirkovic/791294504/tmp.9JFHnRcJpR/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_48.root
+[2MB/9.964MB][ 20%][==========>                                       ][0B/s]  [9.964MB/9.964MB][100%][==================================================][0B/s]  [9.964MB/9.964MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:21:59 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:58 KSI2K hours (418 KSI2K seconds)
+                 This process corresponds to     : 0:27:10 HS06  hours (1630 HS06  seconds)
+
+==> LSFJOB_791294507/STDOUT <==
+Input events = 38153
+Output events = 16028
+xrdcp -f /pool/lsf/cirkovic/791294507/tmp.Z0VGSR32jp/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_49.root
+[2MB/8.634MB][ 23%][===========>                                      ][0B/s]  [8.634MB/8.634MB][100%][==================================================][0B/s]  [8.634MB/8.634MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:13:09 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:21 KSI2K hours (441 KSI2K seconds)
+                 This process corresponds to     : 0:28:41 HS06  hours (1721 HS06  seconds)
+
+==> LSFJOB_791294509/STDOUT <==
+Input events = 6424
+Output events = 2702
+xrdcp -f /pool/lsf/cirkovic/791294509/tmp.cC8leguRGp/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_50.root
+[1.484MB/1.484MB][100%][==================================================][0B/s]  [1.484MB/1.484MB][100%][==================================================][1.484MB/s]  
+
+Job finished at Sun Oct 16 22:12:13 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:03:22 KSI2K hours (202 KSI2K seconds)
+                 This process corresponds to     : 0:13:08 HS06  hours (788 HS06  seconds)
+
+==> LSFJOB_791294512/STDOUT <==
+Input events = 39043
+Output events = 16577
+xrdcp -f /pool/lsf/cirkovic/791294512/tmp.3W9yKewTda/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_51.root
+[2MB/8.933MB][ 22%][===========>                                      ][2MB/s]  [8.933MB/8.933MB][100%][==================================================][8.933MB/s]  [8.933MB/8.933MB][100%][==================================================][4.466MB/s]  
+
+Job finished at Sun Oct 16 22:13:35 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:06 KSI2K hours (486 KSI2K seconds)
+                 This process corresponds to     : 0:31:37 HS06  hours (1897 HS06  seconds)
+
+==> LSFJOB_791294514/STDOUT <==
+Input events = 41764
+Output events = 17359
+xrdcp -f /pool/lsf/cirkovic/791294514/tmp.yWTL5Ebqel/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_52.root
+[2MB/9.352MB][ 21%][==========>                                       ][2MB/s]  [9.352MB/9.352MB][100%][==================================================][9.352MB/s]  [9.352MB/9.352MB][100%][==================================================][4.676MB/s]  
+
+Job finished at Sun Oct 16 22:09:32 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:16 KSI2K hours (436 KSI2K seconds)
+                 This process corresponds to     : 0:28:24 HS06  hours (1704 HS06  seconds)
+
+==> LSFJOB_791294518/STDOUT <==
+Input events = 32104
+Output events = 13361
+xrdcp -f /pool/lsf/cirkovic/791294518/tmp.AodB1D6a7L/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_53.root
+[2MB/7.23MB][ 27%][=============>                                    ][0B/s]  [7.23MB/7.23MB][100%][==================================================][0B/s]  [7.23MB/7.23MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:34 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:00 KSI2K hours (420 KSI2K seconds)
+                 This process corresponds to     : 0:27:19 HS06  hours (1639 HS06  seconds)
+
+==> LSFJOB_791294520/STDOUT <==
+Input events = 36887
+Output events = 15545
+xrdcp -f /pool/lsf/cirkovic/791294520/tmp.sAZuJfxfPQ/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_54.root
+[2MB/8.394MB][ 23%][===========>                                      ][2MB/s]  [8.394MB/8.394MB][100%][==================================================][8.394MB/s]  [8.394MB/8.394MB][100%][==================================================][8.394MB/s]  
+
+Job finished at Sun Oct 16 22:07:23 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:44 KSI2K hours (524 KSI2K seconds)
+                 This process corresponds to     : 0:34:04 HS06  hours (2044 HS06  seconds)
+
+==> LSFJOB_791294523/STDOUT <==
+Input events = 68326
+Output events = 28747
+xrdcp -f /pool/lsf/cirkovic/791294523/tmp.WtgIGPXHon/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_55.root
+[2MB/15.51MB][ 12%][======>                                           ][2MB/s]  [15.51MB/15.51MB][100%][==================================================][15.51MB/s]  [15.51MB/15.51MB][100%][==================================================][15.51MB/s]  
+
+Job finished at Sun Oct 16 22:09:52 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:12:44 KSI2K hours (764 KSI2K seconds)
+                 This process corresponds to     : 0:49:40 HS06  hours (2980 HS06  seconds)
+
+==> LSFJOB_791294526/STDOUT <==
+Input events = 36948
+Output events = 15459
+xrdcp -f /pool/lsf/cirkovic/791294526/tmp.GCAw1AEzEp/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_56.root
+[2MB/8.364MB][ 23%][===========>                                      ][0B/s]  [8.364MB/8.364MB][100%][==================================================][0B/s]  [8.364MB/8.364MB][100%][==================================================][8.364MB/s]  
+
+Job finished at Sun Oct 16 22:21:16 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:44 KSI2K hours (584 KSI2K seconds)
+                 This process corresponds to     : 0:37:59 HS06  hours (2279 HS06  seconds)
+
+==> LSFJOB_791294529/STDOUT <==
+Input events = 12365
+Output events = 5259
+xrdcp -f /pool/lsf/cirkovic/791294529/tmp.FIwNc5l15C/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_57.root
+[2MB/2.854MB][ 70%][===================================>              ][0B/s]  [2.854MB/2.854MB][100%][==================================================][0B/s]  [2.854MB/2.854MB][100%][==================================================][2.854MB/s]  
+
+Job finished at Sun Oct 16 22:14:14 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:24 KSI2K hours (324 KSI2K seconds)
+                 This process corresponds to     : 0:21:06 HS06  hours (1266 HS06  seconds)
+
+==> LSFJOB_791294531/STDOUT <==
+Input events = 36575
+Output events = 15380
+xrdcp -f /pool/lsf/cirkovic/791294531/tmp.pqBIxlA30Z/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_59.root
+[2MB/8.286MB][ 24%][============>                                     ][2MB/s]  [8.286MB/8.286MB][100%][==================================================][8.286MB/s]  [8.286MB/8.286MB][100%][==================================================][8.286MB/s]  
+
+Job finished at Sun Oct 16 22:21:16 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:57 KSI2K hours (477 KSI2K seconds)
+                 This process corresponds to     : 0:31:01 HS06  hours (1861 HS06  seconds)
+
+==> LSFJOB_791294535/STDOUT <==
+Input events = 68288
+Output events = 28672
+xrdcp -f /pool/lsf/cirkovic/791294535/tmp.eFCYfimp0a/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_60.root
+[2MB/15.44MB][ 12%][======>                                           ][409.6kB/s]  [15.44MB/15.44MB][100%][==================================================][3.087MB/s]  [15.44MB/15.44MB][100%][==================================================][3.087MB/s]  
+
+Job finished at Sun Oct 16 22:09:30 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:12:25 KSI2K hours (745 KSI2K seconds)
+                 This process corresponds to     : 0:48:25 HS06  hours (2905 HS06  seconds)
+
+==> LSFJOB_791294537/STDOUT <==
+Input events = 51312
+Output events = 21606
+xrdcp -f /pool/lsf/cirkovic/791294537/tmp.yqvFm53ToE/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_61.root
+[2MB/11.64MB][ 17%][========>                                         ][2MB/s]  [11.64MB/11.64MB][100%][==================================================][11.64MB/s]  [11.64MB/11.64MB][100%][==================================================][5.818MB/s]  
+
+Job finished at Sun Oct 16 22:08:24 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:13 KSI2K hours (493 KSI2K seconds)
+                 This process corresponds to     : 0:32:03 HS06  hours (1923 HS06  seconds)
+
+==> LSFJOB_791294540/STDOUT <==
+Input events = 50602
+Output events = 21283
+xrdcp -f /pool/lsf/cirkovic/791294540/tmp.3SawA5erbZ/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_62.root
+[2MB/11.51MB][ 17%][========>                                         ][256kB/s]  [11.51MB/11.51MB][100%][==================================================][1.438MB/s]  [11.51MB/11.51MB][100%][==================================================][1.438MB/s]  
+
+Job finished at Sun Oct 16 22:09:13 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:30 KSI2K hours (510 KSI2K seconds)
+                 This process corresponds to     : 0:33:12 HS06  hours (1992 HS06  seconds)
+
+==> LSFJOB_791294542/STDOUT <==
+Input events = 62150
+Output events = 26231
+xrdcp -f /pool/lsf/cirkovic/791294542/tmp.kOieEnAbt8/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_63.root
+[2MB/14.12MB][ 14%][=======>                                          ][0B/s]  [14.12MB/14.12MB][100%][==================================================][0B/s]  [14.12MB/14.12MB][100%][==================================================][14.12MB/s]  
+
+Job finished at Sun Oct 16 22:10:31 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:53 KSI2K hours (653 KSI2K seconds)
+                 This process corresponds to     : 0:42:26 HS06  hours (2546 HS06  seconds)
+
+==> LSFJOB_791294544/STDOUT <==
+Input events = 36483
+Output events = 15324
+xrdcp -f /pool/lsf/cirkovic/791294544/tmp.NO0qZztd1f/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_64.root
+[2MB/8.264MB][ 24%][============>                                     ][2MB/s]  [8.264MB/8.264MB][100%][==================================================][8.264MB/s]  [8.264MB/8.264MB][100%][==================================================][8.264MB/s]  
+
+Job finished at Sun Oct 16 22:14:12 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:17 KSI2K hours (317 KSI2K seconds)
+                 This process corresponds to     : 0:20:38 HS06  hours (1238 HS06  seconds)
+
+==> LSFJOB_791294547/STDOUT <==
+Input events = 30543
+Output events = 12873
+xrdcp -f /pool/lsf/cirkovic/791294547/tmp.RxhykUFTaU/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_65.root
+[2MB/6.954MB][ 28%][==============>                                   ][2MB/s]  [6.954MB/6.954MB][100%][==================================================][6.954MB/s]  [6.954MB/6.954MB][100%][==================================================][6.954MB/s]  
+
+Job finished at Sun Oct 16 22:07:37 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:23 KSI2K hours (323 KSI2K seconds)
+                 This process corresponds to     : 0:21:03 HS06  hours (1263 HS06  seconds)
+
+==> LSFJOB_791294549/STDOUT <==
+Input events = 39109
+Output events = 16511
+xrdcp -f /pool/lsf/cirkovic/791294549/tmp.O8qkCP2wTu/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_66.root
+[2MB/8.891MB][ 22%][===========>                                      ][0B/s]  [8.891MB/8.891MB][100%][==================================================][0B/s]  [8.891MB/8.891MB][100%][==================================================][8.891MB/s]  
+
+Job finished at Sun Oct 16 22:06:41 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:02 KSI2K hours (422 KSI2K seconds)
+                 This process corresponds to     : 0:27:25 HS06  hours (1645 HS06  seconds)
+
+==> LSFJOB_791294550/STDOUT <==
+Input events = 37321
+Output events = 15461
+xrdcp -f /pool/lsf/cirkovic/791294550/tmp.E5nbxPhWvA/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_67.root
+[2MB/8.344MB][ 23%][===========>                                      ][0B/s]  [8.344MB/8.344MB][100%][==================================================][0B/s]  [8.344MB/8.344MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:27 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:29 KSI2K hours (389 KSI2K seconds)
+                 This process corresponds to     : 0:25:19 HS06  hours (1519 HS06  seconds)
+
+==> LSFJOB_791294551/STDOUT <==
+Input events = 37420
+Output events = 15884
+xrdcp -f /pool/lsf/cirkovic/791294551/tmp.HWDwkeoemC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_68.root
+[2MB/8.572MB][ 23%][===========>                                      ][0B/s]  [8.572MB/8.572MB][100%][==================================================][0B/s]  [8.572MB/8.572MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:18:54 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:45 KSI2K hours (345 KSI2K seconds)
+                 This process corresponds to     : 0:22:28 HS06  hours (1348 HS06  seconds)
+
+==> LSFJOB_791294552/STDOUT <==
+Input events = 62903
+Output events = 26503
+xrdcp -f /pool/lsf/cirkovic/791294552/tmp.2p6f6QzKL5/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_69.root
+[2MB/14.28MB][ 14%][=======>                                          ][2MB/s]  [14.28MB/14.28MB][100%][==================================================][14.28MB/s]  [14.28MB/14.28MB][100%][==================================================][14.28MB/s]  
+
+Job finished at Sun Oct 16 22:07:21 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:17 KSI2K hours (497 KSI2K seconds)
+                 This process corresponds to     : 0:32:21 HS06  hours (1941 HS06  seconds)
+
+==> LSFJOB_791294554/STDOUT <==
+Input events = 6430
+Output events = 2696
+xrdcp -f /pool/lsf/cirkovic/791294554/tmp.lnBrTNZo6D/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_70.root
+[1.48MB/1.48MB][100%][==================================================][0B/s]  [1.48MB/1.48MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:04:43 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:02:36 KSI2K hours (156 KSI2K seconds)
+                 This process corresponds to     : 0:10:11 HS06  hours (611 HS06  seconds)
+
+==> LSFJOB_791294555/STDOUT <==
+Input events = 37726
+Output events = 15934
+xrdcp -f /pool/lsf/cirkovic/791294555/tmp.dpT0LKTgzs/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_71.root
+[2MB/8.585MB][ 23%][===========>                                      ][0B/s]  [8.585MB/8.585MB][100%][==================================================][0B/s]  [8.585MB/8.585MB][100%][==================================================][8.585MB/s]  
+
+Job finished at Sun Oct 16 22:18:40 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:50 KSI2K hours (350 KSI2K seconds)
+                 This process corresponds to     : 0:22:48 HS06  hours (1368 HS06  seconds)
+
+==> LSFJOB_791294556/STDOUT <==
+Input events = 66474
+Output events = 28100
+xrdcp -f /pool/lsf/cirkovic/791294556/tmp.eMqKnyqXTx/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_72.root
+[2MB/15.11MB][ 13%][======>                                           ][0B/s]  [15.11MB/15.11MB][100%][==================================================][0B/s]  [15.11MB/15.11MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:08:54 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:12:02 KSI2K hours (722 KSI2K seconds)
+                 This process corresponds to     : 0:46:56 HS06  hours (2816 HS06  seconds)
+
+==> LSFJOB_791294557/STDOUT <==
+Input events = 36637
+Output events = 15397
+xrdcp -f /pool/lsf/cirkovic/791294557/tmp.kSLh9MAqQ2/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_73.root
+[2MB/8.31MB][ 24%][============>                                     ][2MB/s]  [8.31MB/8.31MB][100%][==================================================][8.31MB/s]  [8.31MB/8.31MB][100%][==================================================][8.31MB/s]  
+
+Job finished at Sun Oct 16 22:06:15 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:05 KSI2K hours (365 KSI2K seconds)
+                 This process corresponds to     : 0:23:46 HS06  hours (1426 HS06  seconds)
+
+==> LSFJOB_791294558/STDOUT <==
+Input events = 46958
+Output events = 19692
+xrdcp -f /pool/lsf/cirkovic/791294558/tmp.fTee0qkwUs/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_74.root
+[2MB/10.61MB][ 18%][=========>                                        ][0B/s]  [10.61MB/10.61MB][100%][==================================================][0B/s]  [10.61MB/10.61MB][100%][==================================================][10.61MB/s]  
+
+Job finished at Sun Oct 16 22:07:07 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:54 KSI2K hours (474 KSI2K seconds)
+                 This process corresponds to     : 0:30:49 HS06  hours (1849 HS06  seconds)
+
+==> LSFJOB_791294559/STDOUT <==
+Input events = 49332
+Output events = 20764
+xrdcp -f /pool/lsf/cirkovic/791294559/tmp.CSpWOByVUc/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_75.root
+[2MB/11.2MB][ 17%][========>                                         ][2MB/s]  [11.2MB/11.2MB][100%][==================================================][11.2MB/s]  [11.2MB/11.2MB][100%][==================================================][11.2MB/s]  
+
+Job finished at Sun Oct 16 22:07:51 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:26 KSI2K hours (506 KSI2K seconds)
+                 This process corresponds to     : 0:32:53 HS06  hours (1973 HS06  seconds)
+
+==> LSFJOB_791294560/STDOUT <==
+Input events = 49587
+Output events = 21130
+xrdcp -f /pool/lsf/cirkovic/791294560/tmp.3H4Z6aA9AR/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_76.root
+[2MB/11.36MB][ 17%][========>                                         ][0B/s]  [11.36MB/11.36MB][100%][==================================================][0B/s]  [11.36MB/11.36MB][100%][==================================================][11.36MB/s]  
+
+Job finished at Sun Oct 16 22:23:32 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:11:07 KSI2K hours (667 KSI2K seconds)
+                 This process corresponds to     : 0:43:24 HS06  hours (2604 HS06  seconds)
+
+==> LSFJOB_791294561/STDOUT <==
+Input events = 38197
+Output events = 15999
+xrdcp -f /pool/lsf/cirkovic/791294561/tmp.eZ4ggmKNoP/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_77.root
+[2MB/8.618MB][ 23%][===========>                                      ][0B/s]  [8.618MB/8.618MB][100%][==================================================][0B/s]  [8.618MB/8.618MB][100%][==================================================][8.618MB/s]  
+
+Job finished at Sun Oct 16 22:20:46 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:41 KSI2K hours (521 KSI2K seconds)
+                 This process corresponds to     : 0:33:52 HS06  hours (2032 HS06  seconds)
+
+==> LSFJOB_791294563/STDOUT <==
+Input events = 25505
+Output events = 10691
+xrdcp -f /pool/lsf/cirkovic/791294563/tmp.XlHyjVpU8o/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_78.root
+[2MB/5.777MB][ 34%][=================>                                ][2MB/s]  [5.777MB/5.777MB][100%][==================================================][5.777MB/s]  [5.777MB/5.777MB][100%][==================================================][5.777MB/s]  
+
+Job finished at Sun Oct 16 22:17:26 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:28 KSI2K hours (388 KSI2K seconds)
+                 This process corresponds to     : 0:25:15 HS06  hours (1515 HS06  seconds)
+
+==> LSFJOB_791294564/STDOUT <==
+Input events = 36933
+Output events = 15320
+xrdcp -f /pool/lsf/cirkovic/791294564/tmp.sCLIBDuJTp/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_79.root
+[2MB/8.279MB][ 24%][============>                                     ][0B/s]  [8.279MB/8.279MB][100%][==================================================][0B/s]  [8.279MB/8.279MB][100%][==================================================][8.279MB/s]  
+
+Job finished at Sun Oct 16 22:15:00 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:33 KSI2K hours (513 KSI2K seconds)
+                 This process corresponds to     : 0:33:23 HS06  hours (2003 HS06  seconds)
+
+==> LSFJOB_791294565/STDOUT <==
+Input events = 44253
+Output events = 18640
+xrdcp -f /pool/lsf/cirkovic/791294565/tmp.tT4cFukI8U/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_80.root
+[2MB/10.04MB][ 19%][=========>                                        ][0B/s]  [10.04MB/10.04MB][100%][==================================================][0B/s]  [10.04MB/10.04MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:21:59 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:34 KSI2K hours (634 KSI2K seconds)
+                 This process corresponds to     : 0:41:13 HS06  hours (2473 HS06  seconds)
+
+==> LSFJOB_791294566/STDOUT <==
+Input events = 60894
+Output events = 25577
+xrdcp -f /pool/lsf/cirkovic/791294566/tmp.isP3O3NmlG/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_81.root
+[2MB/13.78MB][ 14%][=======>                                          ][2MB/s]  [13.78MB/13.78MB][100%][==================================================][13.78MB/s]  [13.78MB/13.78MB][100%][==================================================][13.78MB/s]  
+
+Job finished at Sun Oct 16 22:10:21 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:11:08 KSI2K hours (668 KSI2K seconds)
+                 This process corresponds to     : 0:43:28 HS06  hours (2608 HS06  seconds)
+
+==> LSFJOB_791294567/STDOUT <==
+Input events = 60510
+Output events = 25726
+xrdcp -f /pool/lsf/cirkovic/791294567/tmp.QofYGO351O/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_82.root
+[2MB/13.85MB][ 14%][=======>                                          ][0B/s]  [13.85MB/13.85MB][100%][==================================================][0B/s]  [13.85MB/13.85MB][100%][==================================================][13.85MB/s]  
+
+Job finished at Sun Oct 16 22:08:51 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:12:08 KSI2K hours (728 KSI2K seconds)
+                 This process corresponds to     : 0:47:22 HS06  hours (2842 HS06  seconds)
+
+==> LSFJOB_791294568/STDOUT <==
+Input events = 37706
+Output events = 15838
+xrdcp -f /pool/lsf/cirkovic/791294568/tmp.LZw5EfnjMJ/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_83.root
+[2MB/8.542MB][ 23%][===========>                                      ][0B/s]  [8.542MB/8.542MB][100%][==================================================][0B/s]  [8.542MB/8.542MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:58 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:51 KSI2K hours (471 KSI2K seconds)
+                 This process corresponds to     : 0:30:40 HS06  hours (1840 HS06  seconds)
+
+==> LSFJOB_791294570/STDOUT <==
+Input events = 37878
+Output events = 15962
+xrdcp -f /pool/lsf/cirkovic/791294570/tmp.TusVVPZhtB/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_84.root
+[2MB/8.622MB][ 23%][===========>                                      ][2MB/s]  [8.622MB/8.622MB][100%][==================================================][8.622MB/s]  [8.622MB/8.622MB][100%][==================================================][8.622MB/s]  
+
+Job finished at Sun Oct 16 22:13:55 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:59 KSI2K hours (539 KSI2K seconds)
+                 This process corresponds to     : 0:35:02 HS06  hours (2102 HS06  seconds)
+
+==> LSFJOB_791294571/STDOUT <==
+Input events = 38207
+Output events = 16123
+xrdcp -f /pool/lsf/cirkovic/791294571/tmp.jfClVkPW07/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_85.root
+[2MB/8.705MB][ 22%][===========>                                      ][0B/s]  [8.705MB/8.705MB][100%][==================================================][0B/s]  [8.705MB/8.705MB][100%][==================================================][8.705MB/s]  
+
+Job finished at Sun Oct 16 22:07:17 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:27 KSI2K hours (507 KSI2K seconds)
+                 This process corresponds to     : 0:33:00 HS06  hours (1980 HS06  seconds)
+
+==> LSFJOB_791294573/STDOUT <==
+Input events = 48203
+Output events = 20271
+xrdcp -f /pool/lsf/cirkovic/791294573/tmp.FuIMBtvL2o/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_86.root
+[2MB/10.96MB][ 18%][=========>                                        ][0B/s]  [10.96MB/10.96MB][100%][==================================================][0B/s]  [10.96MB/10.96MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:08:29 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:20 KSI2K hours (560 KSI2K seconds)
+                 This process corresponds to     : 0:36:25 HS06  hours (2185 HS06  seconds)
+
+==> LSFJOB_791294574/STDOUT <==
+Input events = 69169
+Output events = 29137
+xrdcp -f /pool/lsf/cirkovic/791294574/tmp.BVt8vew6Xh/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_87.root
+[2MB/15.72MB][ 12%][======>                                           ][2MB/s]  [15.72MB/15.72MB][100%][==================================================][15.72MB/s]  [15.72MB/15.72MB][100%][==================================================][15.72MB/s]  
+
+Job finished at Sun Oct 16 22:09:43 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:14:25 KSI2K hours (865 KSI2K seconds)
+                 This process corresponds to     : 0:56:17 HS06  hours (3377 HS06  seconds)
+
+==> LSFJOB_791294575/STDOUT <==
+Input events = 35625
+Output events = 15227
+xrdcp -f /pool/lsf/cirkovic/791294575/tmp.oqa1o41Hsp/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_88.root
+[2MB/8.22MB][ 24%][============>                                     ][2MB/s]  [8.22MB/8.22MB][100%][==================================================][8.22MB/s]  [8.22MB/8.22MB][100%][==================================================][8.22MB/s]  
+
+Job finished at Sun Oct 16 22:07:20 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:38 KSI2K hours (518 KSI2K seconds)
+                 This process corresponds to     : 0:33:43 HS06  hours (2023 HS06  seconds)
+
+==> LSFJOB_791294576/STDOUT <==
+Input events = 67947
+Output events = 28564
+xrdcp -f /pool/lsf/cirkovic/791294576/tmp.VLqWzMFsiU/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_89.root
+[2MB/15.4MB][ 12%][======>                                           ][2MB/s]  [15.4MB/15.4MB][100%][==================================================][15.4MB/s]  [15.4MB/15.4MB][100%][==================================================][7.698MB/s]  
+
+Job finished at Sun Oct 16 22:10:07 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:14:07 KSI2K hours (847 KSI2K seconds)
+                 This process corresponds to     : 0:55:05 HS06  hours (3305 HS06  seconds)
+
+==> LSFJOB_791294577/STDOUT <==
+Input events = 63307
+Output events = 26913
+xrdcp -f /pool/lsf/cirkovic/791294577/tmp.O8HRzqaoP4/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_90.root
+[2MB/14.49MB][ 13%][======>                                           ][2MB/s]  [14.49MB/14.49MB][100%][==================================================][14.49MB/s]  [14.49MB/14.49MB][100%][==================================================][14.49MB/s]  
+
+Job finished at Sun Oct 16 22:20:51 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:12:54 KSI2K hours (774 KSI2K seconds)
+                 This process corresponds to     : 0:50:19 HS06  hours (3019 HS06  seconds)
+
+==> LSFJOB_791294578/STDOUT <==
+Input events = 38348
+Output events = 15981
+xrdcp -f /pool/lsf/cirkovic/791294578/tmp.6sn4PeWPmG/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_91.root
+[2MB/8.621MB][ 23%][===========>                                      ][0B/s]  [8.621MB/8.621MB][100%][==================================================][0B/s]  [8.621MB/8.621MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:19:51 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:46 KSI2K hours (346 KSI2K seconds)
+                 This process corresponds to     : 0:22:31 HS06  hours (1351 HS06  seconds)
+
+==> LSFJOB_791294579/STDOUT <==
+Input events = 35900
+Output events = 14985
+xrdcp -f /pool/lsf/cirkovic/791294579/tmp.soPFjIQDS8/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_92.root
+[2MB/8.099MB][ 24%][============>                                     ][2MB/s]  [8.099MB/8.099MB][100%][==================================================][8.099MB/s]  [8.099MB/8.099MB][100%][==================================================][8.099MB/s]  
+
+Job finished at Sun Oct 16 22:07:27 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:34 KSI2K hours (514 KSI2K seconds)
+                 This process corresponds to     : 0:33:27 HS06  hours (2007 HS06  seconds)
+
+==> LSFJOB_791294580/STDOUT <==
+Input events = 35979
+Output events = 15317
+xrdcp -f /pool/lsf/cirkovic/791294580/tmp.cHyorw2s64/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_93.root
+[2MB/8.256MB][ 24%][============>                                     ][0B/s]  [8.256MB/8.256MB][100%][==================================================][0B/s]  [8.256MB/8.256MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:09:01 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:07 KSI2K hours (487 KSI2K seconds)
+                 This process corresponds to     : 0:31:39 HS06  hours (1899 HS06  seconds)
+
+==> LSFJOB_791294581/STDOUT <==
+Input events = 6422
+Output events = 2708
+xrdcp -f /pool/lsf/cirkovic/791294581/tmp.8oQjomtPpy/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_94.root
+[1.482MB/1.482MB][100%][==================================================][0B/s]  [1.482MB/1.482MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:05:48 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:03:01 KSI2K hours (181 KSI2K seconds)
+                 This process corresponds to     : 0:11:47 HS06  hours (707 HS06  seconds)
+
+==> LSFJOB_791294582/STDOUT <==
+Input events = 37049
+Output events = 15473
+xrdcp -f /pool/lsf/cirkovic/791294582/tmp.WcFMVuGq4i/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_95.root
+[2MB/8.335MB][ 23%][===========>                                      ][0B/s]  [8.335MB/8.335MB][100%][==================================================][0B/s]  [8.335MB/8.335MB][100%][==================================================][4.168MB/s]  
+
+Job finished at Sun Oct 16 22:07:27 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:04 KSI2K hours (364 KSI2K seconds)
+                 This process corresponds to     : 0:23:42 HS06  hours (1422 HS06  seconds)
+
+==> LSFJOB_791294584/STDOUT <==
+Input events = 36430
+Output events = 15373
+xrdcp -f /pool/lsf/cirkovic/791294584/tmp.unXKqoyv3F/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_96.root
+[2MB/8.285MB][ 24%][============>                                     ][0B/s]  [8.285MB/8.285MB][100%][==================================================][0B/s]  [8.285MB/8.285MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:20:53 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:25 KSI2K hours (385 KSI2K seconds)
+                 This process corresponds to     : 0:25:03 HS06  hours (1503 HS06  seconds)
+
+==> LSFJOB_791294585/STDOUT <==
+Input events = 42989
+Output events = 18167
+xrdcp -f /pool/lsf/cirkovic/791294585/tmp.VcalrQEclH/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_97.root
+[2MB/9.792MB][ 20%][==========>                                       ][0B/s]  [9.792MB/9.792MB][100%][==================================================][0B/s]  [9.792MB/9.792MB][100%][==================================================][3.264MB/s]  
+
+Job finished at Sun Oct 16 22:10:51 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:16 KSI2K hours (496 KSI2K seconds)
+                 This process corresponds to     : 0:32:16 HS06  hours (1936 HS06  seconds)
+
+==> LSFJOB_791294586/STDOUT <==
+Input events = 37754
+Output events = 15722
+xrdcp -f /pool/lsf/cirkovic/791294586/tmp.UH31hTIrwy/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_98.root
+[2MB/8.476MB][ 23%][===========>                                      ][0B/s]  [8.476MB/8.476MB][100%][==================================================][0B/s]  [8.476MB/8.476MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:48 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:18 KSI2K hours (498 KSI2K seconds)
+                 This process corresponds to     : 0:32:22 HS06  hours (1942 HS06  seconds)
+
+==> LSFJOB_791294590/STDOUT <==
+Input events = 55245
+Output events = 23325
+xrdcp -f /pool/lsf/cirkovic/791294590/tmp.7WxBbXkUWB/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_99.root
+[2MB/12.57MB][ 15%][=======>                                          ][2MB/s]  [12.57MB/12.57MB][100%][==================================================][12.57MB/s]  [12.57MB/12.57MB][100%][==================================================][6.287MB/s]  
+
+Job finished at Sun Oct 16 22:08:55 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:50 KSI2K hours (590 KSI2K seconds)
+                 This process corresponds to     : 0:38:24 HS06  hours (2304 HS06  seconds)
+
+==> LSFJOB_791294591/STDOUT <==
+Input events = 36258
+Output events = 15264
+xrdcp -f /pool/lsf/cirkovic/791294591/tmp.rrwTYayLvo/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_100.root
+[2MB/8.235MB][ 24%][============>                                     ][0B/s]  [8.235MB/8.235MB][100%][==================================================][0B/s]  [8.235MB/8.235MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:19 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:21 KSI2K hours (321 KSI2K seconds)
+                 This process corresponds to     : 0:20:53 HS06  hours (1253 HS06  seconds)
+
+==> LSFJOB_791294592/STDOUT <==
+Input events = 44588
+Output events = 18670
+xrdcp -f /pool/lsf/cirkovic/791294592/tmp.UD48t5OWA6/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_101.root
+[2MB/10.06MB][ 19%][=========>                                        ][0B/s]  [10.06MB/10.06MB][100%][==================================================][0B/s]  [10.06MB/10.06MB][100%][==================================================][10.06MB/s]  
+
+Job finished at Sun Oct 16 22:08:04 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:25 KSI2K hours (445 KSI2K seconds)
+                 This process corresponds to     : 0:28:58 HS06  hours (1738 HS06  seconds)
+
+==> LSFJOB_791294593/STDOUT <==
+Input events = 41448
+Output events = 17605
+xrdcp -f /pool/lsf/cirkovic/791294593/tmp.CM2Xj1x2I6/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_102.root
+[2MB/9.496MB][ 21%][==========>                                       ][2MB/s]  [9.496MB/9.496MB][100%][==================================================][9.496MB/s]  [9.496MB/9.496MB][100%][==================================================][9.496MB/s]  
+
+Job finished at Sun Oct 16 22:23:17 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:14 KSI2K hours (494 KSI2K seconds)
+                 This process corresponds to     : 0:32:06 HS06  hours (1926 HS06  seconds)
+
+==> LSFJOB_791294594/STDOUT <==
+Input events = 41340
+Output events = 17329
+xrdcp -f /pool/lsf/cirkovic/791294594/tmp.ptMgiN98Sh/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_103.root
+[2MB/9.329MB][ 21%][==========>                                       ][0B/s]  [9.329MB/9.329MB][100%][==================================================][0B/s]  [9.329MB/9.329MB][100%][==================================================][9.329MB/s]  
+
+Job finished at Sun Oct 16 22:07:18 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:47 KSI2K hours (407 KSI2K seconds)
+                 This process corresponds to     : 0:26:28 HS06  hours (1588 HS06  seconds)
+
+==> LSFJOB_791294595/STDOUT <==
+Input events = 25447
+Output events = 10682
+xrdcp -f /pool/lsf/cirkovic/791294595/tmp.pKwO6gODrx/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_104.root
+[2MB/5.759MB][ 34%][=================>                                ][0B/s]  [5.759MB/5.759MB][100%][==================================================][0B/s]  [5.759MB/5.759MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:02 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:44 KSI2K hours (584 KSI2K seconds)
+                 This process corresponds to     : 0:37:58 HS06  hours (2278 HS06  seconds)
+
+==> LSFJOB_791294597/STDOUT <==
+Input events = 43305
+Output events = 18214
+xrdcp -f /pool/lsf/cirkovic/791294597/tmp.bf4soP1J6C/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_105.root
+[2MB/9.816MB][ 20%][==========>                                       ][186.2kB/s]  [6MB/9.816MB][ 61%][==============================>                   ][512kB/s]  [9.816MB/9.816MB][100%][==================================================][837.6kB/s]  [9.816MB/9.816MB][100%][==================================================][837.6kB/s]  
+
+Job finished at Sun Oct 16 22:09:56 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:06 KSI2K hours (486 KSI2K seconds)
+                 This process corresponds to     : 0:31:38 HS06  hours (1898 HS06  seconds)
+
+==> LSFJOB_791294598/STDOUT <==
+Input events = 42881
+Output events = 18017
+xrdcp -f /pool/lsf/cirkovic/791294598/tmp.w9w5ZLgS15/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_106.root
+[2MB/9.686MB][ 20%][==========>                                       ][682.7kB/s]  [9.686MB/9.686MB][100%][==================================================][3.229MB/s]  [9.686MB/9.686MB][100%][==================================================][2.422MB/s]  
+
+Job finished at Sun Oct 16 22:09:14 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:57 KSI2K hours (537 KSI2K seconds)
+                 This process corresponds to     : 0:34:56 HS06  hours (2096 HS06  seconds)
+
+==> LSFJOB_791294599/STDOUT <==
+Input events = 40096
+Output events = 16920
+xrdcp -f /pool/lsf/cirkovic/791294599/tmp.RVKM8KgdgC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_107.root
+[2MB/9.11MB][ 21%][==========>                                       ][0B/s]  [4MB/9.11MB][ 43%][=====================>                            ][2MB/s]  [9.11MB/9.11MB][100%][==================================================][4.555MB/s]  [9.11MB/9.11MB][100%][==================================================][3.037MB/s]  
+
+Job finished at Sun Oct 16 22:09:13 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:56 KSI2K hours (536 KSI2K seconds)
+                 This process corresponds to     : 0:34:53 HS06  hours (2093 HS06  seconds)
+
+==> LSFJOB_791294601/STDOUT <==
+Input events = 25012
+Output events = 10595
+xrdcp -f /pool/lsf/cirkovic/791294601/tmp.pg7u5u9cjS/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_108.root
+[2MB/5.726MB][ 34%][=================>                                ][2MB/s]  [5.726MB/5.726MB][100%][==================================================][5.726MB/s]  [5.726MB/5.726MB][100%][==================================================][5.726MB/s]  
+
+Job finished at Sun Oct 16 22:07:25 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:39 KSI2K hours (339 KSI2K seconds)
+                 This process corresponds to     : 0:22:05 HS06  hours (1325 HS06  seconds)
+
+==> LSFJOB_791294602/STDOUT <==
+Input events = 25056
+Output events = 10514
+xrdcp -f /pool/lsf/cirkovic/791294602/tmp.DBT0MTkrj7/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_109.root
+[2MB/5.685MB][ 35%][=================>                                ][0B/s]  [5.685MB/5.685MB][100%][==================================================][0B/s]  [5.685MB/5.685MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:43 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:04:46 KSI2K hours (286 KSI2K seconds)
+                 This process corresponds to     : 0:18:36 HS06  hours (1116 HS06  seconds)
+
+==> LSFJOB_791294604/STDOUT <==
+Input events = 36769
+Output events = 15440
+xrdcp -f /pool/lsf/cirkovic/791294604/tmp.ZSIt8e2GIv/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_110.root
+[2MB/8.318MB][ 24%][============>                                     ][0B/s]  [8.318MB/8.318MB][100%][==================================================][0B/s]  [8.318MB/8.318MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:23 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:56 KSI2K hours (416 KSI2K seconds)
+                 This process corresponds to     : 0:27:05 HS06  hours (1625 HS06  seconds)
+
+==> LSFJOB_791294607/STDOUT <==
+Input events = 12753
+Output events = 5434
+xrdcp -f /pool/lsf/cirkovic/791294607/tmp.vz4jvPfZI7/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_111.root
+[2MB/2.943MB][ 67%][=================================>                ][0B/s]  [2.943MB/2.943MB][100%][==================================================][0B/s]  [2.943MB/2.943MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:05:17 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:03:28 KSI2K hours (208 KSI2K seconds)
+                 This process corresponds to     : 0:13:31 HS06  hours (811 HS06  seconds)
+
+==> LSFJOB_791294608/STDOUT <==
+Input events = 37594
+Output events = 15882
+xrdcp -f /pool/lsf/cirkovic/791294608/tmp.o8wCsKzHxi/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_112.root
+[2MB/8.564MB][ 23%][===========>                                      ][0B/s]  [8.564MB/8.564MB][100%][==================================================][0B/s]  [8.564MB/8.564MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:35 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:24 KSI2K hours (504 KSI2K seconds)
+                 This process corresponds to     : 0:32:47 HS06  hours (1967 HS06  seconds)
+
+==> LSFJOB_791294609/STDOUT <==
+Input events = 36375
+Output events = 15253
+xrdcp -f /pool/lsf/cirkovic/791294609/tmp.rSTdJQwf7k/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_113.root
+[2MB/8.236MB][ 24%][============>                                     ][0B/s]  [8.236MB/8.236MB][100%][==================================================][0B/s]  [8.236MB/8.236MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:31 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:50 KSI2K hours (470 KSI2K seconds)
+                 This process corresponds to     : 0:30:33 HS06  hours (1833 HS06  seconds)
+
+==> LSFJOB_791294610/STDOUT <==
+Input events = 37585
+Output events = 15855
+xrdcp -f /pool/lsf/cirkovic/791294610/tmp.gJ0dqsbTEV/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_114.root
+[2MB/8.551MB][ 23%][===========>                                      ][2MB/s]  [8.551MB/8.551MB][100%][==================================================][8.551MB/s]  [8.551MB/8.551MB][100%][==================================================][8.551MB/s]  
+
+Job finished at Sun Oct 16 22:20:46 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:45 KSI2K hours (465 KSI2K seconds)
+                 This process corresponds to     : 0:30:16 HS06  hours (1816 HS06  seconds)
+
+==> LSFJOB_791294612/STDOUT <==
+Input events = 36261
+Output events = 15161
+xrdcp -f /pool/lsf/cirkovic/791294612/tmp.a6pYdU9js0/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_115.root
+[2MB/8.177MB][ 24%][============>                                     ][0B/s]  [6MB/8.177MB][ 73%][====================================>             ][6MB/s]  [8.177MB/8.177MB][100%][==================================================][8.177MB/s]  [8.177MB/8.177MB][100%][==================================================][8.177MB/s]  
+
+Job finished at Sun Oct 16 22:07:36 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:19 KSI2K hours (499 KSI2K seconds)
+                 This process corresponds to     : 0:32:29 HS06  hours (1949 HS06  seconds)
+
+==> LSFJOB_791294613/STDOUT <==
+Input events = 12778
+Output events = 5454
+xrdcp -f /pool/lsf/cirkovic/791294613/tmp.QIkEw2xaQw/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_116.root
+[2MB/2.962MB][ 67%][=================================>                ][2MB/s]  [2.962MB/2.962MB][100%][==================================================][2.962MB/s]  [2.962MB/2.962MB][100%][==================================================][2.962MB/s]  
+
+Job finished at Sun Oct 16 22:06:30 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:31 KSI2K hours (331 KSI2K seconds)
+                 This process corresponds to     : 0:21:32 HS06  hours (1292 HS06  seconds)
+
+==> LSFJOB_791294616/STDOUT <==
+Input events = 48725
+Output events = 20534
+xrdcp -f /pool/lsf/cirkovic/791294616/tmp.Upf9KyZLcK/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_117.root
+[2MB/11.07MB][ 18%][=========>                                        ][2MB/s]  [11.07MB/11.07MB][100%][==================================================][11.07MB/s]  [11.07MB/11.07MB][100%][==================================================][11.07MB/s]  
+
+Job finished at Sun Oct 16 22:23:45 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:05 KSI2K hours (545 KSI2K seconds)
+                 This process corresponds to     : 0:35:27 HS06  hours (2127 HS06  seconds)
+
+==> LSFJOB_791294617/STDOUT <==
+Input events = 38239
+Output events = 16209
+xrdcp -f /pool/lsf/cirkovic/791294617/tmp.3wP1ljhdUR/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_118.root
+[2MB/8.759MB][ 22%][===========>                                      ][2MB/s]  [8.759MB/8.759MB][100%][==================================================][8.759MB/s]  [8.759MB/8.759MB][100%][==================================================][8.759MB/s]  
+
+Job finished at Sun Oct 16 22:07:56 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:44 KSI2K hours (464 KSI2K seconds)
+                 This process corresponds to     : 0:30:11 HS06  hours (1811 HS06  seconds)
+
+==> LSFJOB_791294619/STDOUT <==
+Input events = 37412
+Output events = 15761
+xrdcp -f /pool/lsf/cirkovic/791294619/tmp.IiJqw5Fajr/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_119.root
+[2MB/8.513MB][ 23%][===========>                                      ][0B/s]  [8.513MB/8.513MB][100%][==================================================][0B/s]  [8.513MB/8.513MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:19:41 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:32 KSI2K hours (452 KSI2K seconds)
+                 This process corresponds to     : 0:29:24 HS06  hours (1764 HS06  seconds)
+
+==> LSFJOB_791294620/STDOUT <==
+Input events = 37259
+Output events = 15558
+xrdcp -f /pool/lsf/cirkovic/791294620/tmp.bSDnOVBD2Y/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_120.root
+[2MB/8.385MB][ 23%][===========>                                      ][2MB/s]  [8.385MB/8.385MB][100%][==================================================][8.385MB/s]  [8.385MB/8.385MB][100%][==================================================][2.795MB/s]  
+
+Job finished at Sun Oct 16 22:07:38 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:20 KSI2K hours (500 KSI2K seconds)
+                 This process corresponds to     : 0:32:32 HS06  hours (1952 HS06  seconds)
+
+==> LSFJOB_791294621/STDOUT <==
+Input events = 43949
+Output events = 18368
+xrdcp -f /pool/lsf/cirkovic/791294621/tmp.F9OflEzRr5/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_121.root
+[2MB/9.923MB][ 20%][==========>                                       ][2MB/s]  [9.923MB/9.923MB][100%][==================================================][9.923MB/s]  [9.923MB/9.923MB][100%][==================================================][9.923MB/s]  
+
+Job finished at Sun Oct 16 22:07:55 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:00 KSI2K hours (540 KSI2K seconds)
+                 This process corresponds to     : 0:35:07 HS06  hours (2107 HS06  seconds)
+
+==> LSFJOB_791294623/STDOUT <==
+Input events = 49867
+Output events = 20959
+xrdcp -f /pool/lsf/cirkovic/791294623/tmp.dofD5lEEfC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_122.root
+[2MB/11.3MB][ 17%][========>                                         ][0B/s]  [11.3MB/11.3MB][100%][==================================================][0B/s]  [11.3MB/11.3MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:22:50 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:27 KSI2K hours (567 KSI2K seconds)
+                 This process corresponds to     : 0:36:52 HS06  hours (2212 HS06  seconds)
+
+==> LSFJOB_791294625/STDOUT <==
+Input events = 36255
+Output events = 15309
+xrdcp -f /pool/lsf/cirkovic/791294625/tmp.Ng59Fsiv8D/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_123.root
+[2MB/8.267MB][ 24%][============>                                     ][0B/s]  [8.267MB/8.267MB][100%][==================================================][0B/s]  [8.267MB/8.267MB][100%][==================================================][8.267MB/s]  
+
+Job finished at Sun Oct 16 22:07:38 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:06 KSI2K hours (486 KSI2K seconds)
+                 This process corresponds to     : 0:31:36 HS06  hours (1896 HS06  seconds)
+
+==> LSFJOB_791294626/STDOUT <==
+Input events = 42665
+Output events = 17995
+xrdcp -f /pool/lsf/cirkovic/791294626/tmp.WYxFpoedtr/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_124.root
+[2MB/9.685MB][ 20%][==========>                                       ][2MB/s]  [9.685MB/9.685MB][100%][==================================================][9.685MB/s]  [9.685MB/9.685MB][100%][==================================================][9.685MB/s]  
+
+Job finished at Sun Oct 16 22:06:33 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:08 KSI2K hours (368 KSI2K seconds)
+                 This process corresponds to     : 0:23:56 HS06  hours (1436 HS06  seconds)
+
+==> LSFJOB_791294627/STDOUT <==
+Input events = 42232
+Output events = 17662
+xrdcp -f /pool/lsf/cirkovic/791294627/tmp.RGPxJZViQG/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_125.root
+[2MB/9.518MB][ 21%][==========>                                       ][2MB/s]  [9.518MB/9.518MB][100%][==================================================][9.518MB/s]  [9.518MB/9.518MB][100%][==================================================][9.518MB/s]  
+
+Job finished at Sun Oct 16 22:08:08 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:18 KSI2K hours (558 KSI2K seconds)
+                 This process corresponds to     : 0:36:16 HS06  hours (2176 HS06  seconds)
+
+==> LSFJOB_791294628/STDOUT <==
+Input events = 39311
+Output events = 16583
+xrdcp -f /pool/lsf/cirkovic/791294628/tmp.O60ATtwzuT/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_126.root
+[2MB/8.947MB][ 22%][===========>                                      ][2MB/s]  [8.947MB/8.947MB][100%][==================================================][8.947MB/s]  [8.947MB/8.947MB][100%][==================================================][8.947MB/s]  
+
+Job finished at Sun Oct 16 22:23:02 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:19 KSI2K hours (559 KSI2K seconds)
+                 This process corresponds to     : 0:36:20 HS06  hours (2180 HS06  seconds)
+
+==> LSFJOB_791294630/STDOUT <==
+Input events = 44160
+Output events = 18799
+xrdcp -f /pool/lsf/cirkovic/791294630/tmp.eizH7noina/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_127.root
+[2MB/10.13MB][ 19%][=========>                                        ][0B/s]  [10.13MB/10.13MB][100%][==================================================][0B/s]  [10.13MB/10.13MB][100%][==================================================][10.13MB/s]  
+
+Job finished at Sun Oct 16 22:08:31 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:16 KSI2K hours (556 KSI2K seconds)
+                 This process corresponds to     : 0:36:11 HS06  hours (2171 HS06  seconds)
+
+==> LSFJOB_791294631/STDOUT <==
+Input events = 60085
+Output events = 25273
+xrdcp -f /pool/lsf/cirkovic/791294631/tmp.3po7WvVDhX/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_128.root
+[2MB/13.61MB][ 14%][=======>                                          ][0B/s]  [13.61MB/13.61MB][100%][==================================================][0B/s]  [13.61MB/13.61MB][100%][==================================================][13.61MB/s]  
+
+Job finished at Sun Oct 16 22:09:33 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:52 KSI2K hours (652 KSI2K seconds)
+                 This process corresponds to     : 0:42:24 HS06  hours (2544 HS06  seconds)
+
+==> LSFJOB_791294632/STDOUT <==
+Input events = 36605
+Output events = 15530
+xrdcp -f /pool/lsf/cirkovic/791294632/tmp.TUujrvdZuh/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_129.root
+[2MB/8.384MB][ 23%][===========>                                      ][0B/s]  [8.384MB/8.384MB][100%][==================================================][0B/s]  [8.384MB/8.384MB][100%][==================================================][4.192MB/s]  
+
+Job finished at Sun Oct 16 22:07:46 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:53 KSI2K hours (473 KSI2K seconds)
+                 This process corresponds to     : 0:30:46 HS06  hours (1846 HS06  seconds)
+
+==> LSFJOB_791294633/STDOUT <==
+Input events = 42379
+Output events = 17893
+xrdcp -f /pool/lsf/cirkovic/791294633/tmp.y6UWx9avbh/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_130.root
+[2MB/9.642MB][ 20%][==========>                                       ][2MB/s]  [9.642MB/9.642MB][100%][==================================================][9.642MB/s]  [9.642MB/9.642MB][100%][==================================================][9.642MB/s]  
+
+Job finished at Sun Oct 16 22:25:24 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:50 KSI2K hours (530 KSI2K seconds)
+                 This process corresponds to     : 0:34:30 HS06  hours (2070 HS06  seconds)
+
+==> LSFJOB_791294634/STDOUT <==
+Input events = 39032
+Output events = 16518
+xrdcp -f /pool/lsf/cirkovic/791294634/tmp.eRpufCFYbN/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_131.root
+[2MB/8.912MB][ 22%][===========>                                      ][2MB/s]  [8.912MB/8.912MB][100%][==================================================][8.912MB/s]  [8.912MB/8.912MB][100%][==================================================][1.485MB/s]  
+
+Job finished at Sun Oct 16 22:07:41 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:29 KSI2K hours (449 KSI2K seconds)
+                 This process corresponds to     : 0:29:11 HS06  hours (1751 HS06  seconds)
+
+==> LSFJOB_791294635/STDOUT <==
+Input events = 36767
+Output events = 15405
+xrdcp -f /pool/lsf/cirkovic/791294635/tmp.Jbm1h77qJw/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_132.root
+[2MB/8.309MB][ 24%][============>                                     ][0B/s]  [8.309MB/8.309MB][100%][==================================================][0B/s]  [8.309MB/8.309MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:31 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:19 KSI2K hours (439 KSI2K seconds)
+                 This process corresponds to     : 0:28:32 HS06  hours (1712 HS06  seconds)
+
+==> LSFJOB_791294636/STDOUT <==
+Input events = 35640
+Output events = 15142
+xrdcp -f /pool/lsf/cirkovic/791294636/tmp.G8tOb3sXgT/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_133.root
+[2MB/8.158MB][ 24%][============>                                     ][0B/s]  [8.158MB/8.158MB][100%][==================================================][0B/s]  [8.158MB/8.158MB][100%][==================================================][8.158MB/s]  
+
+Job finished at Sun Oct 16 22:23:13 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:29 KSI2K hours (389 KSI2K seconds)
+                 This process corresponds to     : 0:25:20 HS06  hours (1520 HS06  seconds)
+
+==> LSFJOB_791294638/STDOUT <==
+Input events = 49009
+Output events = 20662
+xrdcp -f /pool/lsf/cirkovic/791294638/tmp.yVgTNKUTpA/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_134.root
+[2MB/11.14MB][ 17%][========>                                         ][1024kB/s]  [11.14MB/11.14MB][100%][==================================================][5.568MB/s]  [11.14MB/11.14MB][100%][==================================================][2.784MB/s]  
+
+Job finished at Sun Oct 16 22:09:05 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:49 KSI2K hours (589 KSI2K seconds)
+                 This process corresponds to     : 0:38:18 HS06  hours (2298 HS06  seconds)
+
+==> LSFJOB_791294641/STDOUT <==
+Input events = 37563
+Output events = 15618
+xrdcp -f /pool/lsf/cirkovic/791294641/tmp.YYWMlMSohs/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_135.root
+[2MB/8.43MB][ 23%][===========>                                      ][0B/s]  [8.43MB/8.43MB][100%][==================================================][0B/s]  [8.43MB/8.43MB][100%][==================================================][8.43MB/s]  
+
+Job finished at Sun Oct 16 22:07:49 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:29 KSI2K hours (389 KSI2K seconds)
+                 This process corresponds to     : 0:25:18 HS06  hours (1518 HS06  seconds)
+
+==> LSFJOB_791294642/STDOUT <==
+Input events = 48138
+Output events = 20216
+xrdcp -f /pool/lsf/cirkovic/791294642/tmp.YPBZfZUSEq/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_136.root
+[2MB/10.88MB][ 18%][=========>                                        ][0B/s]  [6MB/10.88MB][ 55%][===========================>                      ][6MB/s]  [10.88MB/10.88MB][100%][==================================================][10.88MB/s]  [10.88MB/10.88MB][100%][==================================================][10.88MB/s]  
+
+Job finished at Sun Oct 16 22:08:28 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:35 KSI2K hours (515 KSI2K seconds)
+                 This process corresponds to     : 0:33:28 HS06  hours (2008 HS06  seconds)
+
+==> LSFJOB_791294643/STDOUT <==
+Input events = 37734
+Output events = 15816
+xrdcp -f /pool/lsf/cirkovic/791294643/tmp.ARZDxaIys1/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_137.root
+[2MB/8.529MB][ 23%][===========>                                      ][0B/s]  [8.529MB/8.529MB][100%][==================================================][0B/s]  [8.529MB/8.529MB][100%][==================================================][8.529MB/s]  
+
+Job finished at Sun Oct 16 22:06:39 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:17 KSI2K hours (557 KSI2K seconds)
+                 This process corresponds to     : 0:36:12 HS06  hours (2172 HS06  seconds)
+
+==> LSFJOB_791294644/STDOUT <==
+Input events = 6330
+Output events = 2647
+xrdcp -f /pool/lsf/cirkovic/791294644/tmp.4MJU4dxLjd/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_138.root
+[1.444MB/1.444MB][100%][==================================================][0B/s]  [1.444MB/1.444MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:05:40 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:04:27 KSI2K hours (267 KSI2K seconds)
+                 This process corresponds to     : 0:17:24 HS06  hours (1044 HS06  seconds)
+
+==> LSFJOB_791294646/STDOUT <==
+Input events = 36449
+Output events = 15418
+xrdcp -f /pool/lsf/cirkovic/791294646/tmp.UGg3vHy6yA/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_139.root
+[2MB/8.309MB][ 24%][============>                                     ][0B/s]  [8.309MB/8.309MB][100%][==================================================][0B/s]  [8.309MB/8.309MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:13:07 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:35 KSI2K hours (575 KSI2K seconds)
+                 This process corresponds to     : 0:37:25 HS06  hours (2245 HS06  seconds)
+
+==> LSFJOB_791294649/STDOUT <==
+Input events = 41514
+Output events = 17480
+xrdcp -f /pool/lsf/cirkovic/791294649/tmp.Mz3ElPGTp2/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_140.root
+[2MB/9.432MB][ 21%][==========>                                       ][0B/s]  [9.432MB/9.432MB][100%][==================================================][0B/s]  [9.432MB/9.432MB][100%][==================================================][9.432MB/s]  
+
+Job finished at Sun Oct 16 22:07:20 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:31 KSI2K hours (391 KSI2K seconds)
+                 This process corresponds to     : 0:25:28 HS06  hours (1528 HS06  seconds)
+
+==> LSFJOB_791294650/STDOUT <==
+Input events = 62534
+Output events = 26393
+xrdcp -f /pool/lsf/cirkovic/791294650/tmp.LliFxkvV56/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_141.root
+[2MB/14.22MB][ 14%][=======>                                          ][2MB/s]  [14.22MB/14.22MB][100%][==================================================][14.22MB/s]  [14.22MB/14.22MB][100%][==================================================][14.22MB/s]  
+
+Job finished at Sun Oct 16 22:09:15 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:49 KSI2K hours (649 KSI2K seconds)
+                 This process corresponds to     : 0:42:12 HS06  hours (2532 HS06  seconds)
+
+==> LSFJOB_791294651/STDOUT <==
+Input events = 54664
+Output events = 23093
+xrdcp -f /pool/lsf/cirkovic/791294651/tmp.6Z8wOjyf6E/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_142.root
+[2MB/12.44MB][ 16%][========>                                         ][1024kB/s]  [12.44MB/12.44MB][100%][==================================================][4.148MB/s]  [12.44MB/12.44MB][100%][==================================================][4.148MB/s]  
+
+Job finished at Sun Oct 16 22:22:09 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:16 KSI2K hours (436 KSI2K seconds)
+                 This process corresponds to     : 0:28:23 HS06  hours (1703 HS06  seconds)
+
+==> LSFJOB_791294652/STDOUT <==
+Input events = 61618
+Output events = 25760
+xrdcp -f /pool/lsf/cirkovic/791294652/tmp.JQmEvKY8OC/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_143.root
+[2MB/13.88MB][ 14%][=======>                                          ][0B/s]  [13.88MB/13.88MB][100%][==================================================][0B/s]  [13.88MB/13.88MB][100%][==================================================][13.88MB/s]  
+
+Job finished at Sun Oct 16 22:09:40 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:11:57 KSI2K hours (717 KSI2K seconds)
+                 This process corresponds to     : 0:46:38 HS06  hours (2798 HS06  seconds)
+
+==> LSFJOB_791294653/STDOUT <==
+Input events = 36159
+Output events = 15233
+xrdcp -f /pool/lsf/cirkovic/791294653/tmp.nhdSYHr5EA/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_144.root
+[2MB/8.206MB][ 24%][============>                                     ][0B/s]  [8.206MB/8.206MB][100%][==================================================][0B/s]  [8.206MB/8.206MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:36 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:30 KSI2K hours (450 KSI2K seconds)
+                 This process corresponds to     : 0:29:15 HS06  hours (1755 HS06  seconds)
+
+==> LSFJOB_791294655/STDOUT <==
+Input events = 55811
+Output events = 23655
+xrdcp -f /pool/lsf/cirkovic/791294655/tmp.QhneO9rpDK/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_145.root
+[2MB/12.75MB][ 15%][=======>                                          ][2MB/s]  [12.75MB/12.75MB][100%][==================================================][12.75MB/s]  [12.75MB/12.75MB][100%][==================================================][12.75MB/s]  
+
+Job finished at Sun Oct 16 22:09:03 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:28 KSI2K hours (628 KSI2K seconds)
+                 This process corresponds to     : 0:40:49 HS06  hours (2449 HS06  seconds)
+
+==> LSFJOB_791294656/STDOUT <==
+Input events = 37935
+Output events = 16077
+xrdcp -f /pool/lsf/cirkovic/791294656/tmp.Y9F8EtnTKP/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_146.root
+[2MB/8.668MB][ 23%][===========>                                      ][2MB/s]  [8.668MB/8.668MB][100%][==================================================][8.668MB/s]  [8.668MB/8.668MB][100%][==================================================][4.334MB/s]  
+
+Job finished at Sun Oct 16 22:07:42 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:20 KSI2K hours (440 KSI2K seconds)
+                 This process corresponds to     : 0:28:38 HS06  hours (1718 HS06  seconds)
+
+==> LSFJOB_791294657/STDOUT <==
+Input events = 36681
+Output events = 15407
+xrdcp -f /pool/lsf/cirkovic/791294657/tmp.Nh4OhmntKl/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_147.root
+[2MB/8.316MB][ 24%][============>                                     ][0B/s]  [8.316MB/8.316MB][100%][==================================================][0B/s]  [8.316MB/8.316MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:14:42 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:34 KSI2K hours (514 KSI2K seconds)
+                 This process corresponds to     : 0:33:27 HS06  hours (2007 HS06  seconds)
+
+==> LSFJOB_791294658/STDOUT <==
+Input events = 43714
+Output events = 18392
+xrdcp -f /pool/lsf/cirkovic/791294658/tmp.AzFheJufNG/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_148.root
+[2MB/9.901MB][ 20%][==========>                                       ][2MB/s]  [9.901MB/9.901MB][100%][==================================================][9.901MB/s]  [9.901MB/9.901MB][100%][==================================================][9.901MB/s]  
+
+Job finished at Sun Oct 16 22:12:05 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:25 KSI2K hours (505 KSI2K seconds)
+                 This process corresponds to     : 0:32:51 HS06  hours (1971 HS06  seconds)
+
+==> LSFJOB_791294660/STDOUT <==
+Input events = 37954
+Output events = 15988
+xrdcp -f /pool/lsf/cirkovic/791294660/tmp.SZwNGkanr9/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_149.root
+[2MB/8.614MB][ 23%][===========>                                      ][0B/s]  [8.614MB/8.614MB][100%][==================================================][0B/s]  [8.614MB/8.614MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:11:47 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:31 KSI2K hours (571 KSI2K seconds)
+                 This process corresponds to     : 0:37:10 HS06  hours (2230 HS06  seconds)
+
+==> LSFJOB_791294661/STDOUT <==
+Input events = 12012
+Output events = 5029
+xrdcp -f /pool/lsf/cirkovic/791294661/tmp.cSXfnoPA4x/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_150.root
+[2MB/2.73MB][ 73%][====================================>             ][0B/s]  [2.73MB/2.73MB][100%][==================================================][0B/s]  [2.73MB/2.73MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:09:24 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:04:57 KSI2K hours (297 KSI2K seconds)
+                 This process corresponds to     : 0:19:21 HS06  hours (1161 HS06  seconds)
+
+==> LSFJOB_791294662/STDOUT <==
+Input events = 42508
+Output events = 17858
+xrdcp -f /pool/lsf/cirkovic/791294662/tmp.yigqVKx9jE/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_151.root
+[2MB/9.62MB][ 20%][==========>                                       ][2MB/s]  [9.62MB/9.62MB][100%][==================================================][9.62MB/s]  [9.62MB/9.62MB][100%][==================================================][9.62MB/s]  
+
+Job finished at Sun Oct 16 22:17:19 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:06 KSI2K hours (426 KSI2K seconds)
+                 This process corresponds to     : 0:27:43 HS06  hours (1663 HS06  seconds)
+
+==> LSFJOB_791294663/STDOUT <==
+Input events = 35713
+Output events = 14967
+xrdcp -f /pool/lsf/cirkovic/791294663/tmp.qMG0I1tSul/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_152.root
+[2MB/8.069MB][ 24%][============>                                     ][120.5kB/s]  [8.069MB/8.069MB][100%][==================================================][486.1kB/s]  [8.069MB/8.069MB][100%][==================================================][459.1kB/s]  
+
+Job finished at Sun Oct 16 22:15:31 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:14 KSI2K hours (434 KSI2K seconds)
+                 This process corresponds to     : 0:28:14 HS06  hours (1694 HS06  seconds)
+
+==> LSFJOB_791294665/STDOUT <==
+Input events = 37991
+Output events = 15858
+xrdcp -f /pool/lsf/cirkovic/791294665/tmp.trTOdAj8Mv/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_153.root
+[2MB/8.538MB][ 23%][===========>                                      ][0B/s]  [8.538MB/8.538MB][100%][==================================================][0B/s]  [8.538MB/8.538MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:08:06 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:52 KSI2K hours (472 KSI2K seconds)
+                 This process corresponds to     : 0:30:43 HS06  hours (1843 HS06  seconds)
+
+==> LSFJOB_791294671/STDOUT <==
+Input events = 37473
+Output events = 15680
+xrdcp -f /pool/lsf/cirkovic/791294671/tmp.uhAfaMN1Am/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_154.root
+[2MB/8.453MB][ 23%][===========>                                      ][0B/s]  [8.453MB/8.453MB][100%][==================================================][0B/s]  [8.453MB/8.453MB][100%][==================================================][8.453MB/s]  
+
+Job finished at Sun Oct 16 22:08:00 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:32 KSI2K hours (452 KSI2K seconds)
+                 This process corresponds to     : 0:29:26 HS06  hours (1766 HS06  seconds)
+
+==> LSFJOB_791294714/STDOUT <==
+Input events = 44302
+Output events = 18483
+xrdcp -f /pool/lsf/cirkovic/791294714/tmp.lbSv1CmR3k/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_155.root
+[2MB/9.968MB][ 20%][==========>                                       ][1024kB/s]  [8MB/9.968MB][ 80%][========================================>         ][2.667MB/s]  [9.968MB/9.968MB][100%][==================================================][3.323MB/s]  [9.968MB/9.968MB][100%][==================================================][3.323MB/s]  
+
+Job finished at Sun Oct 16 22:17:19 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:13 KSI2K hours (433 KSI2K seconds)
+                 This process corresponds to     : 0:28:11 HS06  hours (1691 HS06  seconds)
+
+==> LSFJOB_791294719/STDOUT <==
+Input events = 36905
+Output events = 15591
+xrdcp -f /pool/lsf/cirkovic/791294719/tmp.2zNi8tF8Zw/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_156.root
+[2MB/8.412MB][ 23%][===========>                                      ][0B/s]  [8.412MB/8.412MB][100%][==================================================][0B/s]  [8.412MB/8.412MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:08:20 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:15 KSI2K hours (435 KSI2K seconds)
+                 This process corresponds to     : 0:28:18 HS06  hours (1698 HS06  seconds)
+
+==> LSFJOB_791294720/STDOUT <==
+Input events = 37273
+Output events = 15709
+xrdcp -f /pool/lsf/cirkovic/791294720/tmp.eA75iTVc6A/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_157.root
+[2MB/8.479MB][ 23%][===========>                                      ][0B/s]  [8.479MB/8.479MB][100%][==================================================][0B/s]  [8.479MB/8.479MB][100%][==================================================][8.479MB/s]  
+
+Job finished at Sun Oct 16 22:21:29 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:56 KSI2K hours (536 KSI2K seconds)
+                 This process corresponds to     : 0:34:52 HS06  hours (2092 HS06  seconds)
+
+==> LSFJOB_791294722/STDOUT <==
+Input events = 38289
+Output events = 16029
+xrdcp -f /pool/lsf/cirkovic/791294722/tmp.6c9oeQJ8PA/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_158.root
+[2MB/8.637MB][ 23%][===========>                                      ][0B/s]  [8.637MB/8.637MB][100%][==================================================][0B/s]  [8.637MB/8.637MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:20:55 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:51 KSI2K hours (531 KSI2K seconds)
+                 This process corresponds to     : 0:34:34 HS06  hours (2074 HS06  seconds)
+
+==> LSFJOB_791294726/STDOUT <==
+Input events = 38743
+Output events = 16346
+xrdcp -f /pool/lsf/cirkovic/791294726/tmp.IHe0ddmitJ/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_159.root
+[2MB/8.833MB][ 22%][===========>                                      ][0B/s]  [8.833MB/8.833MB][100%][==================================================][0B/s]  [8.833MB/8.833MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:21:49 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:56 KSI2K hours (536 KSI2K seconds)
+                 This process corresponds to     : 0:34:53 HS06  hours (2093 HS06  seconds)
+
+==> LSFJOB_791294727/STDOUT <==
+Input events = 39083
+Output events = 16369
+xrdcp -f /pool/lsf/cirkovic/791294727/tmp.InjPaEJXvc/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_160.root
+[2MB/8.844MB][ 22%][===========>                                      ][0B/s]  [8.844MB/8.844MB][100%][==================================================][0B/s]  [8.844MB/8.844MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:08:20 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:08 KSI2K hours (428 KSI2K seconds)
+                 This process corresponds to     : 0:27:51 HS06  hours (1671 HS06  seconds)
+
+==> LSFJOB_791294728/STDOUT <==
+Input events = 30143
+Output events = 12689
+xrdcp -f /pool/lsf/cirkovic/791294728/tmp.6n2ODR6tod/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_161.root
+[2MB/6.855MB][ 29%][==============>                                   ][0B/s]  [6.855MB/6.855MB][100%][==================================================][0B/s]  [6.855MB/6.855MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:07:38 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:07:38 KSI2K hours (458 KSI2K seconds)
+                 This process corresponds to     : 0:29:48 HS06  hours (1788 HS06  seconds)
+
+==> LSFJOB_791294729/STDOUT <==
+Input events = 49050
+Output events = 20549
+xrdcp -f /pool/lsf/cirkovic/791294729/tmp.2i3UJHHOGB/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_162.root
+[2MB/11.07MB][ 18%][=========>                                        ][0B/s]  [11.07MB/11.07MB][100%][==================================================][0B/s]  [11.07MB/11.07MB][100%][==================================================][11.07MB/s]  
+
+Job finished at Sun Oct 16 22:16:35 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:10:50 KSI2K hours (650 KSI2K seconds)
+                 This process corresponds to     : 0:42:17 HS06  hours (2537 HS06  seconds)
+
+==> LSFJOB_791294730/STDOUT <==
+Input events = 42124
+Output events = 17828
+xrdcp -f /pool/lsf/cirkovic/791294730/tmp.2htVlyZwdn/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_163.root
+[2MB/9.603MB][ 20%][==========>                                       ][0B/s]  [9.603MB/9.603MB][100%][==================================================][0B/s]  [9.603MB/9.603MB][100%][==================================================][9.603MB/s]  
+
+Job finished at Sun Oct 16 22:08:44 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:09:31 KSI2K hours (571 KSI2K seconds)
+                 This process corresponds to     : 0:37:10 HS06  hours (2230 HS06  seconds)
+
+==> LSFJOB_791294733/STDOUT <==
+Input events = 5983
+Output events = 2498
+xrdcp -f /pool/lsf/cirkovic/791294733/tmp.R9jfcldTcY/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_164.root
+[1.361MB/1.361MB][100%][==================================================][0B/s]  [1.361MB/1.361MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:06:57 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:05:20 KSI2K hours (320 KSI2K seconds)
+                 This process corresponds to     : 0:20:48 HS06  hours (1248 HS06  seconds)
+
+==> LSFJOB_791294734/STDOUT <==
+Input events = 37849
+Output events = 15847
+xrdcp -f /pool/lsf/cirkovic/791294734/tmp.BcTilDi3Dj/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_165.root
+[2MB/8.539MB][ 23%][===========>                                      ][0B/s]  [8.539MB/8.539MB][100%][==================================================][0B/s]  [8.539MB/8.539MB][100%][==================================================][8.539MB/s]  
+
+Job finished at Sun Oct 16 22:08:17 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:08:51 KSI2K hours (531 KSI2K seconds)
+                 This process corresponds to     : 0:34:31 HS06  hours (2071 HS06  seconds)
+
+==> LSFJOB_791294735/STDOUT <==
+Input events = 36797
+Output events = 15433
+xrdcp -f /pool/lsf/cirkovic/791294735/tmp.gVI2Xuy1PF/output.root root://eoscms.cern.ch//eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/TTToSemiLeptonic_TuneCUETP8M1T4_alphaS01108_13TeV-powheg-pythia8_NEW_Ntuple/output_166.root
+[2MB/8.331MB][ 24%][============>                                     ][0B/s]  [8.331MB/8.331MB][100%][==================================================][0B/s]  [8.331MB/8.331MB][100%][==================================================][0B/s]  
+
+Job finished at Sun Oct 16 22:11:23 CEST 2016 on node 
+ under linux version Scientific Linux CERN SLC release 6.8 (Carbon)
+
+CERN statistics: This process used approximately : 0:06:16 KSI2K hours (376 KSI2K seconds)
+                 This process corresponds to     : 0:24:29 HS06  hours (1469 HS06  seconds)

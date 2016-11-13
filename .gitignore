@@ -1,0 +1,7 @@
+*.pyc
+*.root
+LSFJOB*
+*.o
+*.so
+NtupleProducer/test/NtupleProducer
+NtupleAnalyzer/Analyzer

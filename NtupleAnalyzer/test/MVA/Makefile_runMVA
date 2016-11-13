@@ -19,7 +19,7 @@ ADDINC =
 
 SRC = runMVA.cxx
 
-INC = runMVA.h
+INC = runMVA.h b0j3.h b0j4.h b1j3.h b1j4.h
 
 OBJ = runMVA.o
 

@@ -99,8 +99,9 @@ class Hist
    bool fillThis;
 
    // Tree variables
+
    double m_weight;
-   
+   /*
    double m_HiggsMass_TOPTOPLEPHBB;
    double m_HiggsMass_TOPHLEPBB;
    double m_TopHadMass_TOPTOPLEPHAD;
@@ -127,7 +128,41 @@ class Hist
    double m_TopLepHiggsDr_TOPTOPLEPHBB;
    double m_TopLepHiggsDr_TOPHLEPBB;
    double m_TopLepTopHadDr_TOPTOPLEPHAD;
-   
+   */
+
+   double m_HiggsMass_TOPHLEPBB;
+   double m_MVA_TOPHLEPBB;
+   double m_HiggsEta_TOPHLEPBB;
+   double m_TopLepMass_TOPHLEPBB;
+   double m_TopLepPt_TOPHLEPBB;
+   double m_TopLepEta_TOPHLEPBB;
+   double m_HiggsBJet1HiggsBJet2Dr_TOPHLEPBB;
+   double m_TopLepHiggsDr_TOPHLEPBB;
+   double m_HiggsBJet1CSVv2_TOPHLEPBB;
+   double m_HiggsBJet2CSVv2_TOPHLEPBB;
+   double m_TopLepBJetCSVv2_TOPHLEPBB;
+   double m_TopHadMass_TOPTOPLEPHAD;
+   double m_MVA_TOPTOPLEPHAD;
+   double m_TopLepMass_TOPTOPLEPHAD;
+   double m_TopLepTopHadDr_TOPTOPLEPHAD;
+   double m_TopLepBJetCSVv2_TOPTOPLEPHAD;
+   double m_TopHadBJetCSVv2_TOPTOPLEPHAD;
+   double m_TopHadWNonBJet1CSVv2_TOPTOPLEPHAD;
+   double m_TopHadWNonBJet2CSVv2_TOPTOPLEPHAD;
+   double m_HiggsMass_TOPTOPLEPHBB;
+   double m_MVA_TOPTOPLEPHBB;
+   double m_TopLepMass_TOPTOPLEPHBB;
+   double m_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB;
+   double m_TopLepHiggsDr_TOPTOPLEPHBB;
+   double m_HiggsBJet1CSVv2_TOPTOPLEPHBB;
+   double m_HiggsBJet2CSVv2_TOPTOPLEPHBB;
+   double m_TopLepBJetCSVv2_TOPTOPLEPHBB;
+   double m_TopHadNonBJetCSVv2_TOPTOPLEPHBB;
+   int    m_LepCharge;
+
+   int    njets;
+   int    nbjets;
+
  protected:
 
    std::vector<Lepton> *_v_Lepton;
@@ -190,6 +225,7 @@ class Hist
    
    Helper *help;
    
+   /*
    double _mvab3j4HutST;
    double _mvab3j4HctST;
    double _mvab3j4HutTT;
@@ -204,6 +240,51 @@ class Hist
    double _mvab2j4HctST;
    double _mvab2j4HutTT;
    double _mvab2j4HctTT;
+   */
+   double _mvab0j3HutST;
+   double _mvab0j3HctST;
+   double _mvab0j3HutTT;
+   double _mvab0j3HctTT;
+              
+   double _mvab1j3HutST;
+   double _mvab1j3HctST;
+   double _mvab1j3HutTT;
+   double _mvab1j3HctTT;
+              
+   double _mvab2j3HutST;
+   double _mvab2j3HctST;
+   double _mvab2j3HutTT;
+   double _mvab2j3HctTT;
+              
+   double _mvab3j3HutST;
+   double _mvab3j3HctST;
+   double _mvab3j3HutTT;
+   double _mvab3j3HctTT;
+              
+   double _mvab0j4HutST;
+   double _mvab0j4HctST;
+   double _mvab0j4HutTT;
+   double _mvab0j4HctTT;
+              
+   double _mvab1j4HutST;
+   double _mvab1j4HctST;
+   double _mvab1j4HutTT;
+   double _mvab1j4HctTT;
+              
+   double _mvab2j4HutST;
+   double _mvab2j4HctST;
+   double _mvab2j4HutTT;
+   double _mvab2j4HctTT;
+              
+   double _mvab3j4HutST;
+   double _mvab3j4HctST;
+   double _mvab3j4HutTT;
+   double _mvab3j4HctTT;
+              
+   double _mvab4j4HutST;
+   double _mvab4j4HctST;
+   double _mvab4j4HutTT;
+   double _mvab4j4HctTT;
 };
 
 #endif

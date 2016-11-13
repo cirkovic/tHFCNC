@@ -33,7 +33,7 @@ TopReco::TopReco()
    MVAFullRecoReaderTOPTOPLEPHBB->AddVariable("TopLepRecMCSVv2M",&MVAFullReco_TopLepRecM_TOPTOPLEPHBB);
    MVAFullRecoReaderTOPTOPLEPHBB->AddVariable("HiggsTopLepRecDrCSVv2M",&MVAFullReco_HiggsTopLepRecDr_TOPTOPLEPHBB);
    MVAFullRecoReaderTOPTOPLEPHBB->AddVariable("TopLepRecPtCSVv2M",&MVAFullReco_TopLepRecPt_TOPTOPLEPHBB);
-   std::string weightsFileFullRecoTOPTOPLEPHBB = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHbb/MVA/weights/TMVAFullRecoCSVv2M_BDT.weights.xml";
+   std::string weightsFileFullRecoTOPTOPLEPHBB = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHbb/MVA/weights/TMVAFullRecoCSVv2M_BDT.weights.xml";
    MVAFullRecoReaderTOPTOPLEPHBB->BookMVA("BDTG method",weightsFileFullRecoTOPTOPLEPHBB.c_str());
    
    MVAPartRecoReaderTOPTOPLEPHBB = new TMVA::Reader("!Color:!Silent");
@@ -41,7 +41,7 @@ TopReco::TopReco()
    MVAPartRecoReaderTOPTOPLEPHBB->AddVariable("TopLepRecMTCSVv2M",&MVAPartReco_TopLepRecMT_TOPTOPLEPHBB);
    MVAPartRecoReaderTOPTOPLEPHBB->AddVariable("HiggsTopLepRecDphiTCSVv2M",&MVAPartReco_HiggsTopLepRecDphiT_TOPTOPLEPHBB);
    MVAPartRecoReaderTOPTOPLEPHBB->AddVariable("TopLepRecPtTCSVv2M",&MVAPartReco_TopLepRecPtT_TOPTOPLEPHBB);
-   std::string weightsFilePartRecoTOPTOPLEPHBB = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHbb/MVA/weights/TMVAPartRecoCSVv2M_BDT.weights.xml";
+   std::string weightsFilePartRecoTOPTOPLEPHBB = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHbb/MVA/weights/TMVAPartRecoCSVv2M_BDT.weights.xml";
    MVAPartRecoReaderTOPTOPLEPHBB->BookMVA("BDTG method",weightsFilePartRecoTOPTOPLEPHBB.c_str());
 
    MVAFullRecoReaderTOPHLEPBB = new TMVA::Reader("!Color:!Silent");
@@ -49,7 +49,7 @@ TopReco::TopReco()
    MVAFullRecoReaderTOPHLEPBB->AddVariable("TopLepRecMCSVv2M",&MVAFullReco_TopLepRecM_TOPHLEPBB);
    MVAFullRecoReaderTOPHLEPBB->AddVariable("HiggsTopLepRecDrCSVv2M",&MVAFullReco_HiggsTopLepRecDr_TOPHLEPBB);
    MVAFullRecoReaderTOPHLEPBB->AddVariable("TopLepRecPtCSVv2M",&MVAFullReco_TopLepRecPt_TOPHLEPBB);
-   std::string weightsFileFullRecoTOPHLEPBB = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopHLepbb/MVA/weights/TMVAFullRecoHutCSVv2M_BDT.weights.xml";
+   std::string weightsFileFullRecoTOPHLEPBB = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopHLepbb/MVA/weights/TMVAFullRecoHutCSVv2M_BDT.weights.xml";
    MVAFullRecoReaderTOPHLEPBB->BookMVA("BDTG method",weightsFileFullRecoTOPHLEPBB.c_str());
    
    MVAPartRecoReaderTOPHLEPBB = new TMVA::Reader("!Color:!Silent");
@@ -57,7 +57,7 @@ TopReco::TopReco()
    MVAPartRecoReaderTOPHLEPBB->AddVariable("TopLepRecMTCSVv2M",&MVAPartReco_TopLepRecMT_TOPHLEPBB);
    MVAPartRecoReaderTOPHLEPBB->AddVariable("HiggsTopLepRecDphiTCSVv2M",&MVAPartReco_HiggsTopLepRecDphiT_TOPHLEPBB);
    MVAPartRecoReaderTOPHLEPBB->AddVariable("TopLepRecPtTCSVv2M",&MVAPartReco_TopLepRecPtT_TOPHLEPBB);
-   std::string weightsFilePartRecoTOPHLEPBB = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopHLepbb/MVA/weights/TMVAPartRecoHutCSVv2M_BDT.weights.xml";
+   std::string weightsFilePartRecoTOPHLEPBB = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopHLepbb/MVA/weights/TMVAPartRecoHutCSVv2M_BDT.weights.xml";
    MVAPartRecoReaderTOPHLEPBB->BookMVA("BDTG method",weightsFilePartRecoTOPHLEPBB.c_str());
 
    MVAFullRecoReaderTOPTOPLEPHAD = new TMVA::Reader("!Color:!Silent");
@@ -65,7 +65,7 @@ TopReco::TopReco()
    MVAFullRecoReaderTOPTOPLEPHAD->AddVariable("TopLepRecMCSVv2M",&MVAFullReco_TopLepRecM_TOPTOPLEPHAD);
    MVAFullRecoReaderTOPTOPLEPHAD->AddVariable("TopLepTopHadRecDrCSVv2M",&MVAFullReco_TopLepTopHadRecDr_TOPTOPLEPHAD);
    MVAFullRecoReaderTOPTOPLEPHAD->AddVariable("TopLepRecPtCSVv2M",&MVAFullReco_TopLepRecPt_TOPTOPLEPHAD);
-   std::string weightsFileFullRecoTOPTOPLEPHAD = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHad/MVA/weights/TMVAFullRecoCSVv2M_BDT.weights.xml";
+   std::string weightsFileFullRecoTOPTOPLEPHAD = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHad/MVA/weights/TMVAFullRecoCSVv2M_BDT.weights.xml";
    MVAFullRecoReaderTOPTOPLEPHAD->BookMVA("BDTG method",weightsFileFullRecoTOPTOPLEPHAD.c_str());
    
    MVAPartRecoReaderTOPTOPLEPHAD = new TMVA::Reader("!Color:!Silent");
@@ -73,7 +73,7 @@ TopReco::TopReco()
    MVAPartRecoReaderTOPTOPLEPHAD->AddVariable("TopLepRecMTCSVv2M",&MVAPartReco_TopLepRecMT_TOPTOPLEPHAD);
    MVAPartRecoReaderTOPTOPLEPHAD->AddVariable("TopLepTopHadRecDphiTCSVv2M",&MVAPartReco_TopLepTopHadRecDphiT_TOPTOPLEPHAD);
    MVAPartRecoReaderTOPTOPLEPHAD->AddVariable("TopLepRecPtTCSVv2M",&MVAPartReco_TopLepRecPtT_TOPTOPLEPHAD);
-   std::string weightsFilePartRecoTOPTOPLEPHAD = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHad/MVA/weights/TMVAPartRecoCSVv2M_BDT.weights.xml";
+   std::string weightsFilePartRecoTOPTOPLEPHAD = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/Validation/TopTopLepHad/MVA/weights/TMVAPartRecoCSVv2M_BDT.weights.xml";
    MVAPartRecoReaderTOPTOPLEPHAD->BookMVA("BDTG method",weightsFilePartRecoTOPTOPLEPHAD.c_str());
 }
 
@@ -107,7 +107,7 @@ void TopReco::init()
 
    kfTopTopLepHbb->Init(TOPTOPLEPHBB);
    
-   std::string pdfFileNameTopTopLepHbb = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/GenAnalysis/TopTopLepHbb/pdf.root";
+   std::string pdfFileNameTopTopLepHbb = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/GenAnalysis/TopTopLepHbb/pdf.root";
    
    kfTopTopLepHbb->SetPDF("TopWMass",pdfFileNameTopTopLepHbb.c_str(),"TopLepWM_Fit");
    kfTopTopLepHbb->SetPDF("TopMass",pdfFileNameTopTopLepHbb.c_str(),"TopLepRecM_Fit");
@@ -136,7 +136,7 @@ void TopReco::init()
 
    kfTopHLepbb->Init(TOPHLEPBB);
    
-   std::string pdfFileNameTopHLepbb = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/GenAnalysis/TopHLepbb/pdf.root";
+   std::string pdfFileNameTopHLepbb = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/GenAnalysis/TopHLepbb/pdf.root";
    
    kfTopHLepbb->SetPDF("TopWMass",pdfFileNameTopHLepbb.c_str(),"TopLepWM_Fit");
    kfTopHLepbb->SetPDF("TopMass",pdfFileNameTopHLepbb.c_str(),"TopLepRecM_Fit");
@@ -160,7 +160,7 @@ void TopReco::init()
 
    kfTopTopLepHad->Init(TOPTOPLEPHAD);
    
-   std::string pdfFileNameTopTopLepHad = "/user/kskovpen/analysis/tHFCNC/CMSSW_8_0_12/src/TopKinFit/test/GenAnalysis/TopTopLepHad/pdf.root";
+   std::string pdfFileNameTopTopLepHad = "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/TopKinFit/test/GenAnalysis/TopTopLepHad/pdf.root";
    
    kfTopTopLepHad->SetPDF("TopWMass",pdfFileNameTopTopLepHad.c_str(),"TopLepWM_Fit");
    kfTopTopLepHad->SetPDF("TopMass",pdfFileNameTopTopLepHad.c_str(),"TopLepRecM_Fit");

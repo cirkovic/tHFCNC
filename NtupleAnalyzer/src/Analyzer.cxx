@@ -104,6 +104,7 @@ int main(int argc, char *argv[])
 	
 	for(int i=0;i<nent;i++)
 	  {
+         //std::cout << "evt: " << i << std::endl;
 	     if( nmax >= 0 && i > nmax ) break;
 	     
 	     f.GetEntry(i);

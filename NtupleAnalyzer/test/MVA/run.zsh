@@ -1,3 +1,3 @@
 #!/bin/env zsh
 
-./runMVA 9
+./runMVA HctTTallb4j4

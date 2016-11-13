@@ -15,8 +15,8 @@
 int main()
 {
    SetPlotStyle();
-   
-   TFile f("TMVA_HutST_b3j4.root");
+
+   TFile f("TMVA_HutTT_all_b0j3.root");
 
    TH1D *h_sig_train = (TH1D*)f.Get("Method_BDT/BDT/MVA_BDT_Train_S");
    TH1D *h_bkg_train = (TH1D*)f.Get("Method_BDT/BDT/MVA_BDT_Train_B");

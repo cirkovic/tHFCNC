@@ -49,6 +49,7 @@ Hist::~Hist()
 
 void Hist::init()
 {
+   //std::cout << "CIRKOVIC BREAK" << std::endl;    exit(0);
    rnd = new TRandom3(666);
    
 //   std::string foutput = _home+"/"+std::string(flog)+".root";
@@ -60,8 +61,11 @@ void Hist::init()
 
    _fout->cd();
    
+   //std::cout << "CIRKOVIC BREAK" << std::endl;    exit(0);
    _mva = new ApplyMVA(_home);
    _mva->init();
+
+   //std::cout << "CIRKOVIC EXIT LAST" << std::endl;    exit(0);
    
    _h_PassSel_all = new TH1D("h_PassSel_all","h_PassSel_all",3,0.,3.);
    _h_PassSel_e = new TH1D("h_PassSel_e","h_PassSel_e",3,0.,3.);
@@ -69,7 +73,8 @@ void Hist::init()
 
    hname.clear(); 
 
-   histname_n = 38;
+   //histname_n = 38;
+   histname_n = 62;
    histname[0] = "h_chi2_TOPTOPLEPHBB_";
    histname[1] = "h_chi2_TOPHLEPBB_";
    histname[2] = "h_chi2_TOPTOPLEPHAD_";
@@ -96,6 +101,7 @@ void Hist::init()
    histname[23] = "h_TopLepHiggsDr_TOPTOPLEPHBB_";
    histname[24] = "h_TopLepHiggsDr_TOPHLEPBB_";
    histname[25] = "h_TopLepTopHadDr_TOPTOPLEPHAD_";
+   /*
    histname[26] = "h_MVAb3j4HutST_";
    histname[27] = "h_MVAb3j4HctST_";
    histname[28] = "h_MVAb3j4HutTT_";
@@ -108,16 +114,68 @@ void Hist::init()
    histname[35] = "h_MVAb2j4HctST_";
    histname[36] = "h_MVAb2j4HutTT_";
    histname[37] = "h_MVAb2j4HctTT_";
+   */
+   histname[26] = "h_MVAb0j3HutST_";
+   histname[27] = "h_MVAb0j3HctST_";
+   histname[28] = "h_MVAb0j3HutTT_";
+   histname[29] = "h_MVAb0j3HctTT_";
+   histname[30] = "h_MVAb1j3HutST_";
+   histname[31] = "h_MVAb1j3HctST_";
+   histname[32] = "h_MVAb1j3HutTT_";
+   histname[33] = "h_MVAb1j3HctTT_";
+   histname[34] = "h_MVAb2j3HutST_";
+   histname[35] = "h_MVAb2j3HctST_";
+   histname[36] = "h_MVAb2j3HutTT_";
+   histname[37] = "h_MVAb2j3HctTT_";
+   histname[38] = "h_MVAb3j3HutST_";
+   histname[39] = "h_MVAb3j3HctST_";
+   histname[40] = "h_MVAb3j3HutTT_";
+   histname[41] = "h_MVAb3j3HctTT_";
+   histname[42] = "h_MVAb0j4HutST_";
+   histname[43] = "h_MVAb0j4HctST_";
+   histname[44] = "h_MVAb0j4HutTT_";
+   histname[45] = "h_MVAb0j4HctTT_";
+   histname[46] = "h_MVAb1j4HutST_";
+   histname[47] = "h_MVAb1j4HctST_";
+   histname[48] = "h_MVAb1j4HutTT_";
+   histname[49] = "h_MVAb1j4HctTT_";
+   histname[50] = "h_MVAb2j4HutST_";
+   histname[51] = "h_MVAb2j4HctST_";
+   histname[52] = "h_MVAb2j4HutTT_";
+   histname[53] = "h_MVAb2j4HctTT_";
+   histname[54] = "h_MVAb3j4HutST_";
+   histname[55] = "h_MVAb3j4HctST_";
+   histname[56] = "h_MVAb3j4HutTT_";
+   histname[57] = "h_MVAb3j4HctTT_";
+   histname[58] = "h_MVAb4j4HutST_";
+   histname[59] = "h_MVAb4j4HctST_";
+   histname[60] = "h_MVAb4j4HutTT_";
+   histname[61] = "h_MVAb4j4HctTT_";
+
+   //std::cout << "CIRKOVIC BREAK" << std::endl;    exit(0);
 
    type_n = 1;
 //   type[0] = "nonQCD";
 //   type[1] = "QCD";
    type[0] = "ALL";
 
+   /*
    sel_n = 3;
    sel[0] = "b2j4";
    sel[1] = "b3j3";
    sel[2] = "b3j4";
+   */
+
+   sel_n = 9;
+   sel[0] = "b0j3";
+   sel[1] = "b1j3";
+   sel[2] = "b2j3";
+   sel[3] = "b3j3";
+   sel[4] = "b0j4";
+   sel[5] = "b1j4";
+   sel[6] = "b2j4";
+   sel[7] = "b3j4";
+   sel[8] = "b4j4";
 
    chan_n = 3;
    chan[0] = "all";
@@ -150,6 +208,7 @@ void Hist::init()
 	     _trout[ic][is] = new TTree(trName.c_str(),trName.c_str());
 	     
 	     _trout[ic][is]->Branch("weight",&m_weight,"weight/D");
+         /*
 	     _trout[ic][is]->Branch("HiggsMass_TOPTOPLEPHBB",&m_HiggsMass_TOPTOPLEPHBB,"HiggsMass_TOPTOPLEPHBB/D");
 	     _trout[ic][is]->Branch("HiggsMass_TOPHLEPBB",&m_HiggsMass_TOPHLEPBB,"HiggsMass_TOPHLEPBB/D");
 	     _trout[ic][is]->Branch("TopHadMass_TOPTOPLEPHAD",&m_TopHadMass_TOPTOPLEPHAD,"TopHadMass_TOPTOPLEPHAD/D");
@@ -176,8 +235,97 @@ void Hist::init()
 	     _trout[ic][is]->Branch("TopLepHiggsDr_TOPTOPLEPHBB",&m_TopLepHiggsDr_TOPTOPLEPHBB,"TopLepHiggsDr_TOPTOPLEPHBB/D");
 	     _trout[ic][is]->Branch("TopLepHiggsDr_TOPHLEPBB",&m_TopLepHiggsDr_TOPHLEPBB,"TopLepHiggsDr_TOPHLEPBB/D");
 	     _trout[ic][is]->Branch("TopLepTopHadDr_TOPTOPLEPHAD",&m_TopLepTopHadDr_TOPTOPLEPHAD,"TopLepTopHadDr_TOPTOPLEPHAD/D");
+         */
+         _trout[ic][is]->Branch("HiggsMass_TOPHLEPBB",&m_HiggsMass_TOPHLEPBB,"HiggsMass_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("MVA_TOPHLEPBB",&m_MVA_TOPHLEPBB,"MVA_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("HiggsEta_TOPHLEPBB",&m_HiggsEta_TOPHLEPBB,"HiggsEta_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("TopLepMass_TOPHLEPBB",&m_TopLepMass_TOPHLEPBB,"TopLepMass_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("TopLepPt_TOPHLEPBB",&m_TopLepPt_TOPHLEPBB,"TopLepPt_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("TopLepEta_TOPHLEPBB",&m_TopLepEta_TOPHLEPBB,"TopLepEta_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("HiggsBJet1HiggsBJet2Dr_TOPHLEPBB",&m_HiggsBJet1HiggsBJet2Dr_TOPHLEPBB,"HiggsBJet1HiggsBJet2Dr_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("TopLepHiggsDr_TOPHLEPBB",&m_TopLepHiggsDr_TOPHLEPBB,"TopLepHiggsDr_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("HiggsBJet1CSVv2_TOPHLEPBB",&m_HiggsBJet1CSVv2_TOPHLEPBB,"HiggsBJet1CSVv2_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("HiggsBJet2CSVv2_TOPHLEPBB",&m_HiggsBJet2CSVv2_TOPHLEPBB,"HiggsBJet2CSVv2_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("TopLepBJetCSVv2_TOPHLEPBB",&m_TopLepBJetCSVv2_TOPHLEPBB,"TopLepBJetCSVv2_TOPHLEPBB/D");
+         _trout[ic][is]->Branch("TopHadMass_TOPTOPLEPHAD",&m_TopHadMass_TOPTOPLEPHAD,"TopHadMass_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("MVA_TOPTOPLEPHAD",&m_MVA_TOPTOPLEPHAD,"MVA_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("TopLepMass_TOPTOPLEPHAD",&m_TopLepMass_TOPTOPLEPHAD,"TopLepMass_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("TopLepTopHadDr_TOPTOPLEPHAD",&m_TopLepTopHadDr_TOPTOPLEPHAD,"TopLepTopHadDr_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("TopLepBJetCSVv2_TOPTOPLEPHAD",&m_TopLepBJetCSVv2_TOPTOPLEPHAD,"TopLepBJetCSVv2_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("TopHadBJetCSVv2_TOPTOPLEPHAD",&m_TopHadBJetCSVv2_TOPTOPLEPHAD,"TopHadBJetCSVv2_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("TopHadWNonBJet1CSVv2_TOPTOPLEPHAD",&m_TopHadWNonBJet1CSVv2_TOPTOPLEPHAD,"TopHadWNonBJet1CSVv2_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("TopHadWNonBJet2CSVv2_TOPTOPLEPHAD",&m_TopHadWNonBJet2CSVv2_TOPTOPLEPHAD,"TopHadWNonBJet2CSVv2_TOPTOPLEPHAD/D");
+         _trout[ic][is]->Branch("HiggsMass_TOPTOPLEPHBB",&m_HiggsMass_TOPTOPLEPHBB,"HiggsMass_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("MVA_TOPTOPLEPHBB",&m_MVA_TOPTOPLEPHBB,"MVA_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("TopLepMass_TOPTOPLEPHBB",&m_TopLepMass_TOPTOPLEPHBB,"TopLepMass_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB",&m_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB,"HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("TopLepHiggsDr_TOPTOPLEPHBB",&m_TopLepHiggsDr_TOPTOPLEPHBB,"TopLepHiggsDr_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("HiggsBJet1CSVv2_TOPTOPLEPHBB",&m_HiggsBJet1CSVv2_TOPTOPLEPHBB,"HiggsBJet1CSVv2_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("HiggsBJet2CSVv2_TOPTOPLEPHBB",&m_HiggsBJet2CSVv2_TOPTOPLEPHBB,"HiggsBJet2CSVv2_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("TopLepBJetCSVv2_TOPTOPLEPHBB",&m_TopLepBJetCSVv2_TOPTOPLEPHBB,"TopLepBJetCSVv2_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("TopHadNonBJetCSVv2_TOPTOPLEPHBB",&m_TopHadNonBJetCSVv2_TOPTOPLEPHBB,"TopHadNonBJetCSVv2_TOPTOPLEPHBB/D");
+         _trout[ic][is]->Branch("LepCharge",&m_LepCharge,"LepCharge/I");
+
+         if (string(sel[is]) == string("b0j3")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab0j3HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab0j3HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab0j3HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab0j3HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b1j3")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab1j3HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab1j3HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab1j3HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab1j3HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b2j3")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab2j3HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab2j3HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab2j3HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab2j3HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b3j3")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab3j3HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab3j3HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab3j3HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab3j3HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b0j4")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab0j4HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab0j4HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab0j4HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab0j4HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b1j4")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab1j4HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab1j4HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab1j4HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab1j4HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b2j4")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab2j4HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab2j4HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab2j4HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab2j4HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b3j4")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab3j4HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab3j4HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab3j4HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab3j4HctTT,"mvaHctTT/D");
+         }
+         else if (string(sel[is]) == string("b4j4")) {
+             _trout[ic][is]->Branch("mvaHutST",&_mvab4j4HutST,"mvaHutST/D");
+             _trout[ic][is]->Branch("mvaHctST",&_mvab4j4HctST,"mvaHctST/D");
+             _trout[ic][is]->Branch("mvaHutTT",&_mvab4j4HutTT,"mvaHutTT/D");
+             _trout[ic][is]->Branch("mvaHctTT",&_mvab4j4HctTT,"mvaHctTT/D");
+         }
+         _trout[ic][is]->Branch("njets",&njets,"njets/int");
+         _trout[ic][is]->Branch("nbjets",&nbjets,"nbjets/int");
 	  }
      }
+
+   //std::cout << "CIRKOVIC BREAK" << std::endl;    exit(0);
 
    _s_Hist = new std::vector<std::pair<std::vector<std::string>,double*> >();
    _m1d_Hist = new std::map<std::string, TH1D*>();
@@ -224,6 +372,32 @@ void Hist::init()
    set_hist.push_back(RANGE::set_MVA);
    set_hist.push_back(RANGE::set_MVA);
    set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+   set_hist.push_back(RANGE::set_MVA);
+
+   //std::cout << "CIRKOVIC BREAK" << std::endl;    exit(0);
    
    std::string titl;
 
@@ -252,6 +426,8 @@ void Hist::init()
 	       }
 	  }
      }   
+
+   //std::cout << "CIRKOVIC BREAK" << std::endl;    exit(0);
    
    for(int i=0;i<_s_Hist->size();i++)
      {
@@ -379,8 +555,10 @@ void Hist::fill()
    float metpt = _v_Event->at(0).metpt();
    float metphi = _v_Event->at(0).metphi();
    
-   int njets = _v_JetTight->size();
-   int nbjets = _v_BJetTight->size();
+   //int njets = _v_JetTight->size();
+   njets = _v_JetTight->size();
+   //int nbjets = _v_BJetTight->size();
+   nbjets = _v_BJetTight->size();
    
    int nElecLoose = _v_ElectronLoose->size();
    int nMuonLoose = _v_MuonLoose->size();
@@ -394,13 +572,25 @@ void Hist::fill()
    bool is1M = (nMuonTight == 1 && is1L_looseVETO);
    
    passSel_all = 0x0;
+   /*
    passSel_all |= (is1L_looseVETO && njets >= 3 && nbjets == 2)   << 0;
    passSel_all |= (is1L_looseVETO && njets == 3 && nbjets == 3)   << 1;
    passSel_all |= (is1L_looseVETO && njets >= 4 && nbjets == 3)   << 2;
+   */
+   passSel_all |= (is1L_looseVETO && njets == 3 && nbjets == 0)   << 0;
+   passSel_all |= (is1L_looseVETO && njets == 3 && nbjets == 1)   << 1;
+   passSel_all |= (is1L_looseVETO && njets == 3 && nbjets == 2)   << 2;
+   passSel_all |= (is1L_looseVETO && njets == 3 && nbjets == 3)   << 3;
+   passSel_all |= (is1L_looseVETO && njets >= 4 && nbjets == 0)   << 4;
+   passSel_all |= (is1L_looseVETO && njets >= 4 && nbjets == 1)   << 5;
+   passSel_all |= (is1L_looseVETO && njets >= 4 && nbjets == 2)   << 6;
+   passSel_all |= (is1L_looseVETO && njets >= 4 && nbjets == 3)   << 7;
+   passSel_all |= (is1L_looseVETO && njets >= 4 && nbjets == 4)   << 8;
 
    passSel_e = 0x0;
    passSel_m = 0x0;
-   for(int i=0;i<=3;i++)
+   //for(int i=0;i<=3;i++)
+   for(int i=0;i<=9;i++)
      {	
 	passSel_e |= (CHECK_BIT(passSel_all,i) && is1E) << i;
 	passSel_m |= (CHECK_BIT(passSel_all,i) && is1M) << i;
@@ -418,7 +608,10 @@ void Hist::fill()
      }   
    
    // Selection crtieria for plots
-   bool pass = (CHECK_BIT(passSel_all,0) || CHECK_BIT(passSel_all,1) || CHECK_BIT(passSel_all,2));
+   //bool pass = (CHECK_BIT(passSel_all,0) || CHECK_BIT(passSel_all,1) || CHECK_BIT(passSel_all,2));
+   bool pass = (CHECK_BIT(passSel_all,0) || CHECK_BIT(passSel_all,1) || CHECK_BIT(passSel_all,2) ||
+                CHECK_BIT(passSel_all,3) || CHECK_BIT(passSel_all,4) || CHECK_BIT(passSel_all,5) ||
+                CHECK_BIT(passSel_all,6) || CHECK_BIT(passSel_all,7) || CHECK_BIT(passSel_all,8));
    
    if( pass )
      {
@@ -447,33 +640,169 @@ void Hist::fill()
 	// top reconstruction
 	_trec->run();	
 
+    /*
 	m_HiggsMass_TOPTOPLEPHBB = _trec->Higgs_TOPTOPLEPHBB_p4().M();
 	m_HiggsMass_TOPHLEPBB = _trec->Higgs_TOPHLEPBB_p4().M();
 	m_TopHadMass_TOPTOPLEPHAD = _trec->TopHad_TOPTOPLEPHAD_p4().M();
-	m_chi2_TOPTOPLEPHBB = _trec->chi2_TOPTOPLEPHBB();
-	m_chi2_TOPHLEPBB = _trec->chi2_TOPHLEPBB();
-	m_chi2_TOPTOPLEPHAD = _trec->chi2_TOPTOPLEPHAD();
+	//m_chi2_TOPTOPLEPHBB = _trec->chi2_TOPTOPLEPHBB();
+	//m_chi2_TOPHLEPBB = _trec->chi2_TOPHLEPBB();
+	//m_chi2_TOPTOPLEPHAD = _trec->chi2_TOPTOPLEPHAD();
 	m_MVA_TOPTOPLEPHBB = _trec->MVA_TOPTOPLEPHBB();
 	m_MVA_TOPHLEPBB = _trec->MVA_TOPHLEPBB();
 	m_MVA_TOPTOPLEPHAD = _trec->MVA_TOPTOPLEPHAD();   
 	m_LepCharge = _v_Lepton->at(0).charge();
-	m_HiggsEta_TOPTOPLEPHBB = _trec->Higgs_TOPTOPLEPHBB_p4().PseudoRapidity();
+	//m_HiggsEta_TOPTOPLEPHBB = _trec->Higgs_TOPTOPLEPHBB_p4().PseudoRapidity();
 	m_HiggsEta_TOPHLEPBB = _trec->Higgs_TOPHLEPBB_p4().PseudoRapidity();
 	m_TopLepMass_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().M();
 	m_TopLepMass_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().M();
 	m_TopLepMass_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().M();
-	m_TopLepPt_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().Pt();
+	//m_TopLepPt_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().Pt();
 	m_TopLepPt_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().Pt();
-	m_TopLepPt_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().Pt();
-	m_TopLepEta_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().PseudoRapidity();
+	//m_TopLepPt_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().Pt();
+	//m_TopLepEta_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().PseudoRapidity();
 	m_TopLepEta_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().PseudoRapidity();
-	m_TopLepEta_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().PseudoRapidity();
+	//m_TopLepEta_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().PseudoRapidity();
 	m_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB = _trec->HiggsBJet1_TOPTOPLEPHBB_p4().DeltaR(_trec->HiggsBJet2_TOPTOPLEPHBB_p4());
 	m_HiggsBJet1HiggsBJet2Dr_TOPHLEPBB = _trec->HiggsBJet1_TOPHLEPBB_p4().DeltaR(_trec->HiggsBJet2_TOPHLEPBB_p4());
 	m_TopLepHiggsDr_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().DeltaR(_trec->Higgs_TOPTOPLEPHBB_p4());
 	m_TopLepHiggsDr_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().DeltaR(_trec->Higgs_TOPHLEPBB_p4());
 	m_TopLepTopHadDr_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().DeltaR(_trec->TopHad_TOPTOPLEPHAD_p4());
+    */
 
+    m_HiggsMass_TOPHLEPBB = _trec->Higgs_TOPHLEPBB_p4().M();
+    m_MVA_TOPHLEPBB = _trec->MVA_TOPHLEPBB();
+    m_HiggsEta_TOPHLEPBB = _trec->Higgs_TOPHLEPBB_p4().PseudoRapidity();
+    m_TopLepMass_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().M();
+    m_TopLepPt_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().Pt();
+    m_TopLepEta_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().PseudoRapidity();
+    m_HiggsBJet1HiggsBJet2Dr_TOPHLEPBB = _trec->HiggsBJet1_TOPHLEPBB_p4().DeltaR(_trec->HiggsBJet2_TOPHLEPBB_p4());
+    m_TopLepHiggsDr_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().DeltaR(_trec->Higgs_TOPHLEPBB_p4());
+    //m_HiggsBJet1CSVv2_TOPHLEPBB = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_HiggsBJet2CSVv2_TOPHLEPBB = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_TopLepBJetCSVv2_TOPHLEPBB = 2*(std::rand() / (double) INT_MAX)-1;
+    m_TopHadMass_TOPTOPLEPHAD = _trec->TopHad_TOPTOPLEPHAD_p4().M();
+    m_MVA_TOPTOPLEPHAD = _trec->MVA_TOPTOPLEPHAD();
+    m_TopLepMass_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().M();
+    m_TopLepTopHadDr_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().DeltaR(_trec->TopHad_TOPTOPLEPHAD_p4());
+    //m_TopLepBJetCSVv2_TOPTOPLEPHAD = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_TopHadBJetCSVv2_TOPTOPLEPHAD = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_TopHadWNonBJet1CSVv2_TOPTOPLEPHAD = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_TopHadWNonBJet2CSVv2_TOPTOPLEPHAD = 2*(std::rand() / (double) INT_MAX)-1;
+    m_HiggsMass_TOPTOPLEPHBB = _trec->Higgs_TOPTOPLEPHBB_p4().M();
+    m_MVA_TOPTOPLEPHBB = _trec->MVA_TOPTOPLEPHBB();
+    m_TopLepMass_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().M();
+    m_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB = _trec->HiggsBJet1_TOPTOPLEPHBB_p4().DeltaR(_trec->HiggsBJet2_TOPTOPLEPHBB_p4());
+    m_TopLepHiggsDr_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().DeltaR(_trec->Higgs_TOPTOPLEPHBB_p4());
+    //m_HiggsBJet1CSVv2_TOPTOPLEPHBB = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_HiggsBJet2CSVv2_TOPTOPLEPHBB = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_TopLepBJetCSVv2_TOPTOPLEPHBB = 2*(std::rand() / (double) INT_MAX)-1;
+    //m_TopHadNonBJetCSVv2_TOPTOPLEPHBB = 2*(std::rand() / (double) INT_MAX)-1;
+    m_LepCharge = _v_Lepton->at(0).charge();
+
+
+   for(int i=0;i<_v_Jet->size();i++)
+     {
+    if( fabs(_v_Jet->at(i).eta()) > 2.4 ) continue;
+
+    if( _v_Jet->at(i).isTight() )
+      {
+         //std::cout << "jet compare: (" << _v_Jet->at(i).pt() << ", " << _v_Jet->at(i).eta()  << ", " << _v_Jet->at(i).phi() << ", " << _v_Jet->at(i).E() << ") =? ("
+         //          << TopLepBJetCSVv2_TOPTOPLEPHAD_jet.Pt() << ", " << TopLepBJetCSVv2_TOPTOPLEPHAD_jet.Eta() << ", " << TopLepBJetCSVv2_TOPTOPLEPHAD_jet.Phi() << ", " << TopLepBJetCSVv2_TOPTOPLEPHAD_jet.E() << ") "; // << std::endl;
+         double MAXDIF = 1e-2;
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->HiggsBJet1_TOPHLEPBB_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->HiggsBJet1_TOPHLEPBB_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->HiggsBJet1_TOPHLEPBB_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->HiggsBJet1_TOPHLEPBB_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_HiggsBJet1CSVv2_TOPHLEPBB = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->HiggsBJet2_TOPHLEPBB_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->HiggsBJet2_TOPHLEPBB_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->HiggsBJet2_TOPHLEPBB_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->HiggsBJet2_TOPHLEPBB_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_HiggsBJet2CSVv2_TOPHLEPBB = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->TopLepBJet_TOPHLEPBB_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->TopLepBJet_TOPHLEPBB_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->TopLepBJet_TOPHLEPBB_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->TopLepBJet_TOPHLEPBB_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_TopLepBJetCSVv2_TOPHLEPBB = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->TopLepBJet_TOPTOPLEPHAD_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->TopLepBJet_TOPTOPLEPHAD_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->TopLepBJet_TOPTOPLEPHAD_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->TopLepBJet_TOPTOPLEPHAD_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_TopLepBJetCSVv2_TOPTOPLEPHAD = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->TopHadBJet_TOPTOPLEPHAD_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->TopHadBJet_TOPTOPLEPHAD_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->TopHadBJet_TOPTOPLEPHAD_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->TopHadBJet_TOPTOPLEPHAD_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_TopHadBJetCSVv2_TOPTOPLEPHAD = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->TopHadWNonBJet1_TOPTOPLEPHAD_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->TopHadWNonBJet1_TOPTOPLEPHAD_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->TopHadWNonBJet1_TOPTOPLEPHAD_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->TopHadWNonBJet1_TOPTOPLEPHAD_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_TopHadWNonBJet1CSVv2_TOPTOPLEPHAD = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->TopHadWNonBJet2_TOPTOPLEPHAD_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->TopHadWNonBJet2_TOPTOPLEPHAD_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->TopHadWNonBJet2_TOPTOPLEPHAD_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->TopHadWNonBJet2_TOPTOPLEPHAD_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_TopHadWNonBJet2CSVv2_TOPTOPLEPHAD = _v_Jet->at(i).CSVv2();
+            
+         if (
+            ((_v_Jet->at(i).pt()-_trec->HiggsBJet1_TOPTOPLEPHBB_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->HiggsBJet1_TOPTOPLEPHBB_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->HiggsBJet1_TOPTOPLEPHBB_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->HiggsBJet1_TOPTOPLEPHBB_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_HiggsBJet1CSVv2_TOPTOPLEPHBB = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->HiggsBJet2_TOPTOPLEPHBB_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->HiggsBJet2_TOPTOPLEPHBB_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->HiggsBJet2_TOPTOPLEPHBB_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->HiggsBJet2_TOPTOPLEPHBB_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_HiggsBJet2CSVv2_TOPTOPLEPHBB = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->TopLepBJet_TOPTOPLEPHBB_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->TopLepBJet_TOPTOPLEPHBB_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->TopLepBJet_TOPTOPLEPHBB_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->TopLepBJet_TOPTOPLEPHBB_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_TopLepBJetCSVv2_TOPTOPLEPHBB = _v_Jet->at(i).CSVv2();
+
+         if (
+            ((_v_Jet->at(i).pt()-_trec->TopHadNonBJet_TOPTOPLEPHBB_p4().Pt())/_v_Jet->at(i).pt() < MAXDIF) &&
+            ((_v_Jet->at(i).eta()-_trec->TopHadNonBJet_TOPTOPLEPHBB_p4().Eta())/_v_Jet->at(i).eta() < MAXDIF) &&
+            ((_v_Jet->at(i).phi()-_trec->TopHadNonBJet_TOPTOPLEPHBB_p4().Phi())/_v_Jet->at(i).phi() < MAXDIF) &&
+            ((_v_Jet->at(i).E()-_trec->TopHadNonBJet_TOPTOPLEPHBB_p4().E())/_v_Jet->at(i).E() < MAXDIF)
+         )
+            m_TopHadNonBJetCSVv2_TOPTOPLEPHBB = _v_Jet->at(i).CSVv2();
+
+      }
+     }
+    //std::cout << std::endl;
+
+    /*
 	_mva->setVariable_HiggsMass_TOPHLEPBB(m_HiggsMass_TOPHLEPBB);
 	_mva->setVariable_TopHadMass_TOPTOPLEPHAD(m_TopHadMass_TOPTOPLEPHAD);
 	_mva->setVariable_MVA_TOPHLEPBB(m_MVA_TOPHLEPBB);
@@ -490,14 +819,45 @@ void Hist::fill()
 	
 	_mva->setVariable_HiggsMass_TOPTOPLEPHBB(m_HiggsMass_TOPTOPLEPHBB);
 	_mva->setVariable_MVA_TOPTOPLEPHBB(m_MVA_TOPTOPLEPHBB);
-	_mva->setVariable_HiggsEta_TOPTOPLEPHBB(m_HiggsEta_TOPTOPLEPHBB);
+	//_mva->setVariable_HiggsEta_TOPTOPLEPHBB(m_HiggsEta_TOPTOPLEPHBB);
 	_mva->setVariable_TopLepMass_TOPTOPLEPHBB(m_TopLepMass_TOPTOPLEPHBB);
-	_mva->setVariable_TopLepPt_TOPTOPLEPHBB(m_TopLepPt_TOPTOPLEPHBB);
-	_mva->setVariable_TopLepEta_TOPTOPLEPHBB(m_TopLepEta_TOPTOPLEPHBB);
+	//_mva->setVariable_TopLepPt_TOPTOPLEPHBB(m_TopLepPt_TOPTOPLEPHBB);
+	//_mva->setVariable_TopLepEta_TOPTOPLEPHBB(m_TopLepEta_TOPTOPLEPHBB);
 	_mva->setVariable_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB(m_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
 	_mva->setVariable_TopLepHiggsDr_TOPTOPLEPHBB(m_TopLepHiggsDr_TOPTOPLEPHBB);
+    */
+    _mva->setVariable_HiggsMass_TOPHLEPBB(m_HiggsMass_TOPHLEPBB);
+    _mva->setVariable_MVA_TOPHLEPBB(m_MVA_TOPHLEPBB);
+    _mva->setVariable_HiggsEta_TOPHLEPBB(m_HiggsEta_TOPHLEPBB);
+    _mva->setVariable_TopLepMass_TOPHLEPBB(m_TopLepMass_TOPHLEPBB);
+    _mva->setVariable_TopLepPt_TOPHLEPBB(m_TopLepPt_TOPHLEPBB);
+    _mva->setVariable_TopLepEta_TOPHLEPBB(m_TopLepEta_TOPHLEPBB);
+    _mva->setVariable_HiggsBJet1HiggsBJet2Dr_TOPHLEPBB(m_HiggsBJet1HiggsBJet2Dr_TOPHLEPBB);
+    _mva->setVariable_TopLepHiggsDr_TOPHLEPBB(m_TopLepHiggsDr_TOPHLEPBB);
+    _mva->setVariable_HiggsBJet1CSVv2_TOPHLEPBB(m_HiggsBJet1CSVv2_TOPHLEPBB);
+    _mva->setVariable_HiggsBJet2CSVv2_TOPHLEPBB(m_HiggsBJet2CSVv2_TOPHLEPBB);
+    _mva->setVariable_TopLepBJetCSVv2_TOPHLEPBB(m_TopLepBJetCSVv2_TOPHLEPBB);
+    _mva->setVariable_TopHadMass_TOPTOPLEPHAD(m_TopHadMass_TOPTOPLEPHAD);
+    _mva->setVariable_MVA_TOPTOPLEPHAD(m_MVA_TOPTOPLEPHAD);
+    _mva->setVariable_TopLepMass_TOPTOPLEPHAD(m_TopLepMass_TOPTOPLEPHAD);
+    _mva->setVariable_TopLepTopHadDr_TOPTOPLEPHAD(m_TopLepTopHadDr_TOPTOPLEPHAD);
+    _mva->setVariable_TopLepBJetCSVv2_TOPTOPLEPHAD(m_TopLepBJetCSVv2_TOPTOPLEPHAD);
+    _mva->setVariable_TopHadBJetCSVv2_TOPTOPLEPHAD(m_TopHadBJetCSVv2_TOPTOPLEPHAD);
+    _mva->setVariable_TopHadWNonBJet1CSVv2_TOPTOPLEPHAD(m_TopHadWNonBJet1CSVv2_TOPTOPLEPHAD);
+    _mva->setVariable_TopHadWNonBJet2CSVv2_TOPTOPLEPHAD(m_TopHadWNonBJet2CSVv2_TOPTOPLEPHAD);
+    _mva->setVariable_HiggsMass_TOPTOPLEPHBB(m_HiggsMass_TOPTOPLEPHBB);
+    _mva->setVariable_MVA_TOPTOPLEPHBB(m_MVA_TOPTOPLEPHBB);
+    _mva->setVariable_TopLepMass_TOPTOPLEPHBB(m_TopLepMass_TOPTOPLEPHBB);
+    _mva->setVariable_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB(m_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
+    _mva->setVariable_TopLepHiggsDr_TOPTOPLEPHBB(m_TopLepHiggsDr_TOPTOPLEPHBB);
+    _mva->setVariable_HiggsBJet1CSVv2_TOPTOPLEPHBB(m_HiggsBJet1CSVv2_TOPTOPLEPHBB);
+    _mva->setVariable_HiggsBJet2CSVv2_TOPTOPLEPHBB(m_HiggsBJet2CSVv2_TOPTOPLEPHBB);
+    _mva->setVariable_TopLepBJetCSVv2_TOPTOPLEPHBB(m_TopLepBJetCSVv2_TOPTOPLEPHBB);
+    _mva->setVariable_TopHadNonBJetCSVv2_TOPTOPLEPHBB(m_TopHadNonBJetCSVv2_TOPTOPLEPHBB);
+    _mva->setVariable_LepCharge(m_LepCharge);
 	
 	// Evaluate MVA discriminator
+	/*
 	_mvab3j4HutST = _mva->run("b3j4HutST");
 	_mvab3j4HctST = _mva->run("b3j4HctST");
 	_mvab3j4HutTT = _mva->run("b3j4HutTT");
@@ -512,15 +872,83 @@ void Hist::fill()
 	_mvab2j4HctST = _mva->run("b2j4HctST");
 	_mvab2j4HutTT = _mva->run("b2j4HutTT");
 	_mvab2j4HctTT = _mva->run("b2j4HctTT");
+    */
+    _mvab0j3HutST = _mva->run("b0j3HutST");
+    _mvab0j3HctST = _mva->run("b0j3HctST");
+    _mvab0j3HutTT = _mva->run("b0j3HutTT");
+    _mvab0j3HctTT = _mva->run("b0j3HctTT");
+                           
+    _mvab1j3HutST = _mva->run("b1j3HutST");
+    _mvab1j3HctST = _mva->run("b1j3HctST");
+    _mvab1j3HutTT = _mva->run("b1j3HutTT");
+    _mvab1j3HctTT = _mva->run("b1j3HctTT");
+                           
+    _mvab2j3HutST = _mva->run("b2j3HutST");
+    _mvab2j3HctST = _mva->run("b2j3HctST");
+    _mvab2j3HutTT = _mva->run("b2j3HutTT");
+    _mvab2j3HctTT = _mva->run("b2j3HctTT");
+                           
+    _mvab3j3HutST = _mva->run("b3j3HutST");
+    _mvab3j3HctST = _mva->run("b3j3HctST");
+    _mvab3j3HutTT = _mva->run("b3j3HutTT");
+    _mvab3j3HctTT = _mva->run("b3j3HctTT");
+                           
+    _mvab0j4HutST = _mva->run("b0j4HutST");
+    _mvab0j4HctST = _mva->run("b0j4HctST");
+    _mvab0j4HutTT = _mva->run("b0j4HutTT");
+    _mvab0j4HctTT = _mva->run("b0j4HctTT");
+                           
+    _mvab1j4HutST = _mva->run("b1j4HutST");
+    _mvab1j4HctST = _mva->run("b1j4HctST");
+    _mvab1j4HutTT = _mva->run("b1j4HutTT");
+    _mvab1j4HctTT = _mva->run("b1j4HctTT");
+                           
+    _mvab2j4HutST = _mva->run("b2j4HutST");
+    _mvab2j4HctST = _mva->run("b2j4HctST");
+    _mvab2j4HutTT = _mva->run("b2j4HutTT");
+    _mvab2j4HctTT = _mva->run("b2j4HctTT");
+                           
+    _mvab3j4HutST = _mva->run("b3j4HutST");
+    _mvab3j4HctST = _mva->run("b3j4HctST");
+    _mvab3j4HutTT = _mva->run("b3j4HutTT");
+    _mvab3j4HctTT = _mva->run("b3j4HctTT");
+                           
+    _mvab4j4HutST = _mva->run("b4j4HutST");
+    _mvab4j4HctST = _mva->run("b4j4HctST");
+    _mvab4j4HutTT = _mva->run("b4j4HutTT");
+    _mvab4j4HctTT = _mva->run("b4j4HctTT");
+
+    /*
+    if (nbjets == 0 && njets == 3) std::cout << "b0j3" << std::endl;
+    else if (nbjets == 1 && njets == 3) std::cout << "b1j3" << std::endl;
+    else if (nbjets == 2 && njets == 3) std::cout << "b2j3" << std::endl;
+    else if (nbjets == 3 && njets == 3) std::cout << "b3j3" << std::endl;
+    else if (nbjets == 0 && njets == 4) std::cout << "b0j4" << std::endl;
+    else if (nbjets == 1 && njets == 4) std::cout << "b1j4" << std::endl;
+    else if (nbjets == 2 && njets == 4) std::cout << "b2j4" << std::endl;
+    else if (nbjets == 3 && njets == 4) std::cout << "b3j4" << std::endl;
+    else if (nbjets == 4 && njets == 4) std::cout << "b4j4" << std::endl;
+    */
 	
 	bool sel_pass[sel_n];
 	for(int c=0;c<sel_n;c++)
 	  {	
 	     sel_pass[c] = 0;
 	     if( 
+        /*
 		(sel[c] == "b2j4" && nbjets == 2 && njets == 4) ||
 		(sel[c] == "b3j3" && nbjets == 3 && njets == 3) ||
 		(sel[c] == "b3j4" && nbjets == 3 && njets >= 4)
+        */
+        (sel[c] == "b0j3" && nbjets == 0 && njets == 3) ||
+        (sel[c] == "b1j3" && nbjets == 1 && njets == 3) ||
+        (sel[c] == "b2j3" && nbjets == 2 && njets == 3) ||
+        (sel[c] == "b3j3" && nbjets == 3 && njets == 3) ||
+        (sel[c] == "b0j4" && nbjets == 0 && njets == 4) ||
+        (sel[c] == "b1j4" && nbjets == 1 && njets == 4) ||
+        (sel[c] == "b2j4" && nbjets == 2 && njets == 4) ||
+        (sel[c] == "b3j4" && nbjets == 3 && njets == 4) ||
+        (sel[c] == "b4j4" && nbjets == 4 && njets == 4)
 	       )
 	       sel_pass[c] = 1;
 	  }   
@@ -533,7 +961,7 @@ void Hist::fill()
 	     std::vector<std::string> histNAMESSEL;
 	     std::vector<int> histSYS;
 	     std::vector<int> histVAR;
-	     
+	     /*
 	     for(int ih=0;ih<histname_n;ih++)
 	       {
 		  for(int ic=0;ic<chan_n;ic++)
@@ -556,6 +984,18 @@ void Hist::fill()
 			 }		       
 		    }		       
 	       }
+         */
+          for(int ic=0;ic<chan_n;ic++)
+            {
+               if( !chan_pass[ic] ) continue;
+
+               for(int is=0;is<sel_n;is++)
+             {
+                if( !sel_pass[is] ) continue;
+
+                 fillTree(ic,is);
+             }
+            }
 
 	     int nHISTSEL = histNAMESSEL.size();
 	     for(int ih=0;ih<nHISTSEL;ih++)
@@ -888,6 +1328,7 @@ void Hist::fillHisto1D(TH1D *h,float sfj,std::string sys,int ilep,std::string va
      {	
 	h->Fill(_trec->chi2TTbar(),sfj);
      }*/
+   /*
    else if( strcmp(varName.c_str(),"h_MVAb3j4HutST_") == 0 ) h->Fill(_mvab3j4HutST,sfj);
    else if( strcmp(varName.c_str(),"h_MVAb3j4HctST_") == 0 ) h->Fill(_mvab3j4HctST,sfj);
    else if( strcmp(varName.c_str(),"h_MVAb3j4HutTT_") == 0 ) h->Fill(_mvab3j4HutTT,sfj);
@@ -902,6 +1343,51 @@ void Hist::fillHisto1D(TH1D *h,float sfj,std::string sys,int ilep,std::string va
    else if( strcmp(varName.c_str(),"h_MVAb2j4HctST_") == 0 ) h->Fill(_mvab2j4HctST,sfj);
    else if( strcmp(varName.c_str(),"h_MVAb2j4HutTT_") == 0 ) h->Fill(_mvab2j4HutTT,sfj);
    else if( strcmp(varName.c_str(),"h_MVAb2j4HctTT_") == 0 ) h->Fill(_mvab2j4HctTT,sfj);
+   */
+   else if( strcmp(varName.c_str(),"h_MVAb0j3HutST_") == 0 ) h->Fill(_mvab0j3HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb0j3HctST_") == 0 ) h->Fill(_mvab0j3HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb0j3HutTT_") == 0 ) h->Fill(_mvab0j3HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb0j3HctTT_") == 0 ) h->Fill(_mvab0j3HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb1j3HutST_") == 0 ) h->Fill(_mvab1j3HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb1j3HctST_") == 0 ) h->Fill(_mvab1j3HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb1j3HutTT_") == 0 ) h->Fill(_mvab1j3HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb1j3HctTT_") == 0 ) h->Fill(_mvab1j3HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb2j3HutST_") == 0 ) h->Fill(_mvab2j3HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb2j3HctST_") == 0 ) h->Fill(_mvab2j3HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb2j3HutTT_") == 0 ) h->Fill(_mvab2j3HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb2j3HctTT_") == 0 ) h->Fill(_mvab2j3HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb3j3HutST_") == 0 ) h->Fill(_mvab3j3HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb3j3HctST_") == 0 ) h->Fill(_mvab3j3HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb3j3HutTT_") == 0 ) h->Fill(_mvab3j3HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb3j3HctTT_") == 0 ) h->Fill(_mvab3j3HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb0j4HutST_") == 0 ) h->Fill(_mvab0j4HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb0j4HctST_") == 0 ) h->Fill(_mvab0j4HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb0j4HutTT_") == 0 ) h->Fill(_mvab0j4HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb0j4HctTT_") == 0 ) h->Fill(_mvab0j4HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb1j4HutST_") == 0 ) h->Fill(_mvab1j4HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb1j4HctST_") == 0 ) h->Fill(_mvab1j4HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb1j4HutTT_") == 0 ) h->Fill(_mvab1j4HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb1j4HctTT_") == 0 ) h->Fill(_mvab1j4HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb2j4HutST_") == 0 ) h->Fill(_mvab2j4HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb2j4HctST_") == 0 ) h->Fill(_mvab2j4HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb2j4HutTT_") == 0 ) h->Fill(_mvab2j4HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb2j4HctTT_") == 0 ) h->Fill(_mvab2j4HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb3j4HutST_") == 0 ) h->Fill(_mvab3j4HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb3j4HctST_") == 0 ) h->Fill(_mvab3j4HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb3j4HutTT_") == 0 ) h->Fill(_mvab3j4HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb3j4HctTT_") == 0 ) h->Fill(_mvab3j4HctTT,sfj);
+                                                                         
+   else if( strcmp(varName.c_str(),"h_MVAb4j4HutST_") == 0 ) h->Fill(_mvab4j4HutST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb4j4HctST_") == 0 ) h->Fill(_mvab4j4HctST,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb4j4HutTT_") == 0 ) h->Fill(_mvab4j4HutTT,sfj);
+   else if( strcmp(varName.c_str(),"h_MVAb4j4HctTT_") == 0 ) h->Fill(_mvab4j4HctTT,sfj);
 }
 
 void Hist::fillPassSel(TH1D *h,TH1D *he,TH1D *hm,float w)
