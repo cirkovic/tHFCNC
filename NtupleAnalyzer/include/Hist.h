@@ -22,6 +22,7 @@ class Hist
    void setJet(std::vector<Jet> *v)                      {_v_Jet = v;};
    void setEvent(std::vector<Event> *v)                      {_v_Event = v;};
    void setTruth(std::vector<Truth> *v)                      {_v_Truth = v;};
+   void setWeight(double wgt_csv)                            {_wgt_csv = wgt_csv;};
 
 //   void setFakeWeight(SKYPLOT::FakeWeight fakeWeight)      {_fakeWeight = fakeWeight;}; 
 	
@@ -184,6 +185,8 @@ class Hist
    
 //   SKYPLOT::FakeWeight           _fakeWeight;
   
+   double                         _wgt_csv;
+
    std::map<std::string, TH1D*> *_m1d_Hist;
    
    TH1D *_h_PassSel_all;

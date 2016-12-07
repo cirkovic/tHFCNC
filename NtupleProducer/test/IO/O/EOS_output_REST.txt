@@ -1,0 +1,11 @@
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_TopLep_Hut_Ntuple/output_166.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_AntiTopLep_Hct_Ntuple/output_310.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_AntiTopLep_Hct_Ntuple/output_77.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_1353.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_1502.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_1561.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_1599.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_1660.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_1682.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_1838.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC1/TTbar_SM_Ntuple/output_2263.root

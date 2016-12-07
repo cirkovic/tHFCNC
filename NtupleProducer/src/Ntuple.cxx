@@ -63,3 +63,14 @@ void Ntuple::fill()
 {
    m_tree->Fill();
 }
+
+void Ntuple::write()
+{
+   m_file->Write();
+}
+
+void Ntuple::close()
+{
+   m_file->Close();
+}
+

@@ -36,6 +36,8 @@ class Ntuple
    void createVar();
    void clearVar();
    void fill();
+   void write();
+   void close();
    
    TFile*  m_file;
    TTree*  m_tree;

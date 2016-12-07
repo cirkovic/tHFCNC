@@ -5,3 +5,4 @@ LSFJOB*
 *.so
 NtupleProducer/test/NtupleProducer
 NtupleAnalyzer/Analyzer
+trash

@@ -1,0 +1,4 @@
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_NEW/output_117.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_NEW/output_145.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_NEW/output_15.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_NEW/output_337.root

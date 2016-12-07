@@ -1,0 +1,2 @@
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1_NEW_Ntuple/output_34.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1_NEW_Ntuple/output_41.root

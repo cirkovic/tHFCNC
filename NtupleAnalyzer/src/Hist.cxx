@@ -208,6 +208,7 @@ void Hist::init()
 	     _trout[ic][is] = new TTree(trName.c_str(),trName.c_str());
 	     
 	     _trout[ic][is]->Branch("weight",&m_weight,"weight/D");
+	     _trout[ic][is]->Branch("wgt_csv",&_wgt_csv,"wgt_csv/D");
          /*
 	     _trout[ic][is]->Branch("HiggsMass_TOPTOPLEPHBB",&m_HiggsMass_TOPTOPLEPHBB,"HiggsMass_TOPTOPLEPHBB/D");
 	     _trout[ic][is]->Branch("HiggsMass_TOPHLEPBB",&m_HiggsMass_TOPHLEPBB,"HiggsMass_TOPHLEPBB/D");

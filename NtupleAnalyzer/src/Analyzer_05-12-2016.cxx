@@ -26,14 +26,6 @@ std::vector<Event>             *v_Event;
 std::vector<Jet>             *v_Jet;
 std::vector<Truth>             *v_Truth;
 
-bool replace(std::string& str, const std::string& from, const std::string& to) {
-    size_t start_pos = str.find(from);
-    if(start_pos == std::string::npos)
-        return false;
-    str.replace(start_pos, from.length(), to);
-    return true;
-}
-
 int main(int argc, char *argv[])
 {
    if( argc < 6 )
@@ -50,7 +42,6 @@ int main(int argc, char *argv[])
    home = std::string(argv[6]);
    
    TChain f("Nt");
-   TChain ff("sft");
    
 //	std::stringstream fnamev(fin);
 
@@ -61,12 +52,8 @@ int main(int argc, char *argv[])
    while( getline(infile, ifile) )
      //	while( getline(fnamev, ifile, '@') )
      {
-    std::string ifileFriend(ifile.c_str());
-    replace(ifileFriend, "output", "sf");
 	std::cout << ifile.c_str() << std::endl;
-	std::cout << ifileFriend.c_str() << std::endl;
 	f.Add(ifile.c_str());
-    ff.Add(ifileFriend.c_str());
      }	
    
    infile.close();
@@ -83,12 +70,7 @@ int main(int argc, char *argv[])
    f.SetBranchAddress("Event", &v_Event);
    f.SetBranchAddress("Truth", &v_Truth);
 
-   double wgt_csv;
-   ff.SetBranchAddress("wgt_csv", &wgt_csv);
-
    int nent = f.GetEntries();
-   std::cout << nent << std::endl;
-   nent = ff.GetEntries();
    std::cout << nent << std::endl;
    
 /*   SKYPLOT::FakeWeight fakeWeight;
@@ -126,9 +108,6 @@ int main(int argc, char *argv[])
 	     if( nmax >= 0 && i > nmax ) break;
 	     
 	     f.GetEntry(i);
-         ff.GetEntry(i);
-         hist.setWeight(wgt_csv);
-         //std::cout << "CIRKOVIC[wgt_csv]: " << wgt_csv << std::endl;
 	     
 	     std::string fcur = f.GetCurrentFile()->GetName();
 	     if( strcmp(evc,"1") == 0 )
