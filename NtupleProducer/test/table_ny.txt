@@ -1,0 +1,15 @@
+/ST_FCNC-TH_Tleptonic_HTobb_eta_hut/                                          8.229312       1699258
+/ST_FCNC-TH_Tleptonic_HTobb_eta_hct/                                          1.0192         1726082
+/ST_FCNC-TH_Tleptonic_HToWWZZtautau_eta_hut/                                  4.3292907      1737180
+/ST_FCNC-TH_Tleptonic_HToWWZZtautau_eta_hct/                                  0.5361825      1768628
+/TT_TopLeptonicDecay_TH_1L3B_Eta_Hut/                                        41.61           2402599
+/TT_TopLeptonicDecay_TH_1L3B_Eta_Hct/                                        41.61           1171580
+/TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hut/                                    41.61           1273994
+/TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hct/                                    41.61           1189512
+/TT_TuneCUETP8M1_13TeV-powheg-pythia8/                                      831.8            151537165
+/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1/            6.5            999995
+/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1/        136.02           3279179
+/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1/     80.95           1665994
+/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/               35.6            5405674
+/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/           35.6            5280048
+/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/                      61500              9825660

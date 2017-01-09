@@ -119,41 +119,275 @@ int main(int argc, char *argv[])
    Event ev;
    Truth truth;
 
-   calib = new BTagCalibration("csvv2","/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/tHFCNC/NtupleProducer/test/CSVv2_ichep.csv");
-   reader_iterativefit = new BTagCalibrationReader(BTagEntry::OP_RESHAPING,"central",
-						   {"up_jes","down_jes","up_lf","down_lf",
-							"up_hfstats1","down_hfstats1",
-							"up_hfstats2","down_hfstats2",
-							"up_cferr1","down_cferr1",
-							"up_cferr2","down_cferr2"});
-   reader_iterativefit->load(*calib,BTagEntry::FLAV_B,"iterativefit");
-   reader_iterativefit->load(*calib,BTagEntry::FLAV_C,"iterativefit");
-   reader_iterativefit->load(*calib,BTagEntry::FLAV_UDSG,"iterativefit");
+   double wgt_csv_hf, wgt_csv_lf, wgt_csv_cf, wgt_csv;
+   double wgt_csv_hf_JesUp, wgt_csv_lf_JesUp, wgt_csv_cf_JesUp, wgt_csv_JesUp;
+   double wgt_csv_hf_JesDown, wgt_csv_lf_JesDown, wgt_csv_cf_JesDown, wgt_csv_JesDown;
+   double event_wgt_csv_JESUp;
+   double event_wgt_csv_JESDown;
 
-   std::cout << "BTagCalibration initialized" << std::endl;
-   
+   if( !_isdata ) {
+       calib = new BTagCalibration("csvv2","/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/tHFCNC/NtupleProducer/test/CSVv2_ichep.csv");
+       reader_iterativefit = new BTagCalibrationReader(BTagEntry::OP_RESHAPING,"central",
+                               {"up_jes","down_jes","up_lf","down_lf",
+                                "up_hfstats1","down_hfstats1",
+                                "up_hfstats2","down_hfstats2",
+                                "up_cferr1","down_cferr1",
+                                "up_cferr2","down_cferr2"});
+       reader_iterativefit->load(*calib,BTagEntry::FLAV_B,"iterativefit");
+       reader_iterativefit->load(*calib,BTagEntry::FLAV_C,"iterativefit");
+       reader_iterativefit->load(*calib,BTagEntry::FLAV_UDSG,"iterativefit");
+
+       std::cout << "BTagCalibration initialized" << std::endl;
+       
+      //std::string inputFileHF = "data/csv_rwt_fit_hf_2015_11_20.root";
+      std::string inputFileHF = "tHFCNC/NtupleProducer/data/csv_rwt_fit_hf_76x_2016_02_08.root";
+      //std::string inputFileLF = "data/csv_rwt_fit_lf_2015_11_20.root";
+      std::string inputFileLF = "tHFCNC/NtupleProducer/data/csv_rwt_fit_lf_76x_2016_02_08.root";
+
+      TFile* f_CSVwgt_HF = new TFile ((std::string(getenv("CMSSW_BASE")) + "/src/" + inputFileHF).c_str());
+      TFile* f_CSVwgt_LF = new TFile ((std::string(getenv("CMSSW_BASE")) + "/src/" + inputFileLF).c_str());
+
+      fillCSVhistos(f_CSVwgt_HF, f_CSVwgt_LF);
+
+      sft->Branch("wgt_csv_hf", &wgt_csv_hf, "wgt_csv_hf/D", 1);
+      sft->Branch("wgt_csv_lf", &wgt_csv_lf, "wgt_csv_lf/D", 1);
+      sft->Branch("wgt_csv_cf", &wgt_csv_cf, "wgt_csv_cf/D", 1);
+      sft->Branch("wgt_csv", &wgt_csv, "wgt_csv/D", 1);
+
+      sft->Branch("wgt_csv_lf_JesUp", &wgt_csv_lf_JesUp, "wgt_csv_lf_JesUp/D", 1);
+      sft->Branch("wgt_csv_cf_JesUp", &wgt_csv_cf_JesUp, "wgt_csv_cf_JesUp/D", 1);
+      sft->Branch("wgt_csv_JesUp", &wgt_csv_JesUp, "wgt_csv_JesUp/D", 1);
+      sft->Branch("event_wgt_csv_JESUp", &event_wgt_csv_JESUp, "event_wgt_csv_JESUp/D", 1);
+      
+      sft->Branch("wgt_csv_lf_JesDown", &wgt_csv_lf_JesDown, "wgt_csv_lf_JesDown/D", 1);
+      sft->Branch("wgt_csv_cf_JesDown", &wgt_csv_cf_JesDown, "wgt_csv_cf_JesDown/D", 1);
+      sft->Branch("wgt_csv_JesDown", &wgt_csv_JesDown, "wgt_csv_JesDown/D", 1);
+      sft->Branch("event_wgt_csv_JESDown", &event_wgt_csv_JESDown, "event_wgt_csv_JESDown/D", 1);
+    }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // setup calibration readers (once)
+        //BTagCalibration calib_csvv2("csvv2", "ttH_BTV_CSVv2_13TeV_2015D_20151122.csv");
+        BTagCalibration calib_csvv2("csvv2", "/afs/cern.ch/work/c/cirkovic/fcnc_ana/CMSSW_8_0_12/src/tHFCNC/NtupleProducer/test/CSVv2_ichep.csv");
+
+        /*
+        BTagCalibrationReader *reader = new BTagCalibrationReader(&calib_csvv2, // calibration instance
+                      BTagEntry::OP_RESHAPING, // operating point
+                      "iterativefit", // measurement type
+                      "central"); // systematics type
+        */
+        BTagCalibrationReader reader(BTagEntry::OP_RESHAPING, "central");
+        reader.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // JESUp
+        BTagCalibrationReader reader_JESUp(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_jes"); // systematics type
+        */
+        BTagCalibrationReader reader_JESUp(BTagEntry::OP_RESHAPING, "up_jes");
+        reader_JESUp.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_JESUp.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_JESUp.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // JESDown
+        BTagCalibrationReader reader_JESDown(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_jes"); // systematics type
+        */
+        BTagCalibrationReader reader_JESDown(BTagEntry::OP_RESHAPING, "down_jes");
+        reader_JESDown.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_JESDown.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_JESDown.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // LFUp
+        BTagCalibrationReader reader_LFUp(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_lf"); // systematics type
+        */
+        BTagCalibrationReader reader_LFUp(BTagEntry::OP_RESHAPING, "up_lf");
+        reader_LFUp.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_LFUp.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_LFUp.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // LFDown
+        BTagCalibrationReader reader_LFDown(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_lf"); // systematics type
+        */
+        BTagCalibrationReader reader_LFDown(BTagEntry::OP_RESHAPING, "down_lf");
+        reader_LFDown.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_LFDown.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_LFDown.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // HFUp
+        BTagCalibrationReader reader_HFUp(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_hf"); // systematics type
+        */
+        BTagCalibrationReader reader_HFUp(BTagEntry::OP_RESHAPING, "up_hf");
+        reader_HFUp.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_HFUp.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_HFUp.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // HFDown
+        BTagCalibrationReader reader_HFDown(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_hf"); // systematics type
+        */
+        BTagCalibrationReader reader_HFDown(BTagEntry::OP_RESHAPING, "down_hf");
+        reader_HFDown.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_HFDown.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_HFDown.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // HFStats1Up
+        BTagCalibrationReader reader_HFStats1Up(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_hfstats1"); // systematics type
+        */
+        BTagCalibrationReader reader_HFStats1Up(BTagEntry::OP_RESHAPING, "up_hfstats1");
+        reader_HFStats1Up.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_HFStats1Up.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_HFStats1Up.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // HFStats1Down
+        BTagCalibrationReader reader_HFStats1Down(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_hfstats1"); // systematics type
+        */
+        BTagCalibrationReader reader_HFStats1Down(BTagEntry::OP_RESHAPING, "down_hfstats1");
+        reader_HFStats1Down.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_HFStats1Down.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_HFStats1Down.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // HFStats2Up
+        BTagCalibrationReader reader_HFStats2Up(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_hfstats2"); // systematics type
+        */
+        BTagCalibrationReader reader_HFStats2Up(BTagEntry::OP_RESHAPING, "up_hfstats2");
+        reader_HFStats2Up.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_HFStats2Up.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_HFStats2Up.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // HFStats2Down
+        BTagCalibrationReader reader_HFStats2Down(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_hfstats2"); // systematics type
+        */
+        BTagCalibrationReader reader_HFStats2Down(BTagEntry::OP_RESHAPING, "down_hfstats2");
+        reader_HFStats2Down.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_HFStats2Down.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_HFStats2Down.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // LFStats1Up
+        BTagCalibrationReader reader_LFStats1Up(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_lfstats1"); // systematics type
+        */
+        BTagCalibrationReader reader_LFStats1Up(BTagEntry::OP_RESHAPING, "up_lfstats1");
+        reader_LFStats1Up.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_LFStats1Up.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_LFStats1Up.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // LFStats1Down
+        BTagCalibrationReader reader_LFStats1Down(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_lfstats1"); // systematics type
+        */
+        BTagCalibrationReader reader_LFStats1Down(BTagEntry::OP_RESHAPING, "down_lfstats1");
+        reader_LFStats1Down.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_LFStats1Down.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_LFStats1Down.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // LFStats2Up
+        BTagCalibrationReader reader_LFStats2Up(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_lfstats2"); // systematics type
+        */
+        BTagCalibrationReader reader_LFStats2Up(BTagEntry::OP_RESHAPING, "up_lfstats2");
+        reader_LFStats2Up.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_LFStats2Up.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_LFStats2Up.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // LFStats2Down
+        BTagCalibrationReader reader_LFStats2Down(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_lfstats2"); // systematics type
+        */
+        BTagCalibrationReader reader_LFStats2Down(BTagEntry::OP_RESHAPING, "down_lfstats2");
+        reader_LFStats2Down.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_LFStats2Down.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_LFStats2Down.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // CFErr1Up
+        BTagCalibrationReader reader_CFErr1Up(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_cferr1"); // systematics type
+        */
+        BTagCalibrationReader reader_CFErr1Up(BTagEntry::OP_RESHAPING, "up_cferr1");
+        reader_CFErr1Up.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_CFErr1Up.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_CFErr1Up.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // CFErr1Down
+        BTagCalibrationReader reader_CFErr1Down(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_cferr1"); // systematics type
+        */
+        BTagCalibrationReader reader_CFErr1Down(BTagEntry::OP_RESHAPING, "down_cferr1");
+        reader_CFErr1Down.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_CFErr1Down.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_CFErr1Down.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // CFErr2Up
+        BTagCalibrationReader reader_CFErr2Up(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "up_cferr2"); // systematics type
+        */
+        BTagCalibrationReader reader_CFErr2Up(BTagEntry::OP_RESHAPING, "up_cferr2");
+        reader_CFErr2Up.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_CFErr2Up.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_CFErr2Up.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+        /*
+        // CFErr2Down
+        BTagCalibrationReader reader_CFErr2Down(&calib_csvv2, // calibration instance
+                       BTagEntry::OP_RESHAPING, // operating point
+                       "iterativefit", // measurement type
+                       "down_cferr2"); // systematics type
+        */
+        BTagCalibrationReader reader_CFErr2Down(BTagEntry::OP_RESHAPING, "down_cferr2");
+        reader_CFErr2Down.load(calib_csvv2, BTagEntry::FLAV_B,    "iterativefit");
+        reader_CFErr2Down.load(calib_csvv2, BTagEntry::FLAV_C,    "iterativefit");
+        reader_CFErr2Down.load(calib_csvv2, BTagEntry::FLAV_UDSG, "iterativefit");
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    std::list<TString> sys_names;
+    sys_names.push_back(TString("JESUp"));
+    sys_names.push_back(TString("JESDown"));
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
    evdebug = new std::vector<int>();
 //   evdebug->push_back(91408);
-   
+
    std::cout << "Input events = " << nentries << std::endl;
-
-  //std::string inputFileHF = "data/csv_rwt_fit_hf_2015_11_20.root";
-  std::string inputFileHF = "tHFCNC/NtupleProducer/data/csv_rwt_fit_hf_76x_2016_02_08.root";
-  //std::string inputFileLF = "data/csv_rwt_fit_lf_2015_11_20.root";
-  std::string inputFileLF = "tHFCNC/NtupleProducer/data/csv_rwt_fit_lf_76x_2016_02_08.root";
-
-  TFile* f_CSVwgt_HF = new TFile ((std::string(getenv("CMSSW_BASE")) + "/src/" + inputFileHF).c_str());
-  TFile* f_CSVwgt_LF = new TFile ((std::string(getenv("CMSSW_BASE")) + "/src/" + inputFileLF).c_str());
-
-  fillCSVhistos(f_CSVwgt_HF, f_CSVwgt_LF);
-
-  double wgt_csv_hf, wgt_csv_lf, wgt_csv_cf, wgt_csv;
-   //
-  sft->Branch("wgt_csv_hf", &wgt_csv_hf, "wgt_csv_hf/D", 1);
-  sft->Branch("wgt_csv_lf", &wgt_csv_lf, "wgt_csv_lf/D", 1);
-  sft->Branch("wgt_csv_cf", &wgt_csv_cf, "wgt_csv_cf/D", 1);
-  sft->Branch("wgt_csv", &wgt_csv, "wgt_csv/D", 1);
-   
+  
    for(Long64_t i=0;i<nentries;i++)
      {
 //	std::cout << i << std::endl;
@@ -200,7 +434,7 @@ int main(int argc, char *argv[])
     std::vector<double> jetEtas;
     std::vector<double> jetCSVs;
     std::vector<int> jetFlavors;
-    int iSys = 0; //nominal case
+    int iSys;
 
     //std::cout << "CIRKOVIC JETS:" << std::endl;
 	// jets
@@ -227,23 +461,141 @@ int main(int argc, char *argv[])
 	  }
     //std::cout << std::endl;
 
-// Loop over jets and fill vectors: jetPts, jetEtas, jetCSVs, and jetFlavors with std::vector's of those quantities
 
-   //double wgt_csv_hf, wgt_csv_lf, wgt_csv_cf;
-   ////double wgt_csv = ( insample<0 ) ? 1 : get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf);
-   //double wgt_csv = get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf);
-   wgt_csv_hf = 1.0;
-   wgt_csv_lf = 1.0;
-   wgt_csv_cf = 1.0;
-   wgt_csv = 1.0;
-   // std::cout << "CIRKOVIC: (wgt_csv, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf) = (" << wgt_csv << ", " << wgt_csv_hf << ", " << wgt_csv_lf << ", " << wgt_csv_cf << ")" << std::endl;
-   wgt_csv = get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf);
+    if( !_isdata ) {
+    // Loop over jets and fill vectors: jetPts, jetEtas, jetCSVs, and jetFlavors with std::vector's of those quantities
 
-    //double wgt_lumi_csv = wgt_lumi * wgt_csv;
-   // std::cout << "CIRKOVIC: (wgt_csv, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf) = (" << wgt_csv << ", " << wgt_csv_hf << ", " << wgt_csv_lf << ", " << wgt_csv_cf << ")" << std::endl;
-   // std::cout << std::endl;
-    //sft->Fill();
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       //double wgt_csv_hf, wgt_csv_lf, wgt_csv_cf;
+       ////double wgt_csv = ( insample<0 ) ? 1 : get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf);
+       //double wgt_csv = get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf);
+       wgt_csv_hf = 1.0;
+       wgt_csv_lf = 1.0;
+       wgt_csv_cf = 1.0;
+       wgt_csv = 1.0;
+       // std::cout << "CIRKOVIC: (wgt_csv, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf) = (" << wgt_csv << ", " << wgt_csv_hf << ", " << wgt_csv_lf << ", " << wgt_csv_cf << ")" << std::endl;
+       iSys = 0; //nominal case
+       wgt_csv = get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf);
+
+       wgt_csv_hf_JesUp = 1.0;
+       wgt_csv_lf_JesUp = 1.0;
+       wgt_csv_cf_JesUp = 1.0;
+       wgt_csv_JesUp = 1.0;
+
+       iSys = 7; //JesUp
+       wgt_csv_JesUp = get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf_JesUp, wgt_csv_lf_JesUp, wgt_csv_cf_JesUp);
+
+       wgt_csv_hf_JesDown = 1.0;
+       wgt_csv_lf_JesDown = 1.0;
+       wgt_csv_cf_JesDown = 1.0;
+       wgt_csv_JesDown = 1.0;
+
+       iSys = 8; //JesDown
+       wgt_csv_JesDown = get_csv_wgt(jetPts, jetEtas, jetCSVs, jetFlavors, iSys, wgt_csv_hf_JesDown, wgt_csv_lf_JesDown, wgt_csv_cf_JesDown);
+
+        //double wgt_lumi_csv = wgt_lumi * wgt_csv;
+       // std::cout << "CIRKOVIC: (wgt_csv, wgt_csv_hf, wgt_csv_lf, wgt_csv_cf) = (" << wgt_csv << ", " << wgt_csv_hf << ", " << wgt_csv_lf << ", " << wgt_csv_cf << ")" << std::endl;
+       // std::cout << std::endl;
+        //sft->Fill();
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+       event_wgt_csv_JESUp = 1.0;
+       event_wgt_csv_JESDown = 1.0;
+       for(std::list<TString>::const_iterator i = sys_names.begin(); i != sys_names.end(); ++i) {
+           TString sys_name = *i;
+           double event_wgt_csv = 1.0;
+           for( int iJet=0; iJet<int(jetPts.size()); iJet++ ){
+             double pt  = jetPts[iJet];
+             double eta = jetEtas[iJet];
+
+             if( !(pt>20. && fabs(eta)<2.4) ) continue;
+
+             double csv = jetCSVs[iJet];
+             if( csv < 0.0 ) csv = -0.05;
+             if( csv > 1.0 ) csv = 1.0;
+
+             int flavor = jetFlavors[iJet];
+
+             if( pt > 1000 ) pt = 999.;
+
+             bool isBFlav = false;
+             bool isCFlav = false;
+             bool isLFlav = false;
+             if( abs(flavor)==5 )      isBFlav = true;
+             else if( abs(flavor)==4 ) isCFlav = true;
+             else                      isLFlav = true;
+
+             double my_jet_sf = 1.;
+
+             BTagEntry::JetFlavor jf = BTagEntry::FLAV_UDSG;
+             if( isBFlav )       jf = BTagEntry::FLAV_B;
+             else if( isCFlav ) jf = BTagEntry::FLAV_C;
+             else                  jf = BTagEntry::FLAV_UDSG;
+
+             if( sys_name.Contains("JESUp") )        my_jet_sf = reader_JESUp.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("JESDown") ) my_jet_sf = reader_JESDown.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("LFUp") && isBFlav )    my_jet_sf = reader_LFUp.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("LFDown") && isBFlav )  my_jet_sf = reader_LFDown.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("HFUp") && isLFlav )    my_jet_sf = reader_HFUp.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("HFDown") && isLFlav )  my_jet_sf = reader_HFDown.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVHFStats1Up") && isBFlav )   my_jet_sf = reader_HFStats1Up.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVHFStats1Down") && isBFlav ) my_jet_sf = reader_HFStats1Down.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVHFStats2Up") && isBFlav )   my_jet_sf = reader_HFStats2Up.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVHFStats2Down") && isBFlav ) my_jet_sf = reader_HFStats2Down.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVLFStats1Up") && isLFlav )   my_jet_sf = reader_LFStats1Up.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVLFStats1Down") && isLFlav ) my_jet_sf = reader_LFStats1Down.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVLFStats2Up") && isLFlav )   my_jet_sf = reader_LFStats2Up.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVLFStats2Down") && isLFlav ) my_jet_sf = reader_LFStats2Down.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVCFErr1Up") && isCFlav )   my_jet_sf = reader_CFErr1Up.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVCFErr1Down") && isCFlav ) my_jet_sf = reader_CFErr1Down.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVCFErr2Up") && isCFlav )   my_jet_sf = reader_CFErr2Up.eval(jf, eta, pt, csv);
+             else if( sys_name.Contains("CSVCFErr2Down") && isCFlav ) my_jet_sf = reader_CFErr2Down.eval(jf, eta, pt, csv);
+             else my_jet_sf = reader.eval(jf, eta, pt, csv);
+
+             //assert (my_jet_sf > 0.);
+             event_wgt_csv *= my_jet_sf;
+           }
+           if ( sys_name.Contains("JESUp") ) {
+             event_wgt_csv_JESUp = event_wgt_csv;
+           }
+           else if ( sys_name.Contains("JESDown") ) {
+             event_wgt_csv_JESDown = event_wgt_csv;
+           }
+       }
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    }
+
+    /*
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // First, using 'set' functions
+    JME::JetParameters parameters_1;
+    parameters_1.setJetPt(jet.pt());
+    parameters_1.setJetEta(jet.eta());
+
+    // You can also chain calls
+    JME::JetParameters parameters_2;
+    parameters_2.setJetPt(jet.pt()).setJetEta(jet.eta());
+
+    // Second, using the set() function
+    JME::JetParameters parameters_3;
+    parameters_3.set(JME::Binning::JetPt, jet.pt());
+    parameters_3.set({JME::Binning::JetEta, jet.eta()});
+
+    // Or
+
+    JME::JetParameters parameters_4;
+    parameters_4.set(JME::Binning::JetPt, jet.pt()).set(JME::Binning::JetEta, jet.eta());
+        
+    // Third, using a initializer_list
+    JME::JetParameters parameters_5 = {{JME::Binning::JetPt, jet.pt()}, {JME::Binning::JetEta, jet.eta()}};
+
+
+    float r = resolution.getResolution(parameters_1); // Or parameters_2, ...
+    JME::JetParameters parameters = {{JME::Binning::JetEta, jet.eta()}, {JME::Binning::Rho, rho}};
+    float sf = resolution.getScaleFactor(parameters);
+    float sf_up = resolution.getScaleFactor(parameters, Variation::UP);
+    float sf_down = resolution.getScaleFactor(parameters, Variation::DOWN);
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    */
 
 	if( !_isdata )
 	  {	     

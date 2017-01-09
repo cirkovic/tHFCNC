@@ -46,6 +46,15 @@ void Jet::read()
    if( CHECK(ntP->jet_genJet_E) )                _genJetE   = ntP->jet_genJet_E->at(idx);
    
    if(_pt > 0.) _p4.SetPtEtaPhiE(_pt,_eta,_phi,_E);
+
+   if( CHECK(ntP->jet_r_AK4PF_pt) )                    _r_AK4PF_pt     = ntP->jet_r_AK4PF_pt->at(idx);
+   if( CHECK(ntP->jet_r_AK4PchsF_pt) )                 _r_AK4PchsF_pt  = ntP->jet_r_AK4PchsF_pt->at(idx);
+   if( CHECK(ntP->jet_r_AK8PF_pt) )                    _r_AK8PF_pt     = ntP->jet_r_AK8PF_pt->at(idx);
+   if( CHECK(ntP->jet_r_AK8PFchs_pt) )                 _r_AK8PFchs_pt  = ntP->jet_r_AK8PFchs_pt->at(idx);
+   if( CHECK(ntP->jet_r_AK4PF_phi) )                   _r_AK4PF_phi    = ntP->jet_r_AK4PF_phi->at(idx);
+   if( CHECK(ntP->jet_r_AK4PchsF_phi) )                _r_AK4PchsF_phi = ntP->jet_r_AK4PchsF_phi->at(idx);
+   if( CHECK(ntP->jet_r_AK8PF_phi) )                   _r_AK8PF_phi    = ntP->jet_r_AK8PF_phi->at(idx);
+   if( CHECK(ntP->jet_r_AK8PFchs_phi) )                _r_AK8PFchs_phi = ntP->jet_r_AK8PFchs_phi->at(idx);
 }
 
 void Jet::init()
@@ -102,6 +111,15 @@ void Jet::init()
    _SfIterativeFitCferr1Down = 1.;
    _SfIterativeFitCferr2Up = 1.;
    _SfIterativeFitCferr2Down = 1.;
+
+   _r_AK4PF_pt     = VDEF;
+   _r_AK4PchsF_pt  = VDEF;
+   _r_AK8PF_pt     = VDEF;
+   _r_AK8PFchs_pt  = VDEF;
+   _r_AK4PF_phi    = VDEF;
+   _r_AK4PchsF_phi = VDEF;
+   _r_AK8PF_phi    = VDEF;
+   _r_AK8PFchs_phi = VDEF;
 }
 
 void Jet::sel()

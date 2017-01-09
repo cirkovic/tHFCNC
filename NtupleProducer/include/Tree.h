@@ -564,6 +564,14 @@ public :
    vector<float>   *jet_genParton_E;
    vector<int>     *jet_genParton_status;
    vector<int>     *jet_genParton_id;
+   vector<float>   *jet_r_AK4PF_pt;
+   vector<float>   *jet_r_AK4PchsF_pt;
+   vector<float>   *jet_r_AK8PF_pt;
+   vector<float>   *jet_r_AK8PFchs_pt;
+   vector<float>   *jet_r_AK4PF_phi;
+   vector<float>   *jet_r_AK4PchsF_phi;
+   vector<float>   *jet_r_AK8PF_phi;
+   vector<float>   *jet_r_AK8PFchs_phi;
    Int_t           genJet_n;
    vector<float>   *genJet_pt;
    vector<float>   *genJet_eta;
@@ -1140,6 +1148,14 @@ public :
    TBranch        *b_jet_genParton_E;   //!
    TBranch        *b_jet_genParton_status;   //!
    TBranch        *b_jet_genParton_id;   //!
+   TBranch        *b_jet_r_AK4PF_pt;   //!
+   TBranch        *b_jet_r_AK4PchsF_pt;   //!
+   TBranch        *b_jet_r_AK8PF_pt;   //!
+   TBranch        *b_jet_r_AK8PFchs_pt;   //!
+   TBranch        *b_jet_r_AK4PF_phi;   //!
+   TBranch        *b_jet_r_AK4PchsF_phi;   //!
+   TBranch        *b_jet_r_AK8PF_phi;   //!
+   TBranch        *b_jet_r_AK8PFchs_phi;   //!
    TBranch        *b_genJet_n;   //!
    TBranch        *b_genJet_pt;   //!
    TBranch        *b_genJet_eta;   //!

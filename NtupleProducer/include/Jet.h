@@ -140,7 +140,16 @@ class Jet : public Base
    float _SfIterativeFitCferr1Down;
    float _SfIterativeFitCferr2Up;
    float _SfIterativeFitCferr2Down;
-   
+
+   float _r_AK4PF_pt;
+   float _r_AK4PchsF_pt;
+   float _r_AK8PF_pt;
+   float _r_AK8PFchs_pt;
+   float _r_AK4PF_phi;
+   float _r_AK4PchsF_phi;
+   float _r_AK8PF_phi;
+   float _r_AK8PFchs_phi;
+
    ClassDef(Jet,1)
 };
 

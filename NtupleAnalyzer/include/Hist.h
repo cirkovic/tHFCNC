@@ -189,9 +189,9 @@ class Hist
 
    std::map<std::string, TH1D*> *_m1d_Hist;
    
-   TH1D *_h_PassSel_all;
-   TH1D *_h_PassSel_e;
-   TH1D *_h_PassSel_m;
+   //TH1D *_h_PassSel_all;
+   //TH1D *_h_PassSel_e;
+   //TH1D *_h_PassSel_m;
 
    std::vector<std::pair<std::vector<std::string>,double*> > *_s_Hist;
 	

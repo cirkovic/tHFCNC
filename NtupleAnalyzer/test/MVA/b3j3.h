@@ -46,21 +46,21 @@ void b3j3(std::string imva)
 	else if( imva == "HutSTmb3j3" ) trName = "tr_m_b3j3";
 	
 	TChain tr_sig(trName.c_str());
-	tr_sig.Add("../histTEST_MERGED_36/ST_TH_1L3B.root");
+	tr_sig.Add("../histTEST_MERGED/ST_TH_1L3B.root");
 
 	TChain tr_bkg(trName.c_str());
-	tr_bkg.Add("../histTEST_MERGED_36/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WW_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WZ_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WW_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
 
 	tr_sig.SetBranchAddress("weight",&weight);
 	tr_sig.SetBranchAddress("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
@@ -208,21 +208,21 @@ void b3j3(std::string imva)
 	else if( imva == "HctSTmb3j3" ) trName = "tr_m_b3j3";
 	
 	TChain tr_sig(trName.c_str());
-	tr_sig.Add("../histTEST_MERGED_36/ST_TH_1L3B_Hct.root");
+	tr_sig.Add("../histTEST_MERGED/ST_TH_1L3B_Hct.root");
 
 	TChain tr_bkg(trName.c_str());
-	tr_bkg.Add("../histTEST_MERGED_36/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WW_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WZ_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WW_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
 
 	tr_sig.SetBranchAddress("weight",&weight);
 	tr_sig.SetBranchAddress("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
@@ -360,22 +360,22 @@ void b3j3(std::string imva)
 	else if( imva == "HutTTmb3j3" ) trName = "tr_m_b3j3";
 	
 	TChain tr_sig(trName.c_str());
-	tr_sig.Add("../histTEST_MERGED_36/TT_TopLeptonicDecay_TH_1L3B_Eta_Hut.root");
-	tr_sig.Add("../histTEST_MERGED_36/TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hut.root");
+	tr_sig.Add("../histTEST_MERGED/TT_TopLeptonicDecay_TH_1L3B_Eta_Hut.root");
+	tr_sig.Add("../histTEST_MERGED/TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hut.root");
 
 	TChain tr_bkg(trName.c_str());
-	tr_bkg.Add("../histTEST_MERGED_36/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WW_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WZ_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WW_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
    
 	tr_sig.SetBranchAddress("weight",&weight);
 	tr_sig.SetBranchAddress("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
@@ -499,22 +499,22 @@ void b3j3(std::string imva)
 	else if( imva == "HctTTmb3j3" ) trName = "tr_m_b3j3";
 	
 	TChain tr_sig(trName.c_str());
-	tr_sig.Add("../histTEST_MERGED_36/TT_TopLeptonicDecay_TH_1L3B_Eta_Hct.root");
-	tr_sig.Add("../histTEST_MERGED_36/TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hct.root");
+	tr_sig.Add("../histTEST_MERGED/TT_TopLeptonicDecay_TH_1L3B_Eta_Hct.root");
+	tr_sig.Add("../histTEST_MERGED/TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hct.root");
 
 	TChain tr_bkg(trName.c_str());
-	tr_bkg.Add("../histTEST_MERGED_36/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WW_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/WZ_TuneCUETP8M1_13TeV-pythia8.root");
-	tr_bkg.Add("../histTEST_MERGED_36/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-10to50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_s-channel_4f_leptonDecays_13TeV-amcatnlo-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_antitop_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_t-channel_top_4f_leptonDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1.root");
+	tr_bkg.Add("../histTEST_MERGED/WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WW_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/WZ_TuneCUETP8M1_13TeV-pythia8.root");
+	tr_bkg.Add("../histTEST_MERGED/ZZ_TuneCUETP8M1_13TeV-pythia8.root");
    
 	tr_sig.SetBranchAddress("weight",&weight);
 	tr_sig.SetBranchAddress("HiggsMass_TOPHLEPBB",&HiggsMass_TOPHLEPBB);
