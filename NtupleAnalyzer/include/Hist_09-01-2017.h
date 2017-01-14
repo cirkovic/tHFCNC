@@ -189,9 +189,9 @@ class Hist
 
    std::map<std::string, TH1D*> *_m1d_Hist;
    
-   TH1D *_h_PassSel_all;
-   TH1D *_h_PassSel_e;
-   TH1D *_h_PassSel_m;
+   //TH1D *_h_PassSel_all;
+   //TH1D *_h_PassSel_e;
+   //TH1D *_h_PassSel_m;
 
    std::vector<std::pair<std::vector<std::string>,double*> > *_s_Hist;
 	
@@ -288,24 +288,6 @@ class Hist
    double _mvab4j4HctST;
    double _mvab4j4HutTT;
    double _mvab4j4HctTT;
-
-   std::vector<float> _jet_r_AK4PF_pt;
-   std::vector<float> _jet_r_AK4PchsF_pt;
-   std::vector<float> _jet_r_AK8PF_pt;
-   std::vector<float> _jet_r_AK8PFchs_pt;
-   std::vector<float> _jet_r_AK4PF_phi;
-   std::vector<float> _jet_r_AK4PchsF_phi;
-   std::vector<float> _jet_r_AK8PF_phi;
-   std::vector<float> _jet_r_AK8PFchs_phi;
-
-   std::vector<float> _jetTight_r_AK4PF_pt;
-   std::vector<float> _jetTight_r_AK4PchsF_pt;
-   std::vector<float> _jetTight_r_AK8PF_pt;
-   std::vector<float> _jetTight_r_AK8PFchs_pt;
-   std::vector<float> _jetTight_r_AK4PF_phi;
-   std::vector<float> _jetTight_r_AK4PchsF_phi;
-   std::vector<float> _jetTight_r_AK8PF_phi;
-   std::vector<float> _jetTight_r_AK8PFchs_phi;
 };
 
 #endif

@@ -10,7 +10,7 @@ while read p; do
     #echo `sed "${NUM}q;d" $OUTPUT`
     CMD="bsub -q 1nh batch_job_ny.sh $p "`sed "${NUM}q;d" $OUTPUT`
     echo $CMD
-    #exit
+    exit
     eval $CMD
     if [[ $NUM -eq $TOT ]]; then
         break

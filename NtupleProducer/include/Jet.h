@@ -78,6 +78,15 @@ class Jet : public Base
    float SfIterativeFitCferr1Down()         {return _SfIterativeFitCferr1Down;};
    float SfIterativeFitCferr2Up()         {return _SfIterativeFitCferr2Up;};
    float SfIterativeFitCferr2Down()         {return _SfIterativeFitCferr2Down;};
+
+   float r_AK4PF_pt()             {return _r_AK4PF_pt;};
+   float r_AK4PchsF_pt()          {return _r_AK4PchsF_pt;};
+   float r_AK8PF_pt()             {return _r_AK8PF_pt;};
+   float r_AK8PFchs_pt()          {return _r_AK8PFchs_pt;};
+   float r_AK4PF_phi()            {return _r_AK4PF_phi;};
+   float r_AK4PchsF_phi()         {return _r_AK4PchsF_phi;};
+   float r_AK8PF_phi()            {return _r_AK8PF_phi;};
+   float r_AK8PFchs_phi()         {return _r_AK8PFchs_phi;};
    
    void read();
    void init();

@@ -67,9 +67,9 @@ void Hist::init()
 
    //std::cout << "CIRKOVIC EXIT LAST" << std::endl;    exit(0);
    
-   _h_PassSel_all = new TH1D("h_PassSel_all","h_PassSel_all",3,0.,3.);
-   _h_PassSel_e = new TH1D("h_PassSel_e","h_PassSel_e",3,0.,3.);
-   _h_PassSel_m = new TH1D("h_PassSel_m","h_PassSel_m",3,0.,3.);
+   //_h_PassSel_all = new TH1D("h_PassSel_all","h_PassSel_all",3,0.,3.);
+   //_h_PassSel_e = new TH1D("h_PassSel_e","h_PassSel_e",3,0.,3.);
+   //_h_PassSel_m = new TH1D("h_PassSel_m","h_PassSel_m",3,0.,3.);
 
    hname.clear(); 
 
@@ -204,10 +204,13 @@ void Hist::init()
      {
 	for(int is=0;is<sel_n;is++)
 	  {
-	     std::string trName = "tr_"+chan[ic]+"_"+sel[is];
+	     //std::string trName = "tr_"+chan[ic]+"_"+sel[is];
+	     std::string trName = "sf_"+chan[ic]+"_"+sel[is];
 	     _trout[ic][is] = new TTree(trName.c_str(),trName.c_str());
 	     
+/*
 	     _trout[ic][is]->Branch("weight",&m_weight,"weight/D");
+*/
 	     _trout[ic][is]->Branch("wgt_csv",&_wgt_csv,"wgt_csv/D");
          /*
 	     _trout[ic][is]->Branch("HiggsMass_TOPTOPLEPHBB",&m_HiggsMass_TOPTOPLEPHBB,"HiggsMass_TOPTOPLEPHBB/D");
@@ -237,6 +240,7 @@ void Hist::init()
 	     _trout[ic][is]->Branch("TopLepHiggsDr_TOPHLEPBB",&m_TopLepHiggsDr_TOPHLEPBB,"TopLepHiggsDr_TOPHLEPBB/D");
 	     _trout[ic][is]->Branch("TopLepTopHadDr_TOPTOPLEPHAD",&m_TopLepTopHadDr_TOPTOPLEPHAD,"TopLepTopHadDr_TOPTOPLEPHAD/D");
          */
+         /*
          _trout[ic][is]->Branch("HiggsMass_TOPHLEPBB",&m_HiggsMass_TOPHLEPBB,"HiggsMass_TOPHLEPBB/D");
          _trout[ic][is]->Branch("MVA_TOPHLEPBB",&m_MVA_TOPHLEPBB,"MVA_TOPHLEPBB/D");
          _trout[ic][is]->Branch("HiggsEta_TOPHLEPBB",&m_HiggsEta_TOPHLEPBB,"HiggsEta_TOPHLEPBB/D");
@@ -323,28 +327,10 @@ void Hist::init()
          }
          _trout[ic][is]->Branch("njets",&njets,"njets/int");
          _trout[ic][is]->Branch("nbjets",&nbjets,"nbjets/int");
-         //_trout[ic][is]->Branch("jets","std::vector<Jet>",&_v_Jet);
-        _trout[ic][is]->Branch("jet_r_AK4PF_pt","std::vector<float>",&_jet_r_AK4PF_pt);
-        _trout[ic][is]->Branch("jet_r_AK4PchsF_pt","std::vector<float>",&_jet_r_AK4PchsF_pt);
-        _trout[ic][is]->Branch("jet_r_AK8PF_pt","std::vector<float>",&_jet_r_AK8PF_pt);
-        _trout[ic][is]->Branch("jet_r_AK8PFchs_pt","std::vector<float>",&_jet_r_AK8PFchs_pt);
-        _trout[ic][is]->Branch("jet_r_AK4PF_phi","std::vector<float>",&_jet_r_AK4PF_phi);
-        _trout[ic][is]->Branch("jet_r_AK4PchsF_phi","std::vector<float>",&_jet_r_AK4PchsF_phi);
-        _trout[ic][is]->Branch("jet_r_AK8PF_phi","std::vector<float>",&_jet_r_AK8PF_phi);
-        _trout[ic][is]->Branch("jet_r_AK8PFchs_phi","std::vector<float>",&_jet_r_AK8PFchs_phi);
-
-        _trout[ic][is]->Branch("jetTight_r_AK4PF_pt","std::vector<float>",&_jetTight_r_AK4PF_pt);
-        _trout[ic][is]->Branch("jetTight_r_AK4PchsF_pt","std::vector<float>",&_jetTight_r_AK4PchsF_pt);
-        _trout[ic][is]->Branch("jetTight_r_AK8PF_pt","std::vector<float>",&_jetTight_r_AK8PF_pt);
-        _trout[ic][is]->Branch("jetTight_r_AK8PFchs_pt","std::vector<float>",&_jetTight_r_AK8PFchs_pt);
-        _trout[ic][is]->Branch("jetTight_r_AK4PF_phi","std::vector<float>",&_jetTight_r_AK4PF_phi);
-        _trout[ic][is]->Branch("jetTight_r_AK4PchsF_phi","std::vector<float>",&_jetTight_r_AK4PchsF_phi);
-        _trout[ic][is]->Branch("jetTight_r_AK8PF_phi","std::vector<float>",&_jetTight_r_AK8PF_phi);
-        _trout[ic][is]->Branch("jetTight_r_AK8PFchs_phi","std::vector<float>",&_jetTight_r_AK8PFchs_phi);
-
+        */
 	  }
      }
-
+   /*
    //std::cout << "CIRKOVIC BREAK" << std::endl;    exit(0);
 
    _s_Hist = new std::vector<std::pair<std::vector<std::string>,double*> >();
@@ -481,6 +467,7 @@ void Hist::init()
      }
 
    std::cout << "Hist initialisation done" << std::endl;
+   */
 }
 
 void Hist::fill()
@@ -567,36 +554,14 @@ void Hist::fill()
 	     //	if( _v_Jet->at(i).CSVv2() >= 0.970 ) _v_BJetTight->push_back(_v_Jet->at(i));
 	  }	
      }      
-
-   for(int i=0;i<_v_Jet->size();i++) {
-       _jet_r_AK4PF_pt.push_back(_v_Jet->at(i).r_AK4PF_pt());
-       _jet_r_AK4PchsF_pt.push_back(_v_Jet->at(i).r_AK4PchsF_pt());
-       _jet_r_AK8PF_pt.push_back(_v_Jet->at(i).r_AK8PF_pt());
-       _jet_r_AK8PFchs_pt.push_back(_v_Jet->at(i).r_AK8PFchs_pt());
-       _jet_r_AK4PF_phi.push_back(_v_Jet->at(i).r_AK4PF_phi());
-       _jet_r_AK4PchsF_phi.push_back(_v_Jet->at(i).r_AK4PchsF_phi());
-       _jet_r_AK8PF_phi.push_back(_v_Jet->at(i).r_AK8PF_phi());
-       _jet_r_AK8PFchs_phi.push_back(_v_Jet->at(i).r_AK8PFchs_phi());
-   }
-
-   for(int i=0;i<_v_JetTight->size();i++) {
-       _jetTight_r_AK4PF_pt.push_back(_v_JetTight->at(i).r_AK4PF_pt());
-       _jetTight_r_AK4PchsF_pt.push_back(_v_JetTight->at(i).r_AK4PchsF_pt());
-       _jetTight_r_AK8PF_pt.push_back(_v_JetTight->at(i).r_AK8PF_pt());
-       _jetTight_r_AK8PFchs_pt.push_back(_v_JetTight->at(i).r_AK8PFchs_pt());
-       _jetTight_r_AK4PF_phi.push_back(_v_JetTight->at(i).r_AK4PF_phi());
-       _jetTight_r_AK4PchsF_phi.push_back(_v_JetTight->at(i).r_AK4PchsF_phi());
-       _jetTight_r_AK8PF_phi.push_back(_v_JetTight->at(i).r_AK8PF_phi());
-       _jetTight_r_AK8PFchs_phi.push_back(_v_JetTight->at(i).r_AK8PFchs_phi());
-   }
-   
+   /*
    int id = _v_Event->at(0).id();
    int run = _v_Event->at(0).run();
    int lumi = _v_Event->at(0).lumi();
    
    float metpt = _v_Event->at(0).metpt();
    float metphi = _v_Event->at(0).metphi();
-   
+   */
    //int njets = _v_JetTight->size();
    njets = _v_JetTight->size();
    //int nbjets = _v_BJetTight->size();
@@ -648,13 +613,12 @@ void Hist::fill()
 	  )
 	  chan_pass[c] = 1;
      }   
-   
+   /*
    // Selection crtieria for plots
    //bool pass = (CHECK_BIT(passSel_all,0) || CHECK_BIT(passSel_all,1) || CHECK_BIT(passSel_all,2));
    bool pass = (CHECK_BIT(passSel_all,0) || CHECK_BIT(passSel_all,1) || CHECK_BIT(passSel_all,2) ||
                 CHECK_BIT(passSel_all,3) || CHECK_BIT(passSel_all,4) || CHECK_BIT(passSel_all,5) ||
                 CHECK_BIT(passSel_all,6) || CHECK_BIT(passSel_all,7) || CHECK_BIT(passSel_all,8));
-   
    if( pass )
      {
 	_v_Lepton->clear();
@@ -682,7 +646,7 @@ void Hist::fill()
 	// top reconstruction
 	_trec->run();	
 
-    /*
+    / *
 	m_HiggsMass_TOPTOPLEPHBB = _trec->Higgs_TOPTOPLEPHBB_p4().M();
 	m_HiggsMass_TOPHLEPBB = _trec->Higgs_TOPHLEPBB_p4().M();
 	m_TopHadMass_TOPTOPLEPHAD = _trec->TopHad_TOPTOPLEPHAD_p4().M();
@@ -709,7 +673,7 @@ void Hist::fill()
 	m_TopLepHiggsDr_TOPTOPLEPHBB = _trec->TopLep_TOPTOPLEPHBB_p4().DeltaR(_trec->Higgs_TOPTOPLEPHBB_p4());
 	m_TopLepHiggsDr_TOPHLEPBB = _trec->TopLep_TOPHLEPBB_p4().DeltaR(_trec->Higgs_TOPHLEPBB_p4());
 	m_TopLepTopHadDr_TOPTOPLEPHAD = _trec->TopLep_TOPTOPLEPHAD_p4().DeltaR(_trec->TopHad_TOPTOPLEPHAD_p4());
-    */
+    * /
 
     m_HiggsMass_TOPHLEPBB = _trec->Higgs_TOPHLEPBB_p4().M();
     m_MVA_TOPHLEPBB = _trec->MVA_TOPHLEPBB();
@@ -844,7 +808,7 @@ void Hist::fill()
      }
     //std::cout << std::endl;
 
-    /*
+    / *
 	_mva->setVariable_HiggsMass_TOPHLEPBB(m_HiggsMass_TOPHLEPBB);
 	_mva->setVariable_TopHadMass_TOPTOPLEPHAD(m_TopHadMass_TOPTOPLEPHAD);
 	_mva->setVariable_MVA_TOPHLEPBB(m_MVA_TOPHLEPBB);
@@ -867,7 +831,7 @@ void Hist::fill()
 	//_mva->setVariable_TopLepEta_TOPTOPLEPHBB(m_TopLepEta_TOPTOPLEPHBB);
 	_mva->setVariable_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB(m_HiggsBJet1HiggsBJet2Dr_TOPTOPLEPHBB);
 	_mva->setVariable_TopLepHiggsDr_TOPTOPLEPHBB(m_TopLepHiggsDr_TOPTOPLEPHBB);
-    */
+    * /
     _mva->setVariable_HiggsMass_TOPHLEPBB(m_HiggsMass_TOPHLEPBB);
     _mva->setVariable_MVA_TOPHLEPBB(m_MVA_TOPHLEPBB);
     _mva->setVariable_HiggsEta_TOPHLEPBB(m_HiggsEta_TOPHLEPBB);
@@ -899,7 +863,7 @@ void Hist::fill()
     _mva->setVariable_LepCharge(m_LepCharge);
 	
 	// Evaluate MVA discriminator
-	/*
+	/ *
 	_mvab3j4HutST = _mva->run("b3j4HutST");
 	_mvab3j4HctST = _mva->run("b3j4HctST");
 	_mvab3j4HutTT = _mva->run("b3j4HutTT");
@@ -914,7 +878,7 @@ void Hist::fill()
 	_mvab2j4HctST = _mva->run("b2j4HctST");
 	_mvab2j4HutTT = _mva->run("b2j4HutTT");
 	_mvab2j4HctTT = _mva->run("b2j4HctTT");
-    */
+    * /
     _mvab0j3HutST = _mva->run("b0j3HutST");
     _mvab0j3HctST = _mva->run("b0j3HctST");
     _mvab0j3HutTT = _mva->run("b0j3HutTT");
@@ -960,7 +924,7 @@ void Hist::fill()
     _mvab4j4HutTT = _mva->run("b4j4HutTT");
     _mvab4j4HctTT = _mva->run("b4j4HctTT");
 
-    /*
+    / *
     if (nbjets == 0 && njets == 3) std::cout << "b0j3" << std::endl;
     else if (nbjets == 1 && njets == 3) std::cout << "b1j3" << std::endl;
     else if (nbjets == 2 && njets == 3) std::cout << "b2j3" << std::endl;
@@ -970,8 +934,8 @@ void Hist::fill()
     else if (nbjets == 2 && njets == 4) std::cout << "b2j4" << std::endl;
     else if (nbjets == 3 && njets == 4) std::cout << "b3j4" << std::endl;
     else if (nbjets == 4 && njets == 4) std::cout << "b4j4" << std::endl;
-    */
-	
+    * /
+	*/
 	bool sel_pass[sel_n];
 	for(int c=0;c<sel_n;c++)
 	  {	
@@ -994,16 +958,17 @@ void Hist::fill()
 	       )
 	       sel_pass[c] = 1;
 	  }   
-	     
+	
 	for(int isys=0;isys<sys_n;isys++)
 	  {	
+         /*
 	     double sfj = w;
 	     
 	     // 1d
 	     std::vector<std::string> histNAMESSEL;
 	     std::vector<int> histSYS;
 	     std::vector<int> histVAR;
-	     /*
+
 	     for(int ih=0;ih<histname_n;ih++)
 	       {
 		  for(int ic=0;ic<chan_n;ic++)
@@ -1038,7 +1003,7 @@ void Hist::fill()
                  fillTree(ic,is);
              }
             }
-
+         /*
 	     int nHISTSEL = histNAMESSEL.size();
 	     for(int ih=0;ih<nHISTSEL;ih++)
 	       {		       
@@ -1048,10 +1013,13 @@ void Hist::fill()
 		  std::string varName = histname[histVAR[hidx]];
 		  fillHisto1D(h,sfj,sys[histSYS[hidx]],0,varName);
 	       }
+         */
 	  }
+    /*
      }
    
    fillPassSel(_h_PassSel_all,_h_PassSel_e,_h_PassSel_m,w);
+   */
 }
 
 void Hist::close()
