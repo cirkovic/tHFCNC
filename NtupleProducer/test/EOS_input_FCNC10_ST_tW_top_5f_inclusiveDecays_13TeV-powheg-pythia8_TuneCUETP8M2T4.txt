@@ -1,0 +1,14 @@
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_1.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_10.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_11.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_12.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_13.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_14.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_2.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_3.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_4.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_5.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_6.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_7.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_8.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M2T4/output_9.root

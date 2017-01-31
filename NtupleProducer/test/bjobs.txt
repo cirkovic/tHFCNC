@@ -1,0 +1,231 @@
+JOBID     USER    STAT  QUEUE      FROM_HOST   EXEC_HOST   JOB_NAME   SUBMIT_TIME
+831949195 cirkovi RUN   8nm        lxplus003.c b67bf50e6f  *pythia8_x Jan 11 11:45
+831949491 cirkovi RUN   8nm        lxplus003.c b62856f857  *pythia8_x Jan 11 11:45
+831949552 cirkovi RUN   8nm        lxplus003.c b67bf50e6f  *pythia8_x Jan 11 11:45
+831949584 cirkovi RUN   8nm        lxplus003.c b64da10ea7  *pythia8_x Jan 11 11:45
+831949775 cirkovi RUN   8nm        lxplus003.c b65d5807bb  *pythia8_x Jan 11 11:46
+831949792 cirkovi RUN   8nm        lxplus003.c b62fc89011  *pythia8_x Jan 11 11:46
+831950216 cirkovi RUN   8nm        lxplus003.c b6ef446413  *pythia8_x Jan 11 11:46
+831950367 cirkovi RUN   8nm        lxplus003.c b6d08499dc  *pythia8_x Jan 11 11:46
+831950606 cirkovi RUN   8nm        lxplus003.c b65d5807bb  *pythia8_x Jan 11 11:47
+831950649 cirkovi RUN   8nm        lxplus003.c b618024001  *pythia8_x Jan 11 11:47
+831950880 cirkovi RUN   8nm        lxplus003.c b672bae86d  *pythia8_x Jan 11 11:47
+831950902 cirkovi RUN   8nm        lxplus003.c b618024001  *pythia8_x Jan 11 11:47
+831950953 cirkovi RUN   8nm        lxplus003.c b65d5807bb  *pythia8_x Jan 11 11:47
+831950990 cirkovi RUN   8nm        lxplus003.c b6188fb405  *pythia8_x Jan 11 11:47
+831951069 cirkovi RUN   8nm        lxplus003.c b65d5807bb  *pythia8_x Jan 11 11:47
+831951070 cirkovi RUN   8nm        lxplus003.c b64143467f  *pythia8_x Jan 11 11:47
+831951075 cirkovi RUN   8nm        lxplus003.c b63a7ec884  *pythia8_x Jan 11 11:47
+831951101 cirkovi RUN   8nm        lxplus003.c b62fd3371f  *pythia8_x Jan 11 11:47
+831951136 cirkovi RUN   8nm        lxplus003.c b661b6301a  *pythia8_x Jan 11 11:47
+831951237 cirkovi RUN   8nm        lxplus003.c b6793e2665  *pythia8_x Jan 11 11:47
+831951288 cirkovi RUN   8nm        lxplus003.c b6141f6d65  *pythia8_x Jan 11 11:47
+831951510 cirkovi RUN   8nm        lxplus003.c b6793e2665  *pythia8_x Jan 11 11:48
+831951639 cirkovi RUN   8nm        lxplus003.c b6df9640d8  *pythia8_x Jan 11 11:48
+831951649 cirkovi RUN   8nm        lxplus003.c b64a9f125c  *pythia8_x Jan 11 11:48
+831951665 cirkovi RUN   8nm        lxplus003.c b617cd7d2e  *pythia8_x Jan 11 11:48
+831951717 cirkovi RUN   8nm        lxplus003.c b6451c7c3e  *pythia8_x Jan 11 11:48
+831951726 cirkovi RUN   8nm        lxplus003.c b6111b28b6  *pythia8_x Jan 11 11:48
+831951754 cirkovi RUN   8nm        lxplus003.c b67df61de2  *pythia8_x Jan 11 11:48
+831951789 cirkovi RUN   8nm        lxplus003.c b62d99135a  *pythia8_x Jan 11 11:48
+831951822 cirkovi RUN   8nm        lxplus003.c b6793e2665  *pythia8_x Jan 11 11:48
+831951828 cirkovi RUN   8nm        lxplus003.c b61ea1d5e7  *pythia8_x Jan 11 11:48
+831951956 cirkovi RUN   8nm        lxplus003.c b696e46dc7  *pythia8_x Jan 11 11:48
+831951959 cirkovi RUN   8nm        lxplus003.c b63eb72170  *pythia8_x Jan 11 11:48
+831951993 cirkovi RUN   8nm        lxplus003.c b6c279e58b  *pythia8_x Jan 11 11:48
+831952007 cirkovi RUN   8nm        lxplus003.c b685a4c3a9  *pythia8_x Jan 11 11:48
+831952065 cirkovi RUN   8nm        lxplus003.c b67f0a69d6  *pythia8_x Jan 11 11:49
+831952072 cirkovi RUN   8nm        lxplus003.c b67f0a69d6  *pythia8_x Jan 11 11:49
+831952078 cirkovi RUN   8nm        lxplus003.c b61dcb0940  *pythia8_x Jan 11 11:49
+831952102 cirkovi RUN   8nm        lxplus003.c b68f85caa7  *pythia8_x Jan 11 11:49
+831952120 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:49
+831952130 cirkovi RUN   8nm        lxplus003.c b63e4ce3f8  *pythia8_x Jan 11 11:49
+831952136 cirkovi RUN   8nm        lxplus003.c b69c38600d  *pythia8_x Jan 11 11:49
+831952141 cirkovi RUN   8nm        lxplus003.c b64a9f125c  *pythia8_x Jan 11 11:49
+831952179 cirkovi RUN   8nm        lxplus003.c b69c38600d  *pythia8_x Jan 11 11:49
+831952241 cirkovi RUN   8nm        lxplus003.c b618024001  *pythia8_x Jan 11 11:49
+831952281 cirkovi RUN   8nm        lxplus003.c b62856f857  *pythia8_x Jan 11 11:49
+831952316 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:49
+831952322 cirkovi RUN   8nm        lxplus003.c b685a4c3a9  *pythia8_x Jan 11 11:49
+831952326 cirkovi RUN   8nm        lxplus003.c b658796e3a  *pythia8_x Jan 11 11:49
+831952347 cirkovi RUN   8nm        lxplus003.c b678713abd  *pythia8_x Jan 11 11:49
+831952391 cirkovi RUN   8nm        lxplus003.c b63d5804cc  *pythia8_x Jan 11 11:49
+831952396 cirkovi RUN   8nm        lxplus003.c b62fd3371f  *pythia8_x Jan 11 11:49
+831952404 cirkovi RUN   8nm        lxplus003.c b6a2d4d657  *pythia8_x Jan 11 11:49
+831952429 cirkovi RUN   8nm        lxplus003.c b66942fb26  *pythia8_x Jan 11 11:49
+831952430 cirkovi RUN   8nm        lxplus003.c b66942fb26  *pythia8_x Jan 11 11:49
+831952457 cirkovi RUN   8nm        lxplus003.c b6da4b8f35  *pythia8_x Jan 11 11:49
+831952474 cirkovi RUN   8nm        lxplus003.c b63e4ce3f8  *pythia8_x Jan 11 11:50
+831952536 cirkovi RUN   8nm        lxplus003.c b6188fb405  *pythia8_x Jan 11 11:50
+831952572 cirkovi RUN   8nm        lxplus003.c b6141f6d65  *pythia8_x Jan 11 11:50
+831952584 cirkovi RUN   8nm        lxplus003.c b678713abd  *pythia8_x Jan 11 11:50
+831952604 cirkovi RUN   8nm        lxplus003.c b67f0a69d6  *pythia8_x Jan 11 11:50
+831952614 cirkovi RUN   8nm        lxplus003.c b63a7ec884  *pythia8_x Jan 11 11:50
+831952640 cirkovi RUN   8nm        lxplus003.c b6793e2665  *pythia8_x Jan 11 11:50
+831952651 cirkovi RUN   8nm        lxplus003.c b649eba35d  *pythia8_x Jan 11 11:50
+831952661 cirkovi RUN   8nm        lxplus003.c b64143467f  *pythia8_x Jan 11 11:50
+831952679 cirkovi RUN   8nm        lxplus003.c b6537271d9  *pythia8_x Jan 11 11:50
+831952704 cirkovi RUN   8nm        lxplus003.c b65598fbfc  *pythia8_x Jan 11 11:50
+831952721 cirkovi RUN   8nm        lxplus003.c b64a9f125c  *pythia8_x Jan 11 11:50
+831952750 cirkovi RUN   8nm        lxplus003.c b67f0a69d6  *pythia8_x Jan 11 11:50
+831952751 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:50
+831952800 cirkovi RUN   8nm        lxplus003.c b62fd3644b  *pythia8_x Jan 11 11:50
+831952804 cirkovi RUN   8nm        lxplus003.c b673e3208e  *pythia8_x Jan 11 11:50
+831952810 cirkovi RUN   8nm        lxplus003.c b6811fbed9  *pythia8_x Jan 11 11:50
+831952814 cirkovi RUN   8nm        lxplus003.c b65691a27d  *pythia8_x Jan 11 11:50
+831952817 cirkovi RUN   8nm        lxplus003.c b68f74220b  *pythia8_x Jan 11 11:50
+831952844 cirkovi RUN   8nm        lxplus003.c b66942fb26  *pythia8_x Jan 11 11:50
+831952852 cirkovi RUN   8nm        lxplus003.c b62d99135a  *pythia8_x Jan 11 11:50
+831952853 cirkovi RUN   8nm        lxplus003.c b65691a27d  *pythia8_x Jan 11 11:50
+831952860 cirkovi RUN   8nm        lxplus003.c b63944d644  *pythia8_x Jan 11 11:50
+831952866 cirkovi RUN   8nm        lxplus003.c b678713abd  *pythia8_x Jan 11 11:50
+831952882 cirkovi RUN   8nm        lxplus003.c b640bfe8c8  *pythia8_x Jan 11 11:50
+831952886 cirkovi RUN   8nm        lxplus003.c b64a9f125c  *pythia8_x Jan 11 11:50
+831952895 cirkovi RUN   8nm        lxplus003.c b63a7ec884  *pythia8_x Jan 11 11:50
+831952898 cirkovi RUN   8nm        lxplus003.c b67f0a69d6  *pythia8_x Jan 11 11:50
+831952910 cirkovi RUN   8nm        lxplus003.c b6537271d9  *pythia8_x Jan 11 11:50
+831952913 cirkovi RUN   8nm        lxplus003.c b62842eac5  *pythia8_x Jan 11 11:50
+831952933 cirkovi RUN   8nm        lxplus003.c b634662849  *pythia8_x Jan 11 11:51
+831952958 cirkovi RUN   8nm        lxplus003.c b63a7ec884  *pythia8_x Jan 11 11:51
+831952967 cirkovi RUN   8nm        lxplus003.c b62db66a8d  *pythia8_x Jan 11 11:51
+831952982 cirkovi RUN   8nm        lxplus003.c b6b828bb99  *pythia8_x Jan 11 11:51
+831953035 cirkovi RUN   8nm        lxplus003.c b61ff46de7  *pythia8_x Jan 11 11:51
+831953043 cirkovi RUN   8nm        lxplus003.c b63a7ec884  *pythia8_x Jan 11 11:51
+831953068 cirkovi RUN   8nm        lxplus003.c b658796e3a  *pythia8_x Jan 11 11:51
+831953077 cirkovi RUN   8nm        lxplus003.c b672bae86d  *pythia8_x Jan 11 11:51
+831953085 cirkovi RUN   8nm        lxplus003.c b65598fbfc  *pythia8_x Jan 11 11:51
+831953114 cirkovi RUN   8nm        lxplus003.c b6e4a6728a  *pythia8_x Jan 11 11:51
+831953130 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:51
+831953133 cirkovi RUN   8nm        lxplus003.c b658796e3a  *pythia8_x Jan 11 11:51
+831953143 cirkovi RUN   8nm        lxplus003.c b6aced4a9d  *pythia8_x Jan 11 11:51
+831953159 cirkovi RUN   8nm        lxplus003.c b65db56c03  *pythia8_x Jan 11 11:51
+831953170 cirkovi RUN   8nm        lxplus003.c b609f37355  *pythia8_x Jan 11 11:51
+831953181 cirkovi RUN   8nm        lxplus003.c b69728f61e2 *pythia8_x Jan 11 11:51
+831953189 cirkovi RUN   8nm        lxplus003.c b673864ebf  *pythia8_x Jan 11 11:51
+831953212 cirkovi RUN   8nm        lxplus003.c b682a9e003  *pythia8_x Jan 11 11:51
+831953213 cirkovi RUN   8nm        lxplus003.c b6496e26c4  *pythia8_x Jan 11 11:51
+831953217 cirkovi RUN   8nm        lxplus003.c b6220bc805  *pythia8_x Jan 11 11:51
+831953229 cirkovi RUN   8nm        lxplus003.c b68ea8182e  *pythia8_x Jan 11 11:51
+831953231 cirkovi RUN   8nm        lxplus003.c b6fb518812  *pythia8_x Jan 11 11:51
+831953236 cirkovi RUN   8nm        lxplus003.c b6fb518812  *pythia8_x Jan 11 11:51
+831953239 cirkovi RUN   8nm        lxplus003.c b63a7ec884  *pythia8_x Jan 11 11:51
+831953249 cirkovi RUN   8nm        lxplus003.c b62f955b86  *pythia8_x Jan 11 11:51
+831953250 cirkovi RUN   8nm        lxplus003.c b6a10a01d4  *pythia8_x Jan 11 11:51
+831953262 cirkovi RUN   8nm        lxplus003.c b649eba35d  *pythia8_x Jan 11 11:51
+831953284 cirkovi RUN   8nm        lxplus003.c b64a9f125c  *pythia8_x Jan 11 11:51
+831953309 cirkovi RUN   8nm        lxplus003.c b62842eac5  *pythia8_x Jan 11 11:51
+831953314 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:51
+831953320 cirkovi RUN   8nm        lxplus003.c b6141f6d65  *pythia8_x Jan 11 11:51
+831953378 cirkovi RUN   8nm        lxplus003.c b62842eac5  *pythia8_x Jan 11 11:51
+831953379 cirkovi RUN   8nm        lxplus003.c b678713abd  *pythia8_x Jan 11 11:51
+831953399 cirkovi RUN   8nm        lxplus003.c b6889bd30d  *pythia8_x Jan 11 11:51
+831953400 cirkovi RUN   8nm        lxplus003.c b6889bd30d  *pythia8_x Jan 11 11:51
+831953412 cirkovi RUN   8nm        lxplus003.c b66e660520  *pythia8_x Jan 11 11:51
+831953435 cirkovi RUN   8nm        lxplus003.c b66e660520  *pythia8_x Jan 11 11:51
+831953437 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:51
+831953459 cirkovi RUN   8nm        lxplus003.c b672bae86d  *pythia8_x Jan 11 11:52
+831953472 cirkovi RUN   8nm        lxplus003.c b67b56934a  *pythia8_x Jan 11 11:52
+831953474 cirkovi RUN   8nm        lxplus003.c b67b56934a  *pythia8_x Jan 11 11:52
+831953485 cirkovi RUN   8nm        lxplus003.c b6e4a6728a  *pythia8_x Jan 11 11:52
+831953486 cirkovi RUN   8nm        lxplus003.c b63a7ec884  *pythia8_x Jan 11 11:52
+831953489 cirkovi RUN   8nm        lxplus003.c b6b8618022  *pythia8_x Jan 11 11:52
+831953492 cirkovi RUN   8nm        lxplus003.c p05496706n4 *pythia8_x Jan 11 11:52
+831953497 cirkovi RUN   8nm        lxplus003.c b6988889d0  *pythia8_x Jan 11 11:52
+831953505 cirkovi RUN   8nm        lxplus003.c b67bf50e6f  *pythia8_x Jan 11 11:52
+831953511 cirkovi RUN   8nm        lxplus003.c b67b7f83d1  *pythia8_x Jan 11 11:52
+831953513 cirkovi RUN   8nm        lxplus003.c b6e1b01b6b  *pythia8_x Jan 11 11:52
+831953528 cirkovi RUN   8nm        lxplus003.c b60f3275b2  *pythia8_x Jan 11 11:52
+831953532 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:52
+831953533 cirkovi RUN   8nm        lxplus003.c b678713abd  *pythia8_x Jan 11 11:52
+831953539 cirkovi RUN   8nm        lxplus003.c b6a2e547b8  *pythia8_x Jan 11 11:52
+831953542 cirkovi RUN   8nm        lxplus003.c b64dff2bde  *pythia8_x Jan 11 11:52
+831953544 cirkovi RUN   8nm        lxplus003.c b61ea1d5e7  *pythia8_x Jan 11 11:52
+831953547 cirkovi RUN   8nm        lxplus003.c b61ea1d5e7  *pythia8_x Jan 11 11:52
+831953550 cirkovi RUN   8nm        lxplus003.c b67f0a69d6  *pythia8_x Jan 11 11:52
+831953555 cirkovi RUN   8nm        lxplus003.c b649d4b8fd  *pythia8_x Jan 11 11:52
+831953561 cirkovi RUN   8nm        lxplus003.c b635dba902  *pythia8_x Jan 11 11:52
+831953563 cirkovi RUN   8nm        lxplus003.c b609f37355  *pythia8_x Jan 11 11:52
+831953565 cirkovi RUN   8nm        lxplus003.c p06108707s8 *pythia8_x Jan 11 11:52
+831953590 cirkovi RUN   8nm        lxplus003.c b62842eac5  *pythia8_x Jan 11 11:52
+831953593 cirkovi RUN   8nm        lxplus003.c p06108707r2 *pythia8_x Jan 11 11:52
+831953598 cirkovi RUN   8nm        lxplus003.c b60f3275b2  *pythia8_x Jan 11 11:52
+831953602 cirkovi RUN   8nm        lxplus003.c p06109780q6 *pythia8_x Jan 11 11:52
+831953608 cirkovi RUN   8nm        lxplus003.c p06109780q6 *pythia8_x Jan 11 11:52
+831953611 cirkovi RUN   8nm        lxplus003.c b6141f6d65  *pythia8_x Jan 11 11:52
+831953624 cirkovi RUN   8nm        lxplus003.c p06108707c4 *pythia8_x Jan 11 11:52
+831953626 cirkovi RUN   8nm        lxplus003.c p06108707c4 *pythia8_x Jan 11 11:52
+831953630 cirkovi RUN   8nm        lxplus003.c b6d08499dc  *pythia8_x Jan 11 11:52
+831953633 cirkovi RUN   8nm        lxplus003.c b6865af37d  *pythia8_x Jan 11 11:52
+831953635 cirkovi RUN   8nm        lxplus003.c b62842eac5  *pythia8_x Jan 11 11:52
+831953644 cirkovi RUN   8nm        lxplus003.c b622ce8143  *pythia8_x Jan 11 11:52
+831953648 cirkovi RUN   8nm        lxplus003.c b61ea1d5e7  *pythia8_x Jan 11 11:52
+831953657 cirkovi RUN   8nm        lxplus003.c b6e4a6728a  *pythia8_x Jan 11 11:52
+831953662 cirkovi RUN   8nm        lxplus003.c p05496706n4 *pythia8_x Jan 11 11:52
+831953664 cirkovi RUN   8nm        lxplus003.c b60113bc1a  *pythia8_x Jan 11 11:52
+831953671 cirkovi RUN   8nm        lxplus003.c b6641399e6  *pythia8_x Jan 11 11:52
+831953679 cirkovi RUN   8nm        lxplus003.c b6141f6d65  *pythia8_x Jan 11 11:52
+831953687 cirkovi RUN   8nm        lxplus003.c b64ce808ba  *pythia8_x Jan 11 11:52
+831953691 cirkovi RUN   8nm        lxplus003.c b64ce808ba  *pythia8_x Jan 11 11:52
+831953694 cirkovi RUN   8nm        lxplus003.c b6d3c3ce3d  *pythia8_x Jan 11 11:52
+831953698 cirkovi RUN   8nm        lxplus003.c p06108707s4 *pythia8_x Jan 11 11:52
+831953703 cirkovi RUN   8nm        lxplus003.c p06108707s4 *pythia8_x Jan 11 11:52
+831953705 cirkovi RUN   8nm        lxplus003.c b6b8618022  *pythia8_x Jan 11 11:52
+831953708 cirkovi RUN   8nm        lxplus003.c b6e4a6728a  *pythia8_x Jan 11 11:52
+831953710 cirkovi RUN   8nm        lxplus003.c b65598fbfc  *pythia8_x Jan 11 11:52
+831953714 cirkovi RUN   8nm        lxplus003.c b67c15cf31  *pythia8_x Jan 11 11:52
+831953715 cirkovi RUN   8nm        lxplus003.c b6188fb405  *pythia8_x Jan 11 11:52
+831953719 cirkovi RUN   8nm        lxplus003.c b6889bd30d  *pythia8_x Jan 11 11:52
+831953722 cirkovi RUN   8nm        lxplus003.c b6cd8dfa3a  *pythia8_x Jan 11 11:52
+831953738 cirkovi RUN   8nm        lxplus003.c b6620655ae  *pythia8_x Jan 11 11:52
+831953742 cirkovi RUN   8nm        lxplus003.c b6aa4fdba5  *pythia8_x Jan 11 11:52
+831953747 cirkovi RUN   8nm        lxplus003.c p06108707r2 *pythia8_x Jan 11 11:52
+831953750 cirkovi RUN   8nm        lxplus003.c p06108707c4 *pythia8_x Jan 11 11:52
+831953752 cirkovi RUN   8nm        lxplus003.c p06108707q5 *pythia8_x Jan 11 11:52
+831953755 cirkovi RUN   8nm        lxplus003.c p06108707q5 *pythia8_x Jan 11 11:52
+831953759 cirkovi RUN   8nm        lxplus003.c b649d4b8fd  *pythia8_x Jan 11 11:52
+831953760 cirkovi RUN   8nm        lxplus003.c b641f0b431  *pythia8_x Jan 11 11:52
+831953761 cirkovi RUN   8nm        lxplus003.c b641f0b431  *pythia8_x Jan 11 11:52
+831953763 cirkovi RUN   8nm        lxplus003.c b6750ce787  *pythia8_x Jan 11 11:52
+831953765 cirkovi RUN   8nm        lxplus003.c b6325ef18b  *pythia8_x Jan 11 11:52
+831953773 cirkovi RUN   8nm        lxplus003.c b6c83220b0  *pythia8_x Jan 11 11:52
+831953780 cirkovi RUN   8nm        lxplus003.c b69720144d  *pythia8_x Jan 11 11:52
+831953781 cirkovi RUN   8nm        lxplus003.c b672bae86d  *pythia8_x Jan 11 11:52
+831953783 cirkovi RUN   8nm        lxplus003.c b65598fbfc  *pythia8_x Jan 11 11:52
+831953786 cirkovi RUN   8nm        lxplus003.c b65598fbfc  *pythia8_x Jan 11 11:52
+831953790 cirkovi RUN   8nm        lxplus003.c b633942d19  *pythia8_x Jan 11 11:52
+831953792 cirkovi RUN   8nm        lxplus003.c b633942d19  *pythia8_x Jan 11 11:52
+831953794 cirkovi RUN   8nm        lxplus003.c b6945b5efd  *pythia8_x Jan 11 11:52
+831953797 cirkovi RUN   8nm        lxplus003.c b6945b5efd  *pythia8_x Jan 11 11:52
+831953801 cirkovi RUN   8nm        lxplus003.c b6f7ef10ff  *pythia8_x Jan 11 11:52
+831953803 cirkovi RUN   8nm        lxplus003.c b6d6a43f9c  *pythia8_x Jan 11 11:52
+831953805 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953814 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953817 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953819 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953822 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953823 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953827 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953831 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953832 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953835 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953838 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953842 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953850 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953851 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953855 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953860 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953862 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953863 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953865 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953869 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953871 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953876 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953878 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953883 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953891 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953893 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953894 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953897 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953900 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953901 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52
+831953902 cirkovi PEND  8nm        lxplus003.c             *pythia8_x Jan 11 11:52

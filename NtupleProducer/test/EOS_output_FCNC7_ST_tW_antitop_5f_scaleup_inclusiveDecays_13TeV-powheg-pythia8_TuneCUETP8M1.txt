@@ -1,0 +1,10 @@
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_1.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_11.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_13.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_19.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_2.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_3.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_5.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_7.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_8.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/NPO/FCNC7/ST_tW_antitop_5f_scaleup_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1_Ntuple/output_9.root

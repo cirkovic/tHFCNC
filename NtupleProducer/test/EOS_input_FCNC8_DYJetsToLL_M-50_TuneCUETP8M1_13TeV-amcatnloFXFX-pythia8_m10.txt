@@ -1,0 +1,13 @@
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_1.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_10.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_11.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_12.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_13.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_2.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_3.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_4.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_5.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_6.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_7.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_8.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC8/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8_m10/output_9.root

@@ -2751,7 +2751,6 @@
 /eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC6/TT_TuneCUETP8M1_13TeV-powheg-pythia8/output_3994.root
 /eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC6/TT_TuneCUETP8M1_13TeV-powheg-pythia8/output_3995.root
 /eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC6/TT_TuneCUETP8M1_13TeV-powheg-pythia8/output_3997.root
-/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC6/TT_TuneCUETP8M1_13TeV-powheg-pythia8/output_3999.root
 /eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC6/TT_TuneCUETP8M1_13TeV-powheg-pythia8/output_40.root
 /eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC6/TT_TuneCUETP8M1_13TeV-powheg-pythia8/output_400.root
 /eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC6/TT_TuneCUETP8M1_13TeV-powheg-pythia8/output_4000.root

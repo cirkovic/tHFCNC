@@ -2,6 +2,10 @@
 /ST_FCNC-TH_Tleptonic_HTobb_eta_hct/                                          1.0192         1726082
 /ST_FCNC-TH_Tleptonic_HToWWZZtautau_eta_hut/                                  4.3292907      1737180
 /ST_FCNC-TH_Tleptonic_HToWWZZtautau_eta_hct/                                  0.5361825      1768628
+/TT_FCNC-T2HJ_aTleptonic_HTobb_eta_hct-MadGraph5-pythia8/                    18.49           1052106
+/TT_FCNC-TtoHJ_aTleptonic_HTobb_eta_hut-MadGraph5-pythia8/                   18.49           1052089
+/TT_FCNC-aTtoHJ_Tleptonic_HTobb_eta_hct-MadGraph5-pythia8/                   18.49           1051927
+/TT_FCNC-aTtoHJ_Tleptonic_HTobb_eta_hut-MadGraph5-pythia8/                   18.49           1049795
 /TT_TopLeptonicDecay_TH_1L3B_Eta_Hut/                                        41.61           2402599
 /TT_TopLeptonicDecay_TH_1L3B_Eta_Hct/                                        41.61           1171580
 /TT_AntitopLeptonicDecay_TH_1L3B_Eta_Hut/                                    41.61           1273994
@@ -13,3 +17,25 @@
 /ST_tW_top_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/               35.6            5405674
 /ST_tW_antitop_5f_NoFullyHadronicDecays_13TeV-powheg_TuneCUETP8M1/           35.6            5280048
 /WJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8/                      61500              9825660
+/ZJetsToNuNu_HT-800To1200_13TeV-madgraph/                                     1.1796
+/ZJetsToNuNu_HT-600To800_13TeV-madgraph/                                      2.559
+/ZJetsToNuNu_HT-2500ToInf_13TeV-madgraph/                                     0.006945
+/ZJetsToNuNu_HT-1200To2500_13TeV-madgraph/                                    0.28833
+/SingleMuonB1/         1.0     1422819       65
+/SingleMuonB2/         1.0     246175191     2712
+/SingleMuonC/          1.0     97292079      1080
+/SingleMuonD/          1.0     148167727     1569
+/SingleMuonE/          1.0     117321545     1284
+/SingleMuonF/          1.0     70402684      800
+/SingleMuonG/          1.0     153364066     1745
+/SingleMuonH2/         1.0     126863489     1531
+/SingleMuonH3/         1.0     3191585       40
+/SingleElectronB1/     1.0     2816842       53
+/SingleElectronB2/     1.0     158188719     1742
+/SingleElectronC/      1.0     68492270      756
+/SingleElectronD/      1.0     98175265      1035
+/SingleElectronE/      1.0     90986344      972
+/SingleElectronF/      1.0     65235075      714
+/SingleElectronG/      1.0     152881545     1684
+/SingleElectronH2/     1.0     171134793     1928
+/SingleElectronH3/     1.0     4393222       52

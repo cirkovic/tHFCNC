@@ -8,9 +8,12 @@ while read p; do
     NUM=$((NUM+1))
     #echo $p
     #echo `sed "${NUM}q;d" $OUTPUT`
-    CMD="bsub -q 1nh batch_job_ny.sh $p "`sed "${NUM}q;d" $OUTPUT`
+    OUT=`sed "${NUM}q;d" $OUTPUT`
+    CMD="bsub -q 1nh batch_job_ny.sh $p $OUT"
+    if [[ `eos ls $OUT` != "" ]]; then
+        continue
+    fi
     echo $CMD
-    exit
     eval $CMD
     if [[ $NUM -eq $TOT ]]; then
         break

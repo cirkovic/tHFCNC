@@ -1,0 +1,11 @@
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_1.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_10.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_11.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_2.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_3.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_4.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_5.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_6.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_7.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_8.root
+/eos/cms/store/caf/user/mdjordje/Cirkovic/FCNC10/WW_TuneCUETP8M1_13TeV-pythia8/output_9.root
